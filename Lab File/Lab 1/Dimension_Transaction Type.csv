@@ -1,0 +1,16 @@
+Transaction Type Key,WWI Transaction Type ID,Transaction Type,Valid From,Valid To,Lineage Key
+0,0,Unknown,01-01-2013 00:00,31-12-9999 00:00,0
+1,1,Customer Invoice,01-01-2013 00:00,31-12-9999 00:00,7
+2,2,Customer Credit Note,01-01-2013 00:00,31-12-9999 00:00,7
+3,3,Customer Payment Received,01-01-2013 00:00,31-12-9999 00:00,7
+4,4,Customer Refund,01-01-2013 00:00,31-12-9999 00:00,7
+5,5,Supplier Invoice,01-01-2013 00:00,31-12-9999 00:00,7
+6,6,Supplier Credit Note,01-01-2013 00:00,31-12-9999 00:00,7
+7,7,Supplier Payment Issued,01-01-2013 00:00,31-12-9999 00:00,7
+8,8,Supplier Refund,01-01-2013 00:00,31-12-9999 00:00,7
+9,9,Stock Transfer,01-01-2013 00:00,31-12-9999 00:00,7
+10,10,Stock Issue,01-01-2013 00:00,31-12-9999 00:00,7
+11,11,Stock Receipt,01-01-2013 00:00,31-12-9999 00:00,7
+12,12,Stock Adjustment at Stocktake,01-01-2013 00:00,31-12-9999 00:00,7
+13,13,Contra,01-01-2016 16:00,01-01-2016 16:05,7
+14,13,Customer Contra,01-01-2016 16:05,31-12-9999 00:00,7
