@@ -62,8 +62,12 @@ reports.
 
 2.  On the **Microsoft Fabric** sign-in page, enter your credentials,
     and click on the **Submit** button.
+    |   |   |
+    |----|----|
+    |Username|	+++@lab.CloudPortalCredential(User1).Username+++|
+    |Password	|+++@lab.CloudPortalCredential(User1).Password+++|
 
-[TABLE]
+
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image1.png)
@@ -93,7 +97,12 @@ reports.
 7.  On the **Create a workspace** pane that appears on the right side,
     enter the following details, and click **Apply**.
 
-[TABLE]
+    |  |   |
+    |----|----|
+    |Name|	+++Data Factory-XX+++ (XX can be a unique number, you can add more numbers)|
+    |Advanced	|Select Fabric capacity|
+    |Default storage format|	Small dataset storage format|
+
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image6.png)
@@ -275,9 +284,9 @@ incorrect.](./media/image34.png)
     perform data transformation operations and merge the tables for our
     downstream business intelligence projects.
 
-- green_tripdata_2022
+- **green_tripdata_2022**
 
-- nyc_taxi_green_discounts
+- **nyc_taxi_green_discounts**
 
 8.  Click on **Create.**
 
@@ -367,8 +376,7 @@ types of your columns.
 
 8.  With the table unpivoted, rename the *Attribute* and *Value* columns
     using the formula bar. Replace the existing script with:  
-    **+++Table.UnpivotOtherColumns(#"Changed column type", {"VendorID"},
-    "Date", "Discount")+++**
+ +++Table.UnpivotOtherColumns(#"Changed column type", {"VendorID"}, "Date", "Discount")+++ 
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image51.png)
@@ -464,9 +472,8 @@ incorrect.](./media/image65.png)
     select **Currency** for the **Data type**, and provide the following
     M expression for the **Custom column formula**:
 
-> *if \[tolls_amount\] \> 0 then \[tolls_amount\] \* ( 1 - \[Discount\]
-> ) else \[tolls_amount\]*
->
++++if [tolls_amount] > 0 then [tolls_amount] * ( 1 - [Discount] ) else [tolls_amount]+++
+
 > Then select **OK**.
 
 ![](./media/image67.png)
@@ -818,7 +825,7 @@ You configure a copy job to move tables from the lakehouse into a
 dedicated warehouse. This step demonstrates how to stage curated data
 into a high-performance environment for analytics.
 
-1.  On ***Data Factory-XX*** workspace page, navigate and click on **+
+1.  On **Data Factory-XX** workspace page, navigate and click on **+
     New item** button and select the **Warehouse** tile.
 
 > ![A screenshot of a computer AI-generated content may be
@@ -1120,8 +1127,7 @@ incorrect.](./media/image142.png)
 10. The **Pipeline expression builder** dialog appears. Enter the
     following expression, then select **OK**:
 
-+++@concat('DI in an Hour Pipeline Succeeded with Pipeline Run Id',
-pipeline().RunId)+++
++++@concat('DI in an Hour Pipeline Succeeded with Pipeline Run Id',pipeline().RunId)+++
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image158.png)
@@ -1431,8 +1437,14 @@ IDs, lakehouse IDs, filter values) instead of static values.
 > incorrect.](./media/image210.png)
 
 8.  Create the following variables:
+    |   |   |
+    |----|----|
+    |Variable name	|Type	|Default value set|
+    |WorkspaceId|	Guid	|<GUID of Data Factory-XX[Dev] workspace ID >|
+    |LakehouseId	|Guid|	<GUID of datafactory_lakehouse IDLakehouse>|
+    |WarehouseId	|Guid|	<GUID of datafactory_warehouse ID Warehouse>|
+    |Region	|String|+++Sweden+++|
 
-[TABLE]
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image211.png)
@@ -1500,16 +1512,12 @@ incorrect.](./media/image221.png)
 17. Once your query is created and visible in the dataflow, rename it to
     **WorkspaceId** and update the formula in the **Source** step with
     the following expression and click on **Next** button
-
-> let
->
-> Source =
-> Variable.ValueOrDefault("$(/\*\*/dataflow-Variables/WorkspaceId)",
-> "Your Workspace ID")
->
-> in
->
-> Source
+    ```
+    let
+      Source = Variable.ValueOrDefault("$(/**/dataflow-Variables/WorkspaceId)", "Your Workspace ID")
+    in
+    Source
+    ```
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image223.png)
@@ -1596,15 +1604,12 @@ incorrect.](./media/image236.png)
 25. Once your query is created and visible in the dataflow, rename it to
     **Region** and update the formula in the **Source** step with the
     following expression and click on **Next** button
-
-> let
->
-> Source = Variable.ValueOrDefault("$(/\*\*/dataflow-Variables/Region)",
-> "Sweden")
->
-> in
->
-> Source
+    ```
+    let
+      Source = Variable.ValueOrDefault("$(/**/dataflow-Variables/LakehouseID)", "Your LakehouseID ")
+    in
+    Source
+    ```
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image237.png)
@@ -2310,7 +2315,16 @@ Now, create the variable library
 
 5.  Create the following variables:
 
-[TABLE]
+    |   |   |
+    |----|---|
+    |Name	|Type	|Default value set|
+    |Source_Lakehouse_ID|	String|	<GUID of datafactory_lakehouse ID[Dev] Lakehouse>|
+    |Source_Workspace_ID	|String	|<GUID of Data Factory-XX[Dev] workspace ID >|
+    |Destination_Lakehouse_ID	|String	|<GUID of datafactory_lakehouse ID[Test] Lakehouse>|
+    |Destination_Workspace_ID	|String	|<GUID of Data Factory-XX[Test] workspace ID >|
+    |SourceTable_Name|	String|	+++green_tripdata_2017+++|
+    |DestinationTable_Name|	String|	+++TestCopiedData+++|
+
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image352.png)
@@ -2328,7 +2342,16 @@ Now, create the variable library
 
 8.  Create the following variables:
 
-[TABLE]
+    |   |   |
+    |-----|----|
+    |Name	|Type|	Default value set|
+    |Source_Lakehouse_ID	|String	|<GUID of datafactory_lakehouse ID[Test] Lakehouse>|
+    |Source_Workspace_ID	|String	|<GUID of Data Factory-XX[Test] workspace ID >|
+    |Destination_Lakehouse_ID|	String	|<GUID of datafactory_lakehouse ID[Production] Lakehouse>|
+    |Destination_Workspace_ID|	String|	<GUID of Data Factory-XX[Production] workspace ID >|
+    |SourceTable_Name|	String	|+++TestCopiedData+++|
+    |DestinationTable_Name|	String	|+++ProdCopiedData+++|
+
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image355.png)
@@ -2771,3 +2794,4 @@ and controlled release management via deployment pipelines.
 Collectively, the lab provided a comprehensive understanding of how
 Microsoft Fabric supports modern data engineering, automation, and
 DevOps practices—from raw ingestion to production deployment**.**
+
