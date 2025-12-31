@@ -302,7 +302,12 @@ entire data lifecycle, from raw ingestion to curated analytics.
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image46.png)
 
-[TABLE]
+    |    |   |
+    |----|---|
+    |Name	|**+++Data Factory-MedallionXX+++** (XX can be a unique number, you can add more numbers)|
+    |Advanced|	Select Fabric capacity|
+    |Default storage format|	Small dataset storage format|
+
 
 3.  On the **Create a workspace** pane that appears to the right, enter
     the following details, and then click **Apply**.
@@ -618,7 +623,7 @@ incorrect.](./media/image91.png)
 > incorrect.](./media/image93.png)
 
 5.  From the data pipeline page, drop down the **Copy data** and select
-    the **Add to canvas** to copy the sample data**.**
+    the **Add to canvas** to copy the sample data.
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image94.png)
@@ -632,10 +637,11 @@ incorrect.](./media/image94.png)
 incorrect.](./media/image95.png)
 
 7.  Click the **Source** tab, open the **Connection** drop-down menu,
-    and select **Browse all**.![A screenshot of a computer AI-generated
+    and select **Browse all**.
+    ![A screenshot of a computer AI-generated
     content may be incorrect.](./media/image96.png)
 
-8.  The **Get data** page you will be landed on the **Choose data source
+9.  The **Get data** page you will be landed on the **Choose data source
     to get started** page. Select **Sample data** and then select
     the **Public Holidays** data source type.
 
@@ -897,7 +903,16 @@ incorrect.](./media/image131.png)
 9.  On the **Connect to data source** window, enter the details from the
     table below and select **Connect**.
 
-[TABLE]
+    |   |   |
+    |----|---|
+    |Property	|Value|
+    |Account name or URL|	Enter your storage account |
+    |Connection	|Create a new connection|
+    |Connection name|	**+++ContosoSample+++**|
+    |Data gateway	|None|
+    |Authentication kind|	Account key|
+    |Account key|	Enter storage account key|
+
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image132.png)
@@ -972,24 +987,14 @@ incorrect.](./media/image142.png)
     date and string functions to create a dynamic folder path. Copy and
     paste the code block below into the expression input box.
     Press **Ok** when complete.
-
-@concat(
-
-'ContosoSales\\,
-
-formatDateTime(
-
-convertFromUtc(
-
-utcnow(), 'Central Standard Time'
-
-),
-
-'yyyy/MM/dd'
-
-)
-
-)
+    ```
+    @formatDateTime(
+        convertFromUtc(
+            utcnow(), 'Central Standard Time'
+        ),
+        'yyyy/MM/dd'
+    )
+    ```
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image143.png)
@@ -1011,7 +1016,11 @@ incorrect.](./media/image144.png)
     activity within your pipeline, making it easier to understand its
     purpose and functionality.
 
-[TABLE]
+    |  |   |
+    |------|---------|
+    |Property	|Text|
+    |Name|	+++Get and Unzip files+++|
+
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image145.png)
@@ -1175,7 +1184,7 @@ incorrect.](./media/image77.png)
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image168.png)
 
-24. Click Ok
+24. Click **Ok**
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image169.png)
@@ -1202,14 +1211,13 @@ incorrect.](./media/image77.png)
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image173.png)
 
-28. On the left navigation, click on ***Data Factory-MedallionXX***, as
+28. On the left navigation, click on **Data Factory-MedallionXX**, as
     shown in the image below.
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image174.png)
 
-29. Now proceed to select and add an **Assign item** from the **Initial
-    process** task.
+29. Now proceed to select and add an **Assign item** from the **Initial process** task.
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image175.png)
@@ -1283,41 +1291,34 @@ incorrect.](./media/image184.png)
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image185.png)
 
-1.  On the **Add new** **variable** pane, set the **Name** value
+8.  On the **Add new** **variable** pane, set the **Name** value
     to +++**fileDirectory+++** and ensure the Type remains as a string
     before selecting **Confirm.**
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image186.png)
 
-2.  Select the **Value **text input box. This will display the **Add
+9.  Select the **Value **text input box. This will display the **Add
     dynamic content** \[Alt+Shift+D\] property. Select this text to open
     the pipeline expression builder.
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image187.png)
 
-3.  On the Pipeline expression builder page, **copy and paste** the code
+10.  On the Pipeline expression builder page, **copy and paste** the code
     block below into the expression input box. Press **Ok** when
     complete.
-
-@concat(
-
-'ContosoSales\\,
-
-formatDateTime(
-
-convertFromUtc(
-
-utcnow(), 'Central Standard Time'
-
-),
-
-'yyyy/MM/dd'
-
-)
-
-)
+    ```
+    @concat(
+        'ContosoSales\',
+        formatDateTime(
+            convertFromUtc(
+                utcnow(), 'Central Standard Time'
+            ),
+            'yyyy/MM/dd'
+        )
+    )
+    ```
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image188.png)
@@ -1326,8 +1327,7 @@ utcnow(), 'Central Standard Time'
 > incorrect.](./media/image189.png)
 
 4.  Navigate to the **General** tab with the Set variable activity
-    selected. Update the **Name** field with the text +++**Set file
-    directory**+++.
+    selected. Update the **Name** field with the text +++**Set file directory**+++.
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image190.png)
@@ -1363,7 +1363,7 @@ incorrect.](./media/image192.png)
     \[Alt+Shift+D\]**. Click on this text to open the pipeline
     expression builder.
 
-![](./media/image193.png)
+    ![](./media/image193.png)
 
 4.  On the Pipeline expression builder window, select
     the **Variables** option. Within the available variable list,
@@ -1457,8 +1457,7 @@ warehouse practices.
 incorrect.](./media/image206.png)
 
 2.  With the **ForEach** activity selected, navigate to the **General**
-    tab and update the **Name** field with the text +++**For each
-    file+++**.
+    tab and update the **Name** field with the text +++**For each file+++**.
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image207.png)
@@ -1477,7 +1476,7 @@ incorrect.](./media/image208.png)
     the items are processed one after another, maintaining the order of
     execution.
 
-![](./media/image209.png)
+   ![](./media/image209.png)
 
 5.  On the Pipeline expression builder page, select the **Activity
     outputs** section. Then, choose the **Get items in folder** output
@@ -1485,7 +1484,7 @@ incorrect.](./media/image208.png)
     childItems**. This step ensures that the ForEach activity iterates
     over the child items retrieved from the specified directory.
 
-![](./media/image210.png)
+    ![](./media/image210.png)
 
 6.  Select the **add** option on the **For each activity** and then
     select **Copy data**. This step will allow us to repeatedly execute
@@ -1503,8 +1502,7 @@ incorrect.](./media/image211.png)
 incorrect.](./media/image212.png)
 
 8.  Navigate to the **General** tab with the **Copy data activity**
-    selected. Update the **Name** field with the text +++**Copy
-    tables**+++.
+    selected. Update the **Name** field with the text +++**Copy tables**+++.
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image213.png)
@@ -1514,7 +1512,15 @@ incorrect.](./media/image213.png)
     the **Directory** text input box. This will display the **Add
     dynamic content \[Alt+Shift+D\]** property.
 
-[TABLE]
+
+    |   |  |
+    |---|---|
+    |Property|	Value|
+    |Source	|Select the previously configured bronge_Lakehouse lakehouse.|
+    |Root folder|	Files|
+    |File path|	File path|
+    |File format|	Parquet|
+
 
 > ![](./media/image214.png)
 
@@ -1552,7 +1558,12 @@ incorrect.](./media/image215.png)
     \[Alt+Shift+D\] property. Select this text to open the pipeline
     expression builder.
 
-[TABLE]
+|   |   |
+|---|----|
+|Property	|Value|
+|Source|	Select the previously configured silver_Lakehouse lakehouse.|
+|Destination	|Tables|
+
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image219.png)
@@ -1568,7 +1579,7 @@ incorrect.](./media/image220.png)
 
 17. Copy and paste the code block below into the expression input box.
 
-**+++@split(item().name, '.')\[0\]+++**
++++@split(item().name, '.')[0]+++
 
 ![](./media/image221.png)
 
@@ -1589,16 +1600,13 @@ incorrect.](./media/image220.png)
     select **OK** to continue.
 
 20. Copy and paste the code block below into the expression input box.
-
-**@if(**
-
-**startswith(item().name, 'Dim'),**
-
-**'Overwrite',**
-
-**'Append'**
-
-**)**
+    ```
+    @if(
+        startswith(item().name, 'Dim'),
+        'Overwrite',
+        'Append'
+    )
+    ```
 
 ![](./media/image224.png)
 
@@ -1771,7 +1779,7 @@ Query Online. This Dataflow is designed to apply transformations and
 prepare data for downstream analytics by leveraging Fabric’s staging
 architecture for large-scale compute
 
-1.  On the left navigation, click on ***Data Factory-MedallionXX***, as
+1.  On the left navigation, click on **Data Factory-MedallionXX**, as
     shown in the image below.
 
 > ![A screenshot of a computer AI-generated content may be
@@ -1819,7 +1827,22 @@ incorrect.](./media/image260.png)
     perform data transformation operations and merge the tables for our
     downstream business intelligence projects.
 
-[TABLE]
+      |  |
+      |---|
+      |Table Name|
+      |bdo_ Dimension_City|
+      |bdo_Dimension_Customer|
+      |bdo_Dimension_Date|
+      |bdo_Dimension_Employee|
+      |bdo_Dimension_Payment_Method|
+      |bdo_Dimension_Supplier|
+      |bdo_Dimension_Transaction_Type|
+      |bdo_Fact_Order|
+      |bdo_Fact_Purchase|
+      |bdo_Fact_Sale|
+      |bdo_Fact_Stock_Holding|
+      |bdo_Fact_Transaction|
+
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image261.png)
@@ -1919,7 +1942,7 @@ incorrect.](./media/image275.png)
 ![A screenshot of a computer error AI-generated content may be
 incorrect.](./media/image277.png)
 
-8.  On the top menu, select **gold_Warehouse** that you have created in
+14.  On the top menu, select **gold_Warehouse** that you have created in
     the previous task.
 
 ![A screenshot of a computer AI-generated content may be
@@ -1939,7 +1962,21 @@ incorrect.](./media/image279.png)
     model+++**, select the **dbo** schema, choose the below tables, and
     then click **Confirm**
 
-[TABLE]
+      |  |
+      |---|
+      |Table Name|
+      |bdo_ Dimension_City|
+      |bdo_Dimension_Customer|
+      |bdo_Dimension_Date|
+      |bdo_Dimension_Employee|
+      |bdo_Dimension_Payment_Method|
+      |bdo_Dimension_Supplier|
+      |bdo_Dimension_Transaction_Type|
+      |bdo_Fact_Order|
+      |bdo_Fact_Purchase|
+      |bdo_Fact_Sale|
+      |bdo_Fact_Stock_Holding|
+      |bdo_Fact_Transaction|
 
 ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image280.png)
@@ -2183,3 +2220,4 @@ DimCustomers and Fact Sales for analytics. Validation is performed
 through deployment pipelines across Dev, Test, and Prod, ensuring
 consistency, governance, and scalability, before cleaning up resources
 to maintain cost efficiency.
+
