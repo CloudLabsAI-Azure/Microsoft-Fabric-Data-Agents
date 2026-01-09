@@ -290,17 +290,18 @@ incorrect.](./media/image29.png)
 
 > ![](./media/image45.png)
 17. In the **ResourceGroup1** resource group , select **WideWorldImporters** database
-      ![](./media/img1.png)
+> ![](./media/img1.png)
  
 18. In the **WideWorldImporters** database overview, select the **Pricing tier**.
-     ![](./media/img2.png)
+> ![](./media/img2.png)
+
 19. Increase the **DTUs** to **200** and click the **Save** button.
-     ![](./media/img3.png)
- 
-   ![](./media/img4.png)
+> ![](./media/img3.png)
+> ![](./media/img4.png)
+
 20. Copy **SQL Database resource name** and **Server name**, paste them in a notepad, and
     then **Save** the notepad to use the information in the upcoming task.
-     ![](./media/img5.png)
+  > ![](./media/img5.png)
 
 ## Task 3: Create a Fabric workspace
 
@@ -2240,5 +2241,6 @@ DimCustomers and Fact Sales for analytics. Validation is performed
 through deployment pipelines across Dev, Test, and Prod, ensuring
 consistency, governance, and scalability, before cleaning up resources
 to maintain cost efficiency.
+
 
 
