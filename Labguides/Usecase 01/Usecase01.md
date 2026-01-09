@@ -203,7 +203,15 @@ incorrect.](./media/image29.png)
     enter the following details to create a storage account and then
     click on **Next**
 
-[TABLE]
+|----|----|
+|    |   |
+|Subscription|	Select your Azure OpenAI subscription|
+|Resource group	|Select your Resource group|
+|Storage account name|	+++fabricstorageXXXX+++( XXXX can be last 4 digits of Lab instant ID)|
+|Region	|Select the appropriate region for your storage account . In this lab East US is take|
+|Performance|	Standard: Recommended for most scenarios (general-purpose v2 account)|
+|Redundancy|	Locally-redundant storage (LRS)|
+
 
 > ![A screenshot of a computer AI-generated content may be
 > incorrect.](./media/image32.png)
@@ -281,6 +289,18 @@ incorrect.](./media/image29.png)
     task.
 
 > ![](./media/image45.png)
+17. In the **ResourceGroup1** resource group , select **WideWorldImporters** database
+      ![](./media/img1.png)
+ 
+18. In the **WideWorldImporters** database overview, select the **Pricing tier**.
+     ![](./media/img2.png)
+19. Increase the **DTUs** to **200** and click the **Save** button.
+     ![](./media/img3.png)
+ 
+   ![](./media/img4.png)
+20. Copy **SQL Database resource name** and **Server name**, paste them in a notepad, and
+    then **Save** the notepad to use the information in the upcoming task.
+     ![](./media/img5.png)
 
 ## Task 3: Create a Fabric workspace
 
@@ -2220,4 +2240,5 @@ DimCustomers and Fact Sales for analytics. Validation is performed
 through deployment pipelines across Dev, Test, and Prod, ensuring
 consistency, governance, and scalability, before cleaning up resources
 to maintain cost efficiency.
+
 
