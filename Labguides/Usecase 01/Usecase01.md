@@ -55,13 +55,6 @@ efficiently captured and structured for downstream processing.
 
 ## Task 1: Restoring the WideWorldImporters Sample Database Using SQL Server Management Studio (SSMS)
 
-1. Log in to the VM Desktop using the following credentials:
-
-    | | |
-    |===|===|
-    | Username | +++@lab.VirtualMachine(DPDP-070-VM).Username+++ |
-    | Password | +++@lab.VirtualMachine(DPDP-070-VM).Password+++ |
-
 1. Open the **SQL Server Management Studio 22** (SSMS) from the Windows Start Menu.
 
 1. In the **Sign in** dialog selct the **Work or school** account option and then select **Continue**
@@ -2255,3 +2248,4 @@ DimCustomers and Fact Sales for analytics. Validation is performed
 through deployment pipelines across Dev, Test, and Prod, ensuring
 consistency, governance, and scalability, before cleaning up resources
 to maintain cost efficiency.
+
