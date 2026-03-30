@@ -61,21 +61,21 @@ efficiently captured and structured for downstream processing.
 
 1. Provide the following Azure credentials (also found on the Resources tab):
 
-    | | |
-    |===|===|
-    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
-    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
+    | Field | Value |
+    |---|---|
+    | Username | **@lab.CloudPortalCredential(User1).Username** |
+    | TAP | **@lab.CloudPortalCredential(User1).AccessToken** |
 
 1. On the **Sign in to all apps** dialog select **No, this app only**
 
 1. In the **Connect** dialog provide the following information:
 
     | Field | Value |
-    |===|===|
-    | Server Name | +++wwi-sqlserver-@lab.LabInstance.Id.database.windows.net+++ |
+    |---|---|
+    | Server Name | **wwi-sqlserver-@lab.LabInstance.Id.database.windows.net** |
     | Authentication | **SQL Server Authentication** |
-    | Username | +++sqladminuser+++ |
-    | Password | +++P@ssw0rd1234!+++ |
+    | Username | **sqladminuser** |
+    | Password | **P@ssw0rd1234!** |
     | Remember Password | **Enabled** |
 
 1. In the **Database Name** field drop down the selector
@@ -165,20 +165,20 @@ data. This setup forms the foundation of the Bronze layer, enabling
 seamless ingestion and transformation processes within the Medallion
 Architecture.
 
-1.  In Edge, go to +++portal.azure.com+++ and login with the credentials:
+1.  In Edge, go to **portal.azure.com** and login with the credentials:
 
     | | |
-    |===|===|
-    | Username | +++@lab.CloudPortalCredential(User1).Username+++ |
-    | TAP | +++@lab.CloudPortalCredential(User1).AccessToken+++ |
+    |---|---|
+    | Username | **@lab.CloudPortalCredential(User1).Username** |
+    | TAP | **@lab.CloudPortalCredential(User1).AccessToken** |
 	
 1. Select **Create a resource**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image28.png)
 
-2.  On the **Create a resource** search box, type +++Storage
-    account+++ and then click on the **storage account**.
+2.  On the **Create a resource** search box, type **Storage
+    account** and then click on the **storage account**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image29.png)
@@ -198,11 +198,11 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     click on **Next**
 
     | | |
-    |===|===|
-    | Subscription | +++@lab.CloudSubscription.Name+++ |
+    |---|---|
+    | Subscription | **@lab.CloudSubscription.Name** |
 	| Resource Group | **ResourceGroup1** |
-    | Storage Account Name | +++fabricstorage@lab.LabInstance.Id+++ |
-	| Region | +++@lab.CloudResourceGroup(ResourceGroup1).Location+++ |   
+    | Storage Account Name | **fabricstorage@lab.LabInstance.Id** |
+	| Region | **@lab.CloudResourceGroup(ResourceGroup1).Location** |   
 	
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image32.png)
@@ -236,7 +236,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image37.png)
 
 11. On the New container pane that appears on the right side, enter the
-    container Name as +++contososales+++ and click on **Create**
+    container Name as **contososales** and click on **Create**
     button.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image38.png)
@@ -308,7 +308,7 @@ Medallion**—you ensure a well-organized environment for managing the
 entire data lifecycle, from raw ingestion to curated analytics.
 
 1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: +++https://app.fabric.microsoft.com/+++ then
+    the following URL: **https://app.fabric.microsoft.com/** then
     press the **Enter** button.
 
 2.  On the **Fabric Home** page click on **+ New Workspaces** as shown
@@ -322,7 +322,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	
     |    |   |
     |----|---|
-    |Name	|+++Data Factory-Medallion@lab.LabInstance.Id+++ |
+    |Name	|**Data Factory-Medallion@lab.LabInstance.Id** |
     |Advanced| Select Fabric capacity|
     |Semantic storage format| Small Semantic model storage format|
 
@@ -348,7 +348,7 @@ for downstream processing.
 
 >[!Alert] For this task, we must enable the System Assigned Managed Identity of the Azure SQL Server. Please follow these steps prior to moving forward in the lab.
 >
->1. Go to +++Portal.Azure.com+++
+>1. Go to **Portal.Azure.com**
 >
 >1. Select **All Resources**
 >
@@ -400,8 +400,8 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image54.png)
 
-7.  In the **Filter by item type** search box, enter +++Mirrored Azure
-    SQL Database+++ and select the **Mirrored Azure SQL Database**
+7.  In the **Filter by item type** search box, enter **Mirrored Azure
+    SQL Database** and select the **Mirrored Azure SQL Database**
     item.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image55.png)
@@ -414,13 +414,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 9.  On the **New source** tab, enter the following details, and click on
     the **Connect** button.
 
-	- **Server:** Enter your SQL server URL | +++wwi-sqlserver-@lab.LabInstance.Id.database.windows.net+++
+	- **Server:** Enter your SQL server URL | **wwi-sqlserver-@lab.LabInstance.Id.database.windows.net**
 
-	- **Database:** Enter the database as +++WideWorldImporters+++
+	- **Database:** Enter the database as **WideWorldImporters**
 
-    - **Username**: +++sqladminuser+++ 
+    - **Username**: **sqladminuser** 
 
-    - **Password**: +++P@ssw0rd1234!+++ 
+    - **Password**: **P@ssw0rd1234!** 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image57.png)
 
@@ -492,7 +492,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image68.png)
 
 4.  On the New lakehouse pane, set the lakehouse name to
-    +++bronze_Lakehouse+++ and **unselect** the lakehouses schemas.
+    **bronze_Lakehouse** and **unselect** the lakehouses schemas.
     Click on the **Create** button and open the new lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
@@ -525,7 +525,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image74.png)
 
 9.  On the New copy job window, set the copy job name
-    to +++bronze_copyjob+++ and then select **Create**.
+    to **bronze_copyjob** and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image75.png)
@@ -543,7 +543,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	- **Server:** Enter the **SQL connection string** for the mirrored
 	  database **WideWorldImporters**.
 
-	- **Database:** Enter the database as +++WideWorldImporters+++
+	- **Database:** Enter the database as **WideWorldImporters**
 
 	- **Authentication kind:** Organizational account
 
@@ -555,7 +555,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image78.png)
 
 13. On the Choose data destination tab, search for the data source
-    starting with +++bronze_Lakehouse+++ in the search bar and then
+    starting with **bronze_Lakehouse** in the search bar and then
     select **bronze_Lakehouse** from the OneLake catalog list.
 
     ![A screenshot of a computer AI-generated content may be
@@ -647,7 +647,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image92.png)
 
 4.  On the **New pipeline** pane, set the data pipeline name to
-    +++samplePipeline+++ and then select **Create**.
+    **samplePipeline** and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image93.png)
@@ -896,7 +896,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image126.png)
 
 4.  On the New pipeline pane, set the data pipeline name to
-    +++getContosoSample+++ and then select **Create**.
+    **getContosoSample** and then select **Create**.
 
     ![A screenshot of a new pipeline AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image127.png)
@@ -935,7 +935,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     |Property	|Value|
     |Account name or URL|	Enter your storage account |
     |Connection	|Create a new connection|
-    |Connection name|	+++ContosoSample+++|
+    |Connection name|	**ContosoSample**|
     |Data gateway	|None|
     |Authentication kind|	Account key|
     |Account key|	Enter storage account key|
@@ -1047,7 +1047,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     |  |   |
     |------|---------|
     |Property	|Text|
-    |Name|	+++Get and Unzip files+++|
+    |Name|	**Get and Unzip files**|
 
 
     ![A screenshot of a computer AI-generated content may be
@@ -1138,7 +1138,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image157.png)
 
 12. On the New lakehouse pane, set the lakehouse name to
-    +++silver_Lakehouse+++ and **unselect** the lakehouses schemas.
+    **silver_Lakehouse** and **unselect** the lakehouses schemas.
     Click on the **Create** button and open the new lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1151,7 +1151,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image159.png)
 
 4.  On the New pipeline pane, set the data pipeline name to
-    +++createContosoTables+++ and then select **Create**
+    **createContosoTables** and then select **Create**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image160.png)
 
@@ -1165,7 +1165,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	- **Server:** Enter the **SQL connection string** for the mirrored
 	  database **WideWorldImporters**.
 
-	- **Database:** Enter the database as +++WideWorldImporters+++
+	- **Database:** Enter the database as **WideWorldImporters**
 
 	- **Authentication kind:** Organizational account
 
@@ -1283,7 +1283,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image179.png)
 
 4.  On the New pipeline window, set the data pipeline name to
-    +++ContosoTables+++ and then select **Create**
+    **ContosoTables** and then select **Create**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image180.png)
@@ -1320,7 +1320,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image185.png)
 
 8.  On the **Add new** **variable** pane, set the **Name** value
-    to +++fileDirectory+++ and ensure the Type remains as a string
+    to **fileDirectory** and ensure the Type remains as a string
     before selecting **Confirm.**
 
     ![A screenshot of a computer AI-generated content may be
@@ -1356,7 +1356,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image189.png)
 
 4.  Navigate to the **General** tab with the Set variable activity
-    selected. Update the **Name** field with the text +++Set file directory+++.
+    selected. Update the **Name** field with the text **Set file directory**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image190.png)
@@ -1418,7 +1418,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image197.png)
 
 8.  Select the **Get Metadata** activity and update the **Name** field
-    with the text +++Get items in folder+++.
+    with the text **Get items in folder**.
 
 9.  This step aids in identifying and managing the activity within the
     pipeline, enhancing clarity around its purpose and
@@ -1486,7 +1486,7 @@ warehouse practices.
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image206.png)
 
 2.  With the **ForEach** activity selected, navigate to the **General**
-    tab and update the **Name** field with the text +++For each file+++.
+    tab and update the **Name** field with the text **For each file**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image207.png)
@@ -1531,7 +1531,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image212.png)
 
 8.  Navigate to the **General** tab with the **Copy data activity**
-    selected. Update the **Name** field with the text +++Copy tables+++.
+    selected. Update the **Name** field with the text **Copy tables**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image213.png)
@@ -1577,7 +1577,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 14. Copy and paste the code block below into the expression input box.
 
-	+++@item().name+++
+	**@item().name**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image218.png)
 
@@ -1608,7 +1608,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 17. Copy and paste the code block below into the expression input box.
 
-	+++@split(item().name, '.')[0]+++
+	**@split(item().name, '.')[0]**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image221.png)
 
@@ -1732,7 +1732,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image241.png)
 
 4.  On the New **warehouse** window, set the warehouse name to
-    +++gold_Warehouse+++ and then select **Create**.
+    **gold_Warehouse** and then select **Create**.
 
     ![A screenshot of a login box AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image242.png)
@@ -1751,7 +1751,7 @@ refined data for analytics.
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image243.png)
 
 2.  On the New pipeline window, set the data pipeline name to
-    +++Copydata_silver to gold+++ and then select **Create**
+    **Copydata_silver to gold** and then select **Create**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image244.png)
@@ -1827,7 +1827,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image256.png)
 
 5.  On the **New Dataflow Gen2** window, click on **Dataflow1** and
-    rename it to +++PrepContoso+++
+    rename it to **PrepContoso**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image257.png)
 
@@ -1846,7 +1846,7 @@ select relevant tables (dimensions and facts).
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image259.png)
 
 2.  On the **Get data** explorer's search bar,
-    type +++gold_Warehouse+++ to locate the gold Warehouse item.
+    type **gold_Warehouse** to locate the gold Warehouse item.
     Select the **gold_Warehouse** item within the OneLake catalog's
     returned results.
 
@@ -1989,8 +1989,8 @@ In this task, you build a Power BI Report.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image279.png)
 
-2.  On the *New Semantic Model* tab, enter the name as +++Sample
-    model+++, select the **dbo** schema, choose the below tables, and
+2.  On the *New Semantic Model* tab, enter the name as **Sample
+    model**, select the **dbo** schema, choose the below tables, and
     then click **Confirm**
 
 	|  |
@@ -2184,7 +2184,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a graph AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image306.png)
 
-26. Enter the name of your report as +++Profit Reporting+++.
+26. Enter the name of your report as **Profit Reporting**.
     Select **Save**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image307.png)
