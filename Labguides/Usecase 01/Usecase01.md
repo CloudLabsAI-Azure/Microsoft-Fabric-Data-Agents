@@ -88,26 +88,24 @@ efficiently captured and structured for downstream processing.
 
     >**Congratulations**! You are now connected to the **WideWorldImporters** Database and are ready to import your schema and data.
 
-6.  To import data into the database, in Object Explorer right-click the
-    **WideWorldImporters** database, select **Tasks**, and then click
-    **Import Flat File** to start the data import wizard.
+6. To import data into the database, in Object Explorer right-click the **WideWorldImporters** database, select **Tasks**, and then click **Import Flat File** to start the data import wizard.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image15.png)
 
-7.  On the **Import Flat File** wizard **Introduction** page, review the
+7. On the **Import Flat File** wizard **Introduction** page, review the
     details and click **Next** to proceed.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image16.png)
 
-8.  On the **Specify Input File** page, click **Browse** to select the
+8. On the **Specify Input File** page, click **Browse** to select the
     file to import
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image17.png)
 
-9.  Browse to **C:\LabFiles\LabFiles\Lab1** on your VM, then
+9. Browse to **C:\LabFiles\LabFiles\Lab1** on your VM, then
     select **Dimension_City.csv** file and click on **Open** button.
 
     ![A screenshot of a computer AI-generated content may be
@@ -165,7 +163,7 @@ data. This setup forms the foundation of the Bronze layer, enabling
 seamless ingestion and transformation processes within the Medallion
 Architecture.
 
-1.  In Edge, go to **portal.azure.com** and login with the credentials:
+1. In Edge, go to **portal.azure.com** and login with the credentials:
 
     | | |
     |---|---|
@@ -177,23 +175,23 @@ Architecture.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image28.png)
 
-2.  On the **Create a resource** search box, type **Storage
+2. On the **Create a resource** search box, type **Storage
     account** and then click on the **storage account**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image29.png)
 
-3.  Click the **Storage account** tile on the **Marketplace** page.
+3. Click the **Storage account** tile on the **Marketplace** page.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image30.png)
 
-4.  On the **Storage account** page, click **Create**.
+4. On the **Storage account** page, click **Create**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image31.png)
 
-5.  On **Create a storage account** page, under the **Basics** tab,
+5. On **Create a storage account** page, under the **Basics** tab,
     enter the following details to create a storage account and then
     click on **Next**
 
@@ -207,24 +205,24 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image32.png)
 
-6.  Under the **Advanced** tab, select **"Enable hierarchical
+6. Under the **Advanced** tab, select **"Enable hierarchical
     namespace"** and click on **Review+create.**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image33.png)
 
-7.  On the **Review + Create** page, click **Create**.
+7. On the **Review + Create** page, click **Create**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image34.png)
 
-8.  The Azure Storage account is now set up to host data for Azure Data
+8. The Azure Storage account is now set up to host data for Azure Data
     Lake. Click **Go to resource**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image35.png)
 
-9.  On the left-side navigation pane of your Storage Account, select
+9. On the left-side navigation pane of your Storage Account, select
     **Data storage** section and then select **Containers**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -307,17 +305,17 @@ assets. By naming it appropriately—such as **Data Factory –
 Medallion**—you ensure a well-organized environment for managing the
 entire data lifecycle, from raw ingestion to curated analytics.
 
-1.  Open your browser, navigate to the address bar, and type or paste
+1. Open your browser, navigate to the address bar, and type or paste
     the following URL: **https://app.fabric.microsoft.com/** then
     press the **Enter** button.
 
-2.  On the **Fabric Home** page click on **+ New Workspaces** as shown
+2. On the **Fabric Home** page click on **+ New Workspaces** as shown
     in the image below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image46.png)
 
-3.  On the **Create a workspace** pane that appears to the right, enter
+3. On the **Create a workspace** pane that appears to the right, enter
     the following details, and then click **Apply**.
 	
     |    |   |
@@ -331,7 +329,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image48.png)
 
-4.  The Workspace is now created.
+4. The Workspace is now created.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image49.png)
 
@@ -358,7 +356,7 @@ for downstream processing.
 >
 >1. Under **System Assigned Managed Identity** select **On** then **Save**.
 
-1.  From the empty workspace, select the option **Select a predefined
+1. From the empty workspace, select the option **Select a predefined
     task flow** to choose one of Microsoft's task flows. These
     predesigned task flows provide a structured approach to managing
     data projects.
@@ -366,7 +364,7 @@ for downstream processing.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image50.png)
 
-2.  From the **Select a predesigned task flow** pane, choose
+2. From the **Select a predesigned task flow** pane, choose
     the **Medallion** option.
 
 	> This option includes the description "Organize and improve data
@@ -375,43 +373,43 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	into different layers, such as bronze, silver, and gold, to enhance
 	> data quality and accessibility.
 
-3.  Select the **Select** option to continue.
+3. Select the **Select** option to continue.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image51.png)
 
-4.  A task flow has now been created within your workspace, which can be
+4. A task flow has now been created within your workspace, which can be
     considered as an architectural template. This template provides a
     structured framework for your data project.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image52.png)
 
-5.  Select the **New item** option on the **Bronze data** block to start
+5. Select the **New item** option on the **Bronze data** block to start
     adding items to task flow.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image53.png)
 
-6.  On the **New item** page, the available options within Microsoft
+6. On the **New item** page, the available options within Microsoft
     Fabric have been filtered down to **All items**. This filtering is
     helpful for choosing the correct items for project.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image54.png)
 
-7.  In the **Filter by item type** search box, enter **Mirrored Azure
+7. In the **Filter by item type** search box, enter **Mirrored Azure
     SQL Database** and select the **Mirrored Azure SQL Database**
     item.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image55.png)
 
-8.  On the **Choose a database connection to get started** page, select
+8. On the **Choose a database connection to get started** page, select
     **Azure SQL database**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image56.png)
 
-9.  On the **New source** tab, enter the following details, and click on
+9. On the **New source** tab, enter the following details, and click on
     the **Connect** button.
 
 	- **Server:** Enter your SQL server URL | **wwi-sqlserver-@lab.LabInstance.Id.database.windows.net**
@@ -475,23 +473,23 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 ## Task 5: Build the Bronze Lakehouse and Ingest Data Using Copy Job
 
-1.  Select the **New item** option on the **Bronze data** block to start
+1. Select the **New item** option on the **Bronze data** block to start
     adding items to task flow.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image67.png)
 
-2.  On the **Create an item** page, the available options within
+2. On the **Create an item** page, the available options within
     Microsoft Fabric have been filtered down to **Recommended items**.
     This filtering is helpful for choosing the correct items for
     project.
 
-3.  Select the **Lakehouse** item for data storage.
+3. Select the **Lakehouse** item for data storage.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image68.png)
 
-4.  On the New lakehouse pane, set the lakehouse name to
+4. On the New lakehouse pane, set the lakehouse name to
     **bronze_Lakehouse** and **unselect** the lakehouses schemas.
     Click on the **Create** button and open the new lakehouse.
 
@@ -501,30 +499,30 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image70.png)
 
-5.  On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
+5. On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
     shown in the image below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image71.png)
 
-6.  Within the workspace, you will notice that three items have now been
+6. Within the workspace, you will notice that three items have now been
     created and are associated with your lakehouse. These items include
     the lakehouse , SQL analytics endpoint
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image72.png)
 
-7.  Now proceed to select and add a **New item** from the **High-volume
+7. Now proceed to select and add a **New item** from the **High-volume
     data ingest** task.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image73.png)
 
-8.  Select the **Copyjob** tile.
+8. Select the **Copyjob** tile.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image74.png)
 
-9.  On the New copy job window, set the copy job name
+9. On the New copy job window, set the copy job name
     to **bronze_copyjob** and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -625,7 +623,7 @@ with a dynamic expression that creates a date-based folder structure
 scalable, and well-structured, with validation confirming successful
 execution.
 
-1.  On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
+1. On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
     shown in the image below.
 
     ![A screenshot of a computer AI-generated content may be
@@ -634,31 +632,31 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image90.png)
 
-2.  Now proceed to select and add a **New item** from the **High-volume
+2. Now proceed to select and add a **New item** from the **High-volume
     data ingest** task.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image91.png)
 
-3.  On the **New item** page, the available options within Microsoft
+3. On the **New item** page, the available options within Microsoft
     Fabric have been filtered down to **Recommended items**. Select the
     **Pipeline** item.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image92.png)
 
-4.  On the **New pipeline** pane, set the data pipeline name to
+4. On the **New pipeline** pane, set the data pipeline name to
     **samplePipeline** and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image93.png)
 
-5.  From the data pipeline page, drop down the **Copy data** and select
+5. From the data pipeline page, drop down the **Copy data** and select
     the **Add to canvas** to copy the sample data.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image94.png)
 
-6.  The properties section below provides access to the configurations
+6. The properties section below provides access to the configurations
     for Source, Destination, Settings, and more. These configurations
     can be edited directly to ensure the data copy activity is correctly
     set up and aligned with specific requirements.
@@ -666,19 +664,19 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image95.png)
 
-7.  Click the **Source** tab, open the **Connection** drop-down menu,
+7. Click the **Source** tab, open the **Connection** drop-down menu,
     and select **Browse all**.
         ![A screenshot of a computer AI-generated
     content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image96.png)
 
-9.  The **Get data** page you will be landed on the **Choose data source
+9. The **Get data** page you will be landed on the **Choose data source
     to get started** page. Select **Sample data** and then select
     the **Public Holidays** data source type.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image97.png)
 
-9.  A preview of the data source will now be displayed to verify the
+9. A preview of the data source will now be displayed to verify the
     correct selection and understand the data structure. After reviewing
     the preview, select **OK** to proceed.
 
@@ -876,38 +874,38 @@ files under a date-based folder structure, ensuring scalable and
 well-structured ingestion. The result is a clean and accessible Bronze
 layer containing raw datasets ready for further processing.
 
-1.  On the left navigation, select ***Data Factory-medallion@lab.LabInstance.Id***, as
+1. On the left navigation, select ***Data Factory-medallion@lab.LabInstance.Id***, as
     shown in the image below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image124.png)
 
-2.   Now proceed to select and add a **New item** from the **High-volume
+2.  Now proceed to select and add a **New item** from the **High-volume
     data ingest** task.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image125.png)
 
-3.  On the **New item** page, the available options within Microsoft
+3. On the **New item** page, the available options within Microsoft
     Fabric have been filtered down to **Recommended items**. Select
     the **Pipeline** item.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image126.png)
 
-4.  On the New pipeline pane, set the data pipeline name to
+4. On the New pipeline pane, set the data pipeline name to
     **getContosoSample** and then select **Create**.
 
     ![A screenshot of a new pipeline AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image127.png)
 
-5.  From the new and empty data pipeline, select the **Pipeline
+5. From the new and empty data pipeline, select the **Pipeline
     activity** watermark option and then choose **Copy data** to add
     this activity to the authoring canvas.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image128.png)
 
-6.  With the **Copy data** activity selected, navigate to
+6. With the **Copy data** activity selected, navigate to
     the **Source** tab. Within the **Connection** drop-down menu,
     select **Browse all** to launch the **Get data** navigator. 
 
@@ -917,17 +915,17 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	various data sources, ensuring that you can easily integrate different
 	data streams into pipeline.
 
-7.  From the Get data navigator, select **New** from the left pane.
+7. From the Get data navigator, select **New** from the left pane.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image130.png)
 
-8.  From the list of **New sources**, select **View more**, search
+8. From the list of **New sources**, select **View more**, search
     for **Azure Blobs** and select it.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image131.png)
 
-9.  On the **Connect to data source** window, enter the details from the
+9. On the **Connect to data source** window, enter the details from the
     table below and select **Connect**.
 
     |   |   |
@@ -1121,13 +1119,13 @@ section, later appearing in the Tables section of the Lakehouse. This
 ensures that data is transitioned from raw (Bronze) to structured
 (Silver) format, optimized for analytical queries.
 
-1.  On the left navigation, click on ***Data Factory-Medallion@lab.LabInstance.Id***, as
+1. On the left navigation, click on ***Data Factory-Medallion@lab.LabInstance.Id***, as
     shown in the image below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image155.png)
 
-2.  Select the **New item** option on the **Silver data** block to add
+2. Select the **New item** option on the **Silver data** block to add
     another storage item to project. Within the **Item type** selection,
     select **Lakehouse**.
 
@@ -1144,18 +1142,18 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image158.png)
 
-3.  On the **Home** tab of the lakehouse, select **Get
+3. On the **Home** tab of the lakehouse, select **Get
     data** **\>** **New pipeline**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image159.png)
 
-4.  On the New pipeline pane, set the data pipeline name to
+4. On the New pipeline pane, set the data pipeline name to
     **createContosoTables** and then select **Create**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image160.png)
 
-5.  In the **Home** tab , Select **SQL Server database**
+5. In the **Home** tab , Select **SQL Server database**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image161.png)
 
@@ -1269,20 +1267,20 @@ into date-partitioned folders (yyyy/MM/dd). Assigning such variables
 improves automation and modularity within pipelines, making maintenance
 and scaling easier.
 
-1.  Select the **New item** option on the **Intial process** from your
+1. Select the **New item** option on the **Intial process** from your
     task flow to add another storage item to project.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image178.png)
 
-2.  On the **New item** window, the available options within Microsoft
+2. On the **New item** window, the available options within Microsoft
     Fabric have been filtered down to **Recommended items**. Select the
     **Pipeline** item.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image179.png)
 
-4.  On the New pipeline window, set the data pipeline name to
+4. On the New pipeline window, set the data pipeline name to
     **ContosoTables** and then select **Create**
 
     ![A screenshot of a computer AI-generated content may be
@@ -1295,7 +1293,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	in the top right corner to be taken into an empty authoring canvas. This
 	ensures that start with a clean slate for pipeline configuration.
 
-3.  On the **Home** tab of the lakehouse, select **Get data** from **New
+3. On the **Home** tab of the lakehouse, select **Get data** from **New
     data pipeline**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1304,7 +1302,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer error message AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image183.png)
 
-6.  Select the **Activities** tab and then the **Set variable** activity
+6. Select the **Activities** tab and then the **Set variable** activity
     to add this to your canvas. The Set variable activity allows us to
     define and assign values to variables that can be used throughout
     pipeline.
@@ -1312,28 +1310,28 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image184.png)
 
-7.  With the Set variable activity selected, navigate to the
+7. With the Set variable activity selected, navigate to the
     **Settings** tab. Next to the Name property, select '**New'** to
     create a variable that will be used within the pipeline.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image185.png)
 
-8.  On the **Add new** **variable** pane, set the **Name** value
+8. On the **Add new** **variable** pane, set the **Name** value
     to **fileDirectory** and ensure the Type remains as a string
     before selecting **Confirm.**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image186.png)
 
-9.  Select the **Value **text input box. This will display the **Add
+9. Select the **Value **text input box. This will display the **Add
     dynamic content** \[Alt+Shift+D\] property. Select this text to open
     the pipeline expression builder.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image187.png)
 
-10.  On the Pipeline expression builder page, **copy and paste** the code
+10. On the Pipeline expression builder page, **copy and paste** the code
     block below into the expression input box. Press **Ok** when
     complete.
 	
@@ -1355,7 +1353,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image189.png)
 
-4.  Navigate to the **General** tab with the Set variable activity
+4. Navigate to the **General** tab with the Set variable activity
     selected. Update the **Name** field with the text **Set file directory**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1374,7 +1372,7 @@ activity dynamically identifies child files in the Bronze Lakehouse.
 This setup ensures the pipeline can automatically discover and process
 incoming files without manual configuration
 
-1.  Navigate to the **Activities** tab and select the **Get
+1. Navigate to the **Activities** tab and select the **Get
     metadata** activity to add it to your canvas.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1383,22 +1381,22 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image192.png)
 
-2.  On the **Settings** options, set
+2. On the **Settings** options, set
     the **Connection** to **bronze_Lakehouse** from the available
     connection options.
 
-3.  Choose the **Files** option and then click on the **Directory** file
+3. Choose the **Files** option and then click on the **Directory** file
     path text input box. This will display the **Add dynamic content
     \[Alt+Shift+D\]**. Click on this text to open the pipeline
     expression builder.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image193.png)
 
-4.  On the Pipeline expression builder window, select
+4. On the Pipeline expression builder window, select
     the **Variables** option. Within the available variable list,
     select **fileDirectory** and then **OK**.
 
-5.  This step ensures that the file path for the metadata retrieval is
+5. This step ensures that the file path for the metadata retrieval is
     dynamically set based on the value of the fileDirectory variable.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image194.png)
@@ -1406,21 +1404,21 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image195.png)
 
-6.  Select **Get metadata** activity, navigate to the **Settings** tab.
+6. Select **Get metadata** activity, navigate to the **Settings** tab.
     From the **Field list** select **New**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image196.png)
 
-7.  From the drop-down menu, configure the value as **Child items**.
+7. From the drop-down menu, configure the value as **Child items**.
     This ensures that the metadata activity retrieves information about
     the child items and their names within the specified directory.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image197.png)
 
-8.  Select the **Get Metadata** activity and update the **Name** field
+8. Select the **Get Metadata** activity and update the **Name** field
     with the text **Get items in folder**.
 
-9.  This step aids in identifying and managing the activity within the
+9. This step aids in identifying and managing the activity within the
     pipeline, enhancing clarity around its purpose and
     functionality**.**
 
@@ -1477,7 +1475,7 @@ refreshed completely). For fact tables, the pipeline appends new data
 Silver layer is properly maintained and aligned with real-world data
 warehouse practices.
 
-1.  Select the **Activities** tab and then the **ForEach** activity to
+1. Select the **Activities** tab and then the **ForEach** activity to
     add this to your canvas. This activity allows you to iterate over a
     collection of items, performing a set of actions for each item in
     the collection.
@@ -1485,20 +1483,20 @@ warehouse practices.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image206.png)
 
-2.  With the **ForEach** activity selected, navigate to the **General**
+2. With the **ForEach** activity selected, navigate to the **General**
     tab and update the **Name** field with the text **For each file**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image207.png)
 
-3.  Next, create a conditional path by dragging and dropping the **On
+3. Next, create a conditional path by dragging and dropping the **On
     success** option between the **Get items in folder activity** and
     the **For each file activity**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image208.png)
 
-4.  Select **For each file activity**, navigate to the **Settings** tab.
+4. Select **For each file activity**, navigate to the **Settings** tab.
     Select the **Items** text input box. This will display the **Add
     dynamic content \[Alt+Shift+D\]** property. Select this text to open
     the pipeline expression builder. The sequential order ensures that
@@ -1507,7 +1505,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image209.png)
 
-5.  On the Pipeline expression builder page, select the **Activity
+5. On the Pipeline expression builder page, select the **Activity
     outputs** section. Then, choose the **Get items in folder** output
     of **childItems**. The full option title is **Get items in folder
     childItems**. This step ensures that the ForEach activity iterates
@@ -1515,14 +1513,14 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image210.png)
 
-6.  Select the **add** option on the **For each activity** and then
+6. Select the **add** option on the **For each activity** and then
     select **Copy data**. This step will allow us to repeatedly execute
     the copy data activity for each item in the array.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image211.png)
 
-7.  Select the **Edit** option on the **For each activity** to drill
+7. Select the **Edit** option on the **For each activity** to drill
     into the nested authoring canvas. This step allows you to configure
     the activities that will be executed for each item in the
     collection.
@@ -1530,13 +1528,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image212.png)
 
-8.  Navigate to the **General** tab with the **Copy data activity**
+8. Navigate to the **General** tab with the **Copy data activity**
     selected. Update the **Name** field with the text **Copy tables**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image213.png)
 
-9.  With the **Copy data** activity selected, configure the following
+9. With the **Copy data** activity selected, configure the following
     options in the **Source** tab. Once complete select
     the **Directory** text input box. This will display the **Add
     dynamic content \[Alt+Shift+D\]** property.
@@ -1712,7 +1710,7 @@ serves as the curated Gold layer. This warehouse is optimized for
 analytics and reporting, offering a structured and performant
 environment for business intelligence workloads.
 
-1.  On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
+1. On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
     shown in the image below.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image238.png)
@@ -1720,18 +1718,18 @@ environment for business intelligence workloads.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image239.png)
 
-2.  Select the **New item** option on the **Gold data** from task flow
+2. Select the **New item** option on the **Gold data** from task flow
     to add another storage item.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image240.png)
 
-3.  On the **Create an item** tab, select **Warehouse**.
+3. On the **Create an item** tab, select **Warehouse**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image241.png)
 
-4.  On the New **warehouse** window, set the warehouse name to
+4. On the New **warehouse** window, set the warehouse name to
     **gold_Warehouse** and then select **Create**.
 
     ![A screenshot of a login box AI-generated content may be
@@ -1744,46 +1742,46 @@ all structured Silver Lakehouse tables into the Gold Warehouse. This
 step ensures persistence, centralization, and optimized availability of
 refined data for analytics.
 
-1.  From the **Home** tab of the warehouse, select **Get
+1. From the **Home** tab of the warehouse, select **Get
     data** from **New pipeline**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image243.png)
 
-2.  On the New pipeline window, set the data pipeline name to
+2. On the New pipeline window, set the data pipeline name to
     **Copydata_silver to gold** and then select **Create**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image244.png)
 
-3.  On the **Choose a data into Lakehouse** window, select **OneLake
+3. On the **Choose a data into Lakehouse** window, select **OneLake
     catalog** and then select **silver_Lakehouse** lakehouse
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image245.png)
 
-4.  From the **Connect to data source** page, select all tables and then
+4. From the **Connect to data source** page, select all tables and then
     click the **Next** button
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image246.png)
 
-5.  Click **Next** again.
+5. Click **Next** again.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image247.png)
 
-6.  Click **Next** on the **Settings** tab.
+6. Click **Next** on the **Settings** tab.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image248.png)
 
-7.  On the **Review + save** tab, click **Save + Run**
+7. On the **Review + save** tab, click **Save + Run**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image249.png)
 
-8.  Click **OK**
+8. Click **OK**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image250.png)
@@ -1791,7 +1789,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image251.png)
 
-9.  On the top navigation menu, navigate and click on
+9. On the top navigation menu, navigate and click on
     ***gold_Warehouse***, as shown in the below image.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1809,24 +1807,24 @@ Query Online. This Dataflow is designed to apply transformations and
 prepare data for downstream analytics by leveraging Fabric’s staging
 architecture for large-scale compute
 
-1.  On the left navigation, click on **Data Factory-medallion@lab.LabInstance.Id**, as
+1. On the left navigation, click on **Data Factory-medallion@lab.LabInstance.Id**, as
     shown in the image below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image254.png)
 
-2.  From the task flow, select the **Further transform** task and click
+2. From the task flow, select the **Further transform** task and click
     on the **New item** option. Within the Create an item pane display
     properties, change the toggle to the **All items** option.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image255.png)
 
-3.  From the list of available items, select the **Dataflow Gen2** item
+3. From the list of available items, select the **Dataflow Gen2** item
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image256.png)
 
-5.  On the **New Dataflow Gen2** window, click on **Dataflow1** and
+5. On the **New Dataflow Gen2** window, click on **Dataflow1** and
     rename it to **PrepContoso**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image257.png)
@@ -1839,13 +1837,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 In this task, you connect the Dataflow to the *gold_Warehouse* and
 select relevant tables (dimensions and facts).
 
-1.  From the **Home** tab, select **Get data** and then
+1. From the **Home** tab, select **Get data** and then
     the **More...** option.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image259.png)
 
-2.  On the **Get data** explorer's search bar,
+2. On the **Get data** explorer's search bar,
     type **gold_Warehouse** to locate the gold Warehouse item.
     Select the **gold_Warehouse** item within the OneLake catalog's
     returned results.
@@ -1853,7 +1851,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image260.png)
 
-3.  From the Get data table navigator, select the tables listed below to
+3. From the Get data table navigator, select the tables listed below to
     perform data transformation operations and merge the tables for our
     downstream business intelligence projects.
 
@@ -1880,7 +1878,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image262.png)
 
-4.  Select the **Fact_Sale** table and from the Home tab, navigate to
+4. Select the **Fact_Sale** table and from the Home tab, navigate to
     the **Merge queries** option and select **Merge queries as new**.
 
 	> Note that there are two options: Merge queries, which will merge a
@@ -1893,7 +1891,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image263.png)
 
-5.  From the Merge query window, set the **Right table for
+5. From the Merge query window, set the **Right table for
     merge** to **dbo**\_**Fact_Order**. In the top right corner, select
     the lightbulb which has detected a possible column match. In this
     example, both tables contain a column titled **City Key** Select
@@ -1910,7 +1908,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image266.png)
 
-6.  Navigate to the far right for the **Merge** table and select the
+6. Navigate to the far right for the **Merge** table and select the
     joined **dbo_Fact_Orders** table column's top right corner to expand
     the table, from the avaialble column selections deselect **City
     Key** and **Stock Item Key** since this column is what we used to
@@ -1923,19 +1921,19 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image268.png)
 
-7.  Select the **Merge** query and from the **Home** tab, select **Add
+7. Select the **Merge** query and from the **Home** tab, select **Add
     data destination** and then choose the **Warehouse** option.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image269.png)
 
-8.  On the **Connect to data destination** dialog box, your connection
+8. On the **Connect to data destination** dialog box, your connection
     should already be selected. Select **Next** to continue.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image270.png)
 
-9.  On the **Choose destination target** dialog, browse to the warehiuse
+9. On the **Choose destination target** dialog, browse to the warehiuse
     where you wish to load the data and name the new table, then
     select **Next** again.
 
@@ -1973,7 +1971,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer error AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image277.png)
 
-14.  On the top menu, select **gold_Warehouse** that you have created in
+14. On the top menu, select **gold_Warehouse** that you have created in
     the previous task.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1983,13 +1981,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 In this task, you build a Power BI Report.
 
-1.  On gold_Warehouse page, select the **Home** tab and then
+1. On gold_Warehouse page, select the **Home** tab and then
     select **New semantic model**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image279.png)
 
-2.  On the *New Semantic Model* tab, enter the name as **Sample
+2. On the *New Semantic Model* tab, enter the name as **Sample
     model**, select the **dbo** schema, choose the below tables, and
     then click **Confirm**
 
@@ -2012,14 +2010,14 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image280.png)
 
-5.  On the left navigation, click on ***Data Factory-Medallion@lab.LabInstance.Id***.
+5. On the left navigation, click on ***Data Factory-Medallion@lab.LabInstance.Id***.
 
-6.  Select ***Sample model***
+6. Select ***Sample model***
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image281.png)
 
-7.  On the sample model home page, click **Open Semantic Model** to
+7. On the sample model home page, click **Open Semantic Model** to
     access the model.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image282.png)
@@ -2027,7 +2025,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image283.png)
 
-8.  Ensure from the top-right corner that the data model designer is
+8. Ensure from the top-right corner that the data model designer is
     selected in the **Editing** mode. This should change the drop-down
     text to “Editing”.
 
@@ -2037,7 +2035,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image285.png)
 
-9.  From the dbo\_**fact_sale** table, drag the **CityKey** field and
+9. From the dbo\_**fact_sale** table, drag the **CityKey** field and
     drop it on the **CityKey** field in
     the dbo\_**dimension_city** table to create a relationship.
     The **Create Relationship** dialog box appears..
@@ -2213,7 +2211,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 ## Task 6: Clean up resources
 
-1.  From the top-right corner of the Fabric Workspace page,
+1. From the top-right corner of the Fabric Workspace page,
     select **Workspace settings**. If you do not see this option, select
     the **...** option at the top right of the page and then
     select **Workspace settings**.
@@ -2221,12 +2219,12 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image313.png)
 
-2.  Select **General** and then select **Remove this workspace**.
+2. Select **General** and then select **Remove this workspace**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image314.png)
 
-3.  Click **Delete** to delete the workspace.
+3. Click **Delete** to delete the workspace.
 
     ![A white background with black text AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image315.png)
