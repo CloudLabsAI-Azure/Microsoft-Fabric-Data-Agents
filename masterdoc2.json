@@ -1,0 +1,13 @@
+[
+    {
+        "Name": "Microsoft Fabric Data Factory",
+        "Language": "English",
+        "BaseURL": "https://github.com/CloudLabsAI-Azure/Microsoft-Fabric-Data-Agents/tree/Cloud-slice-December2025",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Microsoft-Fabric-Data-Agents/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/Usecase02.md",
+                "Order": 1
+             }
+        ]
+    }
+]
