@@ -301,8 +301,8 @@ In this task, you set up a new Microsoft Fabric workspace to serve as
 the central hub for the Medallion Architecture implementation. This
 workspace brings together all essential components, including
 Lakehouses, Dataflows, Pipelines, Warehouses, Notebooks, and Power BI
-assets. By naming it appropriately—such as **Data Factory –
-Medallion**—you ensure a well-organized environment for managing the
+assets. By naming it appropriately-such as **Data Factory –
+Medallion**-you ensure a well-organized environment for managing the
 entire data lifecycle, from raw ingestion to curated analytics.
 
 1. Open your browser, navigate to the address bar, and type or paste
@@ -1683,7 +1683,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 26. The data pipeline runs multiple activities sequentially, writing to
     the Silver data layer as delta parquet tables. v-Order optimized
     tables enhance performance, reduce storage costs, and support
-    efficient querying and data updates—ideal for analytical workloads
+    efficient querying and data updates-ideal for analytical workloads
     in Microsoft Fabric.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image235.png)

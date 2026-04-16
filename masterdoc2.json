@@ -7,6 +7,10 @@
              {
                 "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/Usecase02.md",
                 "Order": 1
+             },
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/GettingStarted.md",
+                "Order": 2
              }
         ]
     }
