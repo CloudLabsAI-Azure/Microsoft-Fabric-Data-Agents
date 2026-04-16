@@ -5,11 +5,11 @@
         "BaseURL": "https://github.com/CloudLabsAI-Azure/fbrcdtafctrydepth/tree/Cloud-slice-December2025",
         "Files": [
              {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/GettingStarted.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/Usecase01.md",
                 "Order": 2
              },
              {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/Usecase01.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/GettingStarted.md",
                 "Order": 1
              }             
         ]
