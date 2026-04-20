@@ -55,103 +55,136 @@ efficiently captured and structured for downstream processing.
 
 ## Task 1: Restoring the WideWorldImporters Sample Database Using SQL Server Management Studio (SSMS)
 
-1. Open the **SQL Server Management Studio 22** (SSMS) from the Windows Start Menu.
+1. In the Azure portal search bar, search for **Resource groups (1)**, then select **Resource groups (2)** from the results.
+   
+   ![A screenshot of a computer AI-generated content may be
+incorrect.](./media/ex1-0.png)
 
-1. In the **Sign in** dialog selct the **Work or school** account option and then select **Continue**
-
-1. Provide the following Azure credentials (also found on the Resources tab):
-
-    | Field | Value |
-    |---|---|
-    | Username | **@lab.CloudPortalCredential(User1).Username** |
-    | TAP | **@lab.CloudPortalCredential(User1).AccessToken** |
-
-1. On the **Sign in to all apps** dialog select **No, this app only**
-
-1. In the **Connect** dialog provide the following information:
-
-    | Field | Value |
-    |---|---|
-    | Server Name | **wwi-sqlserver-@lab.LabInstance.Id.database.windows.net** |
-    | Authentication | **SQL Server Authentication** |
-    | Username | **sqladminuser** |
-    | Password | **P@ssw0rd1234!** |
-    | Remember Password | **Enabled** |
-
-1. In the **Database Name** field drop down the selector
-
-	>[!note] Copilot might auto fill in the necessary fields, ensure the details are correct before moving on.
-
-1. In the **Create new firewall rule** ensure the proper credentials are displayed.
-
-1. On the **Connect** dialog select the **Database Name**: **WideWorldImporters**, leave all other fields at their default values and then select **Connect**
-
-    >**Congratulations**! You are now connected to the **WideWorldImporters** Database and are ready to import your schema and data.
-
-6. To import data into the database, in Object Explorer right-click the **WideWorldImporters** database, select **Tasks**, and then click **Import Flat File** to start the data import wizard.
+1. From the **Resource groups** list, select the **Fabric** resource group to open it.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image15.png)
+incorrect.](./media/ex1-1.png)
 
-7. On the **Import Flat File** wizard **Introduction** page, review the
-    details and click **Next** to proceed.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image16.png)
-
-8. On the **Specify Input File** page, click **Browse** to select the
-    file to import
+1. In the **Fabric** resource group, locate and select the **wwi-sqlserver SQL database** to open it.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image17.png)
+incorrect.](./media/ex1-2.png)
 
-9. Browse to **C:\LabFiles\LabFiles\Lab1** on your VM, then
-    select **Dimension_City.csv** file and click on **Open** button.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image18.png)
-
-10. Click **Next** to proceed.
+1. In the SQL database **Overview**, click the **copy icon** next to the **Server name**, then **paste it into Notepad** for later use.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image19.png)
+incorrect.](./media/ex1-3.png)
 
-11. Click **Next** to proceed.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image20.png)
-
-12. On the **Summary** page, review the import details and click
-    **Finish** to complete the data import.
+1. In the LabVM search bar, type **SSMS (1)** and select **SQL Server Management Studio 22 (2)** to open the application.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image21.png)
+incorrect.](./media/new38.png)
 
-13. Click **Next** to proceed.
+1. In the **Sign in to SQL Server Management Studio** window, click **Sign in with Microsoft** to continue.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image22.png)
+   ![](./media/new39.png)
 
-14. On the **Results** page, verify that the operation completed
-    successfully and click **Close** to exit the wizard.
+1. Select **Work or school account (1)** and click **Continue (2)** to sign in using your assigned credentials.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image23.png)
+   ![](./media/new40.png)
 
-15. Continue repeating steps **7 through 14** to upload all the
-    remaining files.
+1. On the **Sign in** page, enter the following email/username, and click on **Next (2)**. 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image24.png)
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+     ![Image](./media/latest3.png)
+     
+1. Now, enter the following Temporary Access Pass and click on **Sign in (2)**.
+   
+   * **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image25.png)
+       ![Image](./media/latest4.png)   
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image26.png)
+       > **Note:** I may ask you to select the user **<inject key="AzureAdUserEmail"></inject>**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image27.png)
+1. In the sign-in prompts, click **Yes** to enable sign-in to all apps and websites on this device.
+
+   ![Image](./media/latest1.png)
+
+1. On the confirmation screen, click **Done** to complete the account setup and start accessing your organization’s apps and services.  
+
+   ![Image](./media/latest2.png)
+
+1. In the **Connect** window, provide the following details to connect to the SQL Server:
+
+    - **Server name**: Enter the **Server name** of the SQL database that you copied in **Step 4** **(1)**
+    - **Authentication**: Select **SQL Server Authentication (2)**
+    - **User name**: Enter **sqladminuser (3)**
+    - **Password**: Enter the **P@ssw0rd1234! (4)**
+    - Check the box for Remember Pasword **(5)**  
+    - **Trust Server Certificate**: Check this option **(6)**
+    - Click **Connect (7)** to access the SQL Server.
+
+      ![Image](./media/ex1-4.png)
+
+1. In Object Explorer, expand **Databases (1)**, right-click the **wwi-sqlserver (2)** database, and select **Rename (3)**.
+
+    ![Image](./media/ex1-5.png)
+
+1. In Object Explorer, expand **Databases** and select the **WideWorldImporters** database.
+
+    ![Image](./media/ex1-6.png)    
+
+1. Right-click the **WideWorldImporters (1)** database, go to **Tasks (2)**, and select **Import Flat File... (3)** to start importing data.
+
+    ![Image](./media/ex1-7.png)  
+
+1. On the **Introduction** screen of the Import Flat File wizard, click **Next** to continue.
+
+    ![Image](./media/ex1-8.png)
+
+1. Click **Browse…**, select the file to import, and provide a **New table name** to proceed.
+
+    ![Image](./media/ex1-9.png)
+
+1. Navigate to the **C:\LabFiles\lab file\Lab1 (1)** path, select the **Dimension_City (2)** file, and click **Open (3)**.
+
+    ![Image](./media/ex1-10.png)
+
+1. Verify that the file path and table details are correctly populated, then click **Next** to proceed.
+
+    ![Image](./media/new6.png)
+
+1. Review the data preview to confirm the columns and values are correct, then click **Next** to continue.
+
+    ![Image](./media/new7.png)
+
+1. Review and adjust the column names, data types, and constraints if required, then click **Next** to proceed.
+
+    ![Image](./media/new8.png)
+
+1. Review the import summary to confirm the database, table name, and file details are correct, then click **Finish** to start the import process.
+
+    ![Image](./media/new9.png)
+
+1. Verify that the operation status shows **Success** for data insertion, then click **Close** to exit the wizard.
+
+    ![Image](./media/new10.png)      
+
+    > **Congratulations**! You are now connected to the **WideWorldImporters** Database and are ready to import your schema and data.
+
+15. Repeat steps **15 to 23** to upload all the remaining files.
+
+    - Dimension_Customer
+    - Dimension_Date
+    - Dimension_Employee
+    - Dimension_Payment Method
+    - Dimension_Supplier
+    - Dimension_Transaction Type
+    - Fact_Order
+    - Fact_Purchase1
+    - Fact_Sale
+    - Fact_Stock Holding
+    - Fact_Transaction
+
+1. Verify all the tables are populated under **WideWorldImporters** database **Tables**.
+
+      ![Image](./media/ex1-11.png)
 
 ## Task 2: Configure Azure Storage Account with ContosoSales data
 
@@ -163,137 +196,86 @@ data. This setup forms the foundation of the Bronze layer, enabling
 seamless ingestion and transformation processes within the Medallion
 Architecture.
 
-1. In Edge, go to **portal.azure.com** and login with the credentials:
+1. In the Azure portal search bar, type **Storage accounts (1)** from the results, select **Storage accounts (2)** under Services.
+
+    ![Image](./media/ex1-12.png)
+	
+1. Click **+ Create** to start creating a new storage resource.
+
+    ![Image](./media/ex1-13.png)
+
+1. On **Create a storage account** page, under the **Basics** tab, enter the following details to create a storage account and then click on **Next (6).**
 
     | | |
     |---|---|
-    | Username | **@lab.CloudPortalCredential(User1).Username** |
-    | TAP | **@lab.CloudPortalCredential(User1).AccessToken** |
-	
-1. Select **Create a resource**.
+	| Resource Group | **Fabric (1)** |
+    | Storage Account Name | **fabricstorage (2)** |
+	| Region | ** (3)** |  
+    | Performanace | **Standard (4)** |
+    | Redundancy | **Locally-redundant storage (LRS) (5)** |
+
+     ![Image](./media/ex1-14.png)
+
+1. In the **Advanced** tab, check **Enable hierarchical namespace**, keep other settings as default, then click **Review + create**.
+
+    ![Image](./media/ex1-15.png)
+
+1. Review all configuration details, then click **Create** to deploy the storage account.
+
+    ![Image](./media/ex1-16.png)
+
+1. The Azure Storage account is now set up to host data for Azure Data Lake. Click **Go to resource**.
+
+    ![Image](./media/ex1-17.png)
+
+1. On the left-side navigation pane of your Storage Account, expand **Data storage (1)**, select **Containers (2)**, then click **+ Add container (3)** to create a new container.
+
+    ![Image](./media/ex1-18.png)
+
+1. Enter **contososales (1)** as the container name and click **Create (2)**.
+
+    ![Image](./media/ex1-19.png)
+
+1. In the **Containers** section, verify that the **contososales** container has been successfully created.
+
+    ![Image](./media/ex1-20.png)
+
+1. Click **Upload**, then select **Browse for files** to choose files for upload.
+
+    ![Image](./media/ex1-21.png)
+
+1. Navigate to **C:\LabFiles\lab file**, select the **ContosoSales** file, and click **Open** to upload it.
+
+    ![Image](./media/ex1-22.png)
+
+1. Click **Upload** to upload the selected **ContosoSales.zip** file to the container.
+
+    ![Image](./media/ex1-22.png)
+
+1. Verify that the **ContosoSales.zip** file is successfully uploaded and visible in the **contososales** container.
+
+    ![Image](./media/ex1-23.png)
+
+1. Expand **Security + networking**, select **Access keys**, and click **Show** to view the storage account key.
+
+    ![Image](./media/ex1-27.png)
+
+1. Copy the **Storage account name** and **Key1 value** using the copy icons and paste them in the Notepad for later use.
+
+    ![Image](./media/ex1-28.png)	
+
+1. Navigate back to resource groups, from the **Resource groups** list, select the **Fabric** resource group to open it.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image28.png)
+incorrect.](./media/ex1-1.png)
 
-2. On the **Create a resource** search box, type **Storage
-    account** and then click on the **storage account**.
+1. In the **Fabric** resource group, locate and select the **SQL server (wwi-sqlserver)** resource.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image29.png)
+    ![Image](./media/ex1-29.png)    
 
-3. Click the **Storage account** tile on the **Marketplace** page.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image30.png)
-
-4. On the **Storage account** page, click **Create**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image31.png)
-
-5. On **Create a storage account** page, under the **Basics** tab,
-    enter the following details to create a storage account and then
-    click on **Next**
-
-    | | |
-    |---|---|
-    | Subscription | **@lab.CloudSubscription.Name** |
-	| Resource Group | **ResourceGroup1** |
-    | Storage Account Name | **fabricstorage@lab.LabInstance.Id** |
-	| Region | **@lab.CloudResourceGroup(ResourceGroup1).Location** |   
-	
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image32.png)
-
-6. Under the **Advanced** tab, select **"Enable hierarchical
-    namespace"** and click on **Review+create.**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image33.png)
-
-7. On the **Review + Create** page, click **Create**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image34.png)
-
-8. The Azure Storage account is now set up to host data for Azure Data
-    Lake. Click **Go to resource**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image35.png)
-
-9. On the left-side navigation pane of your Storage Account, select
-    **Data storage** section and then select **Containers**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image36.png)
-
-10. Click **Add Container.**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image37.png)
-
-11. On the New container pane that appears on the right side, enter the
-    container Name as **contososales** and click on **Create**
-    button.
-
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image38.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image39.png)
-
-12. On **fabricstorage@lab.LabInstance.Id | Containers** page,
-    select **contososales** container.
-
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image40.png)
-
-13. Now, you are going to upload the **ContosoSales.zip** file in the
-    Container. On the **Overview** page of **contososales** container,
-    select **Upload**.
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image41.png)
-
-14. On the **Upload blob** pane, click on **Browse for file**, navigate
-    to **C:\Labfiles** location and select **ContosoSales.zip**, then
-    click on the **Open** button.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image42.png)
-
-15. On **Upload blob** page, click on the **Upload** button.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image43.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image44.png)
-
-16. Go back to your Storage Account. From the left navigation, select
-    **Access keys** under **Security + networking** group, copy **Key
-    and Storage account name**, paste them in a notepad, and
-    then **Save** the notepad to use the information in the upcoming
-    task.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image45.png)
-	
-17. In the **ResourceGroup1** resource group , select **WideWorldImporters** database.
-
-	![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/img1.png)
+1. Under **Security**, open **Identity**, switch the **Status** to **On**, and click **Save** to enable the system-assigned managed identity.
  
-18. In the **WideWorldImporters** database overview, select the **Pricing tier**.
-
-	![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/img2.png)
-
-19. Increase the **DTUs** to **200** and click the **Save** button.
-
-	![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/img3.png)
-	![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/img4.png)
-
-20. Copy **SQL Database resource name** and **Server name**, paste them in a notepad, and
-    then **Save** the notepad to use the information in the upcoming task.
-  
-	![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/img5.png)
+    ![Image](./media/ex1-30.png)   
 
 ## Task 3: Create a Fabric workspace
 
@@ -305,33 +287,54 @@ assets. By naming it appropriately-such as **Data Factory –
 Medallion**-you ensure a well-organized environment for managing the
 entire data lifecycle, from raw ingestion to curated analytics.
 
-1. Open your browser, navigate to the address bar, and type or paste
-    the following URL: **https://app.fabric.microsoft.com/** then
-    press the **Enter** button.
+2.  In the new tab, navigate to the **Microsoft Fabric** portal by copying and pasting the following URL into the address bar.
 
-2. On the **Fabric Home** page click on **+ New Workspaces** as shown
-    in the image below.
+      ```
+      https://app.fabric.microsoft.com
+      ```
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image46.png)
+3. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
 
-3. On the **Create a workspace** pane that appears to the right, enter
-    the following details, and then click **Apply**.
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
+ 
+       ![01](./media/uc1-0.png)
+ 
+4. Next, provide your Temporary Access Password **(1)** and click on **Sign in (2)**:
+ 
+   - **Temprory Access Pass:** <inject key="AzureAdUserPassword"></inject>
+ 
+       ![01](./media/latest3.png)
+
+5. If you see the pop-up Stay Signed in?, select **No**.
+   
+    ![01](./media/latest6.png)
+
+6. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
+
+    ![01](./media/latest7.png)
+
+7. When the **Welcome to the Fabric view** dialog appears, click **Cancel**.   
+
+    ![01](./media/latest8.png)
+
+1. On the Microsoft **Fabric Home Page**, click on **+ New workspace** to create a new workspace.
+
+    ![01](./media/latest10.png)
+
+1. In the **Create a workspace tab**, enter the following details and
+    click on the **Apply (5)** button.
 	
-    |    |   |
+    |   |   |
     |----|---|
-    |Name	|**Data Factory-Medallion@lab.LabInstance.Id** |
-    |Advanced| Select Fabric capacity|
-    |Semantic storage format| Small Semantic model storage format|
+    |Name	| Enter **Medallion-<inject key="Deployment ID" enableCopy="false"/> (1)**  |
+    |Workspace type |	Select **Fabric (2)**, under **Details** you must see **fabric capacity (3)** |
+    |Semantic model storage format|	Select **Small semantic model storage format (4)** |
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image47.png)
+    ![01](./media/ex1-31.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image48.png)
+    ![01](./media/ex1-32.png)
 
-4. The Workspace is now created.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image49.png)
+1. The Workspace is now created.
 
 ## Task 4: Implement Azure SQL Mirroring to Bronze layer
 
@@ -344,274 +347,161 @@ synchronization of SQL data. This setup helps maintain a reliable raw
 data copy without the need for manual exports, streamlining ingestion
 for downstream processing.
 
->[!Alert] For this task, we must enable the System Assigned Managed Identity of the Azure SQL Server. Please follow these steps prior to moving forward in the lab.
->
->1. Go to **Portal.Azure.com**
->
->1. Select **All Resources**
->
->1. Select your **SQL Server** (wwi-sqlserver-@lab.LabInstance.Id)
->
->1. Under **Security** on the left-hand navigation bar, select **Identity**.
->
->1. Under **System Assigned Managed Identity** select **On** then **Save**.
+1. From the empty workspace, select the option **Select a predesigned task flow** to choose one of Microsoft's task flows. These predesigned task flows provide a structured approach to managing data projects.
 
-1. From the empty workspace, select the option **Select a predefined
-    task flow** to choose one of Microsoft's task flows. These
-    predesigned task flows provide a structured approach to managing
-    data projects.
+    ![01](./media/ex1-33.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image50.png)
+1. From the **Select a predesigned task flow** pane, choose **Medallion** and click **Select** to create the predefined task flow.
 
-2. From the **Select a predesigned task flow** pane, choose
-    the **Medallion** option.
 
-	> This option includes the description "Organize and improve data
-	> progressively as it moves through each layer," which is crucial for
-	> data projects. The medallion architecture helps in structuring data
-	into different layers, such as bronze, silver, and gold, to enhance
-	> data quality and accessibility.
+    ![01](./media/ex1-34.png)
 
-3. Select the **Select** option to continue.
+	> This option includes the description "Organize and improve data progressively as it moves through each layer," which is crucial for data projects. The medallion architecture helps in structuring data into different layers, such as bronze, silver, and gold, to enhance data quality and accessibility.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image51.png)
+1. A task flow has now been created within your workspace, which can be considered as an architectural template. This template provides a structured framework for your data project.
 
-4. A task flow has now been created within your workspace, which can be
-    considered as an architectural template. This template provides a
-    structured framework for your data project.
+    ![01](./media/ex1-35.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image52.png)
+1. Select the **+ New item** option on the **Bronze data** block to start adding items to task flow.
 
-5. Select the **New item** option on the **Bronze data** block to start
-    adding items to task flow.
+    ![01](./media/ex1-36.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image53.png)
+6. Ensure **Assign to task** is set to **Bronze data (1)**, select **All items (2)**, in the search bar search for **Mirrored Azure SQL Database (3)**, and select **Mirrored Azure SQL Database (4)** from the results.
 
-6. On the **New item** page, the available options within Microsoft
-    Fabric have been filtered down to **All items**. This filtering is
-    helpful for choosing the correct items for project.
+    ![01](./media/ex1-37.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image54.png)
+1. Select **Azure SQL database** under **New sources** to configure the connection.
 
-7. In the **Filter by item type** search box, enter **Mirrored Azure
-    SQL Database** and select the **Mirrored Azure SQL Database**
-    item.
+    ![01](./media/ex1-38.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image55.png)
+1. On the **New source** tab, enter the following details, and click on the **Connect (6)** button.
 
-8. On the **Choose a database connection to get started** page, select
-    **Azure SQL database**
+	- **Server:** Enter your SQL server URL that you copied in Task 1 step 4 **wwi-sqlserver-@lab.LabInstance.Id.database.windows.net (1)**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image56.png)
+	- **Database:** Enter the database as **WideWorldImporters (2)**
 
-9. On the **New source** tab, enter the following details, and click on
-    the **Connect** button.
+    - **Connection:** Select **Create new connection (3)**
 
-	- **Server:** Enter your SQL server URL | **wwi-sqlserver-@lab.LabInstance.Id.database.windows.net**
+    - **Username**: **sqladminuser (4)** 
 
-	- **Database:** Enter the database as **WideWorldImporters**
+    - **Password**: **P@ssw0rd1234! (5)** 
 
-    - **Username**: **sqladminuser** 
+      ![01](./media/ex1-39.png)
 
-    - **Password**: **P@ssw0rd1234!** 
+1. On the **Choose data** tab, select **Select all (1)** and click on **Connect (2)** button
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image57.png)
+    ![01](./media/ex1-40.png)
 
-10. On the **Choose data** tab, select **Select all** and click on
-    **Connect** button
+1. On the **Destination** tab, click **Create mirrored database**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image58.png)
+    ![01](./media/ex1-41.png)
 
-11. On the **Destination** tab, click **Create mirrored database**.
+1. Verify that the replication **Status** shows **Running**, indicating the mirroring process has started successfully.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image59.png)
+    ![01](./media/ex1-42.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image60.png)
+1. From the **Home** tab, click the **settings** icon and select *About*. Copy the mirrored SQL endpoint name displayed as ***WideWorldImporters*** and paste it into the Notepad. We will use this name in the upcoming tasks.
 
-12. Check the status of mirroring the database.
+    ![01](./media/latest11.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image61.png)
+1. Select SQL endpoint copy the mirrored SQL connection string and paste it into the notebook. We will use this name in the upcoming tasks.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image62.png)
+    ![01](./media/latest12.png)   
 
-13. From the **Home** tab, click the **settings** icon and select
-    *About*. Copy the mirrored SQL endpoint name displayed as
-    ***WideWorldImporters*** and paste it into the notebook. We will use
-    this name in the upcoming tasks.
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image63.png)
+    ![01](./media/ex1-46.png)
 
-14. Select SQL endpoint copy the mirrored SQL connection string and
-    paste it into the notebook. We will use this name in the upcoming
-    tasks.
+1. Confirm that the **WideWorldImporters** mirrored database and its SQL analytics endpoint are successfully created and mapped under the **Bronze data** stage in the Medallion pipeline.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image64.png)
-
-15. On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
-    shown in the image below.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image65.png)
-
-14. Within the workspace, you will notice that some items have now been
-    created and are associated with your Mirrored SQLdatabase. These
-    items include the Mirrored database (storage) and SQL analytics
-    endpoint.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image66.png)
+    ![01](./media/ex1-43.png)
 
 ## Task 5: Build the Bronze Lakehouse and Ingest Data Using Copy Job
 
-1. Select the **New item** option on the **Bronze data** block to start
-    adding items to task flow.
+1. Select the **+ New item** option on the **Bronze data** block to start adding items to task flow.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image67.png)
+    ![01](./media/ex1-48.png)
 
-2. On the **Create an item** page, the available options within
-    Microsoft Fabric have been filtered down to **Recommended items**.
-    This filtering is helpful for choosing the correct items for
-    project.
+1. Select **Bronze data** as the task, search for **Lakehouse**, and choose the **Lakehouse** item to create a lakehouse in this layer.
 
-3. Select the **Lakehouse** item for data storage.
+    ![01](./media/ex1-49.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image68.png)
+1. Enter **bronze_Lakehouse (1)** as the name, ensure it is assigned to **Bronze data**, leave **Lakehouse schemas** unchecked, and click **Create**.
 
-4. On the New lakehouse pane, set the lakehouse name to
-    **bronze_Lakehouse** and **unselect** the lakehouses schemas.
-    Click on the **Create** button and open the new lakehouse.
+    ![01](./media/ex1-50.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image69.png)
+    ![01](./media/ex1-51.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image70.png)
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-5. On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
-    shown in the image below.
+    ![01](./media/ex1-46.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image71.png)
+1. Within the workspace, you will notice that three items have now been created and are associated with your lakehouse. These items include the lakehouse , SQL analytics endpoint.
 
-6. Within the workspace, you will notice that three items have now been
-    created and are associated with your lakehouse. These items include
-    the lakehouse , SQL analytics endpoint
+    ![01](./media/ex1-52.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image72.png)
+7. Now proceed to select and add a **+ New item** from the **High-volume data ingest** task.
 
-7. Now proceed to select and add a **New item** from the **High-volume
-    data ingest** task.
+    ![01](./media/ex1-53.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image73.png)
+1. Select **High-volume data** in the *Assign to task* dropdown, then choose the **Copy job** option from the available items to start creating a data ingestion process.
 
-8. Select the **Copyjob** tile.
+    ![01](./media/ex1-54.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image74.png)
+1. Enter **bronze_copyjob (1)** as the name, ensure it is assigned to **High-volume data ingest (2)**, and click **Create (3)**.
 
-9. On the New copy job window, set the copy job name
-    to **bronze_copyjob** and then select **Create**.
+    ![01](./media/ex1-55.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image75.png)
+1. From the Copy job window, use the Home tab at the top if you want to set additional criteria such as filters or item types. Select **SQL Server database.**
 
-10. From the Copy job window, use the Home tab at the top if you want to
-    set additional criteria such as filters or item types. Select **SQL
-    Server database**
+    ![01](./media/ex1-56.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image76.png)
-
-11. On the **Connect to data source** tab, enter the following details,
-    and click on the **Next** button.
+1. On the **Connect to data source** tab, enter the following details, and click on the **Next (4)** button.
 
 	- **Server:** Enter the **SQL connection string** for the mirrored
-	  database **WideWorldImporters**.
+	  database **WideWorldImporters** **(1)** that you copied and pasted in the Notepad in **Task 3 step 12**.
 
-	- **Database:** Enter the database as **WideWorldImporters**
+	- **Database:** Enter the database as **WideWorldImporters (2)**
 
-	- **Authentication kind:** Organizational account
+	- **Authentication kind:** **Organizational account (3)**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image77.png)
+      ![01](./media/ex1-57.png)
 
-12. Select sqldatabase and click on **Next** button
+1. Select sqldatabase and click on **Next** button.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image78.png)
+    ![01](./media/ex1-58.png)
 
-13. On the Choose data destination tab, search for the data source
-    starting with **bronze_Lakehouse** in the search bar and then
-    select **bronze_Lakehouse** from the OneLake catalog list.
+1. Select **OneLake catalog** and choose the **bronze_Lakehouse** as the data destination.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image79.png)
+    ![01](./media/ex1-59.png)
 
-14. On the **Settings** step, review the Copy job mode options and then
-    select **Next** to continue. Copy jobs move curated data into a
-    warehouse for faster analytics.
+1. Select **Full copy** as the read method, choose **Tables** as the destination root folder, and click **Next**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image80.png)
+    ![01](./media/ex1-60.png)
 
-15. On the **Map to destination** tab, you can review the added tables
-    and update the schema or table names. Once reviewed,
-    select **Next** to continue.
+1. Review the table mappings to ensure source and destination tables are correctly aligned, then click **Next**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image81.png)
+    ![01](./media/ex1-61.png)
 
-16. On the **Review + save** step, deselect the **Start data transfer
-    immediately** option and then select **Save** to continue.
+1. Review the configuration summary to confirm the source, destination, and number of tables, then click **Save + Run** to start the copy job.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image82.png)
+    ![01](./media/ex1-62.png)
 
-17. Now that you've reviewed the configuration, from the **Home** tab,
-    select the **Run** option to begin copying data from the SQL
-    mirroring database into the bronze lakehouse.
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image83.png)
+    ![01](./media/ex1-46.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image84.png)
+1. Select the **bronze_Lakehouse** item listed under the **Bronze data** stage in your Medallion workflow.
 
-18. You can monitor the copy job in the **Results** tab at the bottom to
-    confirm that it has successfully completed.
+    ![01](./media/latest13.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image85.png)
+1. Click the ellipsis (**...**) next to **Tables** in the **bronze_Lakehouse**, then select **Refresh** to reload the metadata and ensure that all newly ingested tables from the copy job are visible in the lakehouse.
 
-19. On the top menu, select ***bronze_Lakehouse***, as shown in the
-    image below.
+    ![01](./media/ex1-64.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image86.png)
+1. Now review the list of tables
 
-20. To validate the copy tables, click and select refresh on
-    the **Tables** in the **Explorer** panel until all the tables appear
-    in the list.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image87.png)
-
-21. Now review the list of tables
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image88.png)
+    ![01](./media/ex1-65.png)
 
 ## Task 6: Build Dynamic Data Pipelines Using Copy Activity
 
@@ -623,165 +513,93 @@ with a dynamic expression that creates a date-based folder structure
 scalable, and well-structured, with validation confirming successful
 execution.
 
-1. On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
-    shown in the image below.
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image89.png)
+    ![01](./media/ex1-46.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image90.png)
+1. Click **+ New item** in the **High-volume data ingest** stage to add a new data ingestion item to the workflow.
 
-2. Now proceed to select and add a **New item** from the **High-volume
-    data ingest** task.
+    ![01](./media/ex1-66.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image91.png)
+1. Ensure **High-volume data ingest** is selected under **Assign to task**, then choose **Pipeline** to create a new data pipeline for orchestrating data ingestion and workflows.
 
-3. On the **New item** page, the available options within Microsoft
-    Fabric have been filtered down to **Recommended items**. Select the
-    **Pipeline** item.
+    ![01](./media/ex1-67.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image92.png)
+1. Enter **samplePipeline** as the pipeline name, confirm it is assigned to **High-volume data ingest**, and click **Create** to create the pipeline.
 
-4. On the **New pipeline** pane, set the data pipeline name to
-    **samplePipeline** and then select **Create**.
+    ![01](./media/ex1-68.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image93.png)
+1. Click **Copy data** from the toolbar and select **Add copy data activity** to add a copy activity to the pipeline.
 
-5. From the data pipeline page, drop down the **Copy data** and select
-    the **Add to canvas** to copy the sample data.
+    ![01](./media/ex1-69.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image94.png)
+1. Go to the **Source** tab, click the **Connection** dropdown, and select **Browse all** to choose the required data source connection.
 
-6. The properties section below provides access to the configurations
-    for Source, Destination, Settings, and more. These configurations
-    can be edited directly to ensure the data copy activity is correctly
-    set up and aligned with specific requirements.
+    ![01](./media/ex1-70.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image95.png)
+1. Select **Sample data** from the left pane, then choose **Public Holidays** as the data source to proceed.
 
-7. Click the **Source** tab, open the **Connection** drop-down menu,
-    and select **Browse all**.
-        ![A screenshot of a computer AI-generated
-    content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image96.png)
+    ![01](./media/ex1-71.png)
 
-9. The **Get data** page you will be landed on the **Choose data source
-    to get started** page. Select **Sample data** and then select
-    the **Public Holidays** data source type.
+1. Review the preview of the **Public Holidays** dataset and click **OK** to confirm and use it as the source.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image97.png)
+    ![01](./media/ex1-72.png)
 
-9. A preview of the data source will now be displayed to verify the
-    correct selection and understand the data structure. After reviewing
-    the preview, select **OK** to proceed.
+1. Go to the **Destination** tab, open the **Connection** dropdown, and select **Browse all** to choose the destination connection.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image98.png)
+    ![01](./media/ex1-73.png)
 
-10. Select the **Destination** tab
+1. Select **OneLake catalog** from the left pane, then choose **bronze_Lakehouse** as the destination for the data.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image99.png)
+    ![01](./media/ex1-74.png)
 
-11. In the **Destination** tab, open the **Connection** drop-down menu,
-    and select **Browse all**.
+1. In the **Destination** settings, select **Files** as the root folder, choose **Parquet** as the file format, and then click **Run** to execute the pipeline.  
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image100.png)
+    ![01](./media/ex1-75.png)
 
-12. Select the **bronze_Lakehouse** lakehouse item as the data
-    destination from the **OneLake catalog list**. It determines the
-    storage location for the data.
+1. Click **Save and run** to confirm and execute the pipeline with the configured settings.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image101.png)
+    ![01](./media/ex1-76.png)
 
-13. On the **Destination** tab, select the **Files** and select the File
-    format as **Parquet**.
+1. The pipeline executed successfully, confirming that the data copy activity completed without any errors.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image102.png)
+    ![01](./media/ex1-77.png)
 
-14. Select the **Run** option to start the pipeline and begin your data
-    ingestion process. Running the pipeline initiates the data transfer
-    from the source to the destination.
+1. Click on **Medallion- (1)** workspace from the left navigation pane and then select **bronze_Lakehouse (2)** to open the lakehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image103.png)
+    ![01](./media/ex1-78.png)
 
-15. On the **Save and run?** dialog box, click **Save and run** to
-    execute these activities. This activity will take less than 1 min.
+1. Click the **three dots (⋯)** on the *Files* section and select **Refresh** to view the newly generated Parquet file.
 
-    ![A screenshot of a computer error AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image104.png)
+    ![01](./media/ex1-79.png)
 
-16. The global properties and **Output** view will then become visible.
-    After starting the run of your pipeline, both the **Pipeline
-    status** and the **Activity status** should be **Succeeded**. This
-    indicates that everything ran as intended, confirming that your data
-    ingestion process is successful.
+1. The Parquet file opens successfully, displaying the ingested dataset in tabular format within the Lakehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image105.png)
+    ![01](./media/ex1-80.png)
 
-19. From the top menu, select the **bronze_Lakehouse lakehouse** created
-    in the previous task.
+1. Under **Files**, click the **three dots (⋯)** next to the Parquet file and select **Delete** to remove it.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image106.png)
+    ![01](./media/ex1-81.png)
 
-20. The file has been successfully added to the **Files** section.
-    Selecting the file provides a preview of the data, helping confirm
-    that the ingestion process was completed correctly.
+1. Click **Delete** to permanently remove the file from the lakehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image107.png)
+    ![01](./media/ex1-82.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image108.png)
+1. Click on **Medallion- (1)** workspace from the left navigation pane and then select **samplePipeline (2)** to open the pipeline.
 
-27. Delete the existing **Holidays** file from the lakehouse by
-    selecting the ellipses (**...**) and then select **Delete**.
+    ![01](./media/ex1-83.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image109.png)
+1. Click **Validate** to verify that the pipeline configuration, connections, and settings are correct and free of errors.
 
-28. A confirmation window will be displayed. Select **Delete** to
-    confirm the removal of the file.
+1. Once validation succeeds, click **Run** to execute the pipeline and start the data movement process.
 
-    ![A screenshot of a computer error AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image110.png)
+    ![01](./media/ex1-84.png)
 
-29. On the top navigation, select **samplePipeline**.
+1. Select the **Copy data1 activity**, go to the **Destination** tab, and click **Add dynamic content** to configure the file path dynamically.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image111.png)
+    ![01](./media/ex1-85.png)
 
-30. Select the **Copy data** activity and then go to
-    the **Destination** tab.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image112.png)
-
-31. Select the text box input for the **File path**, where after
-    selection you will see the text **Add dynamic content
-    \[Alt+Shift+D\]**. Select this text to open the pipeline expression
-    builder.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image113.png)
-
-32. On the Pipeline expression builder page, select
-    the **Functions** tab. Here, you can explore various functions that
-    exist within the expression library. These functions provide
-    powerful tools for creating dynamic expressions. When you're ready,
-    copy and paste the code block below into the expression input box.
-    Press **Ok** when complete.
+1. On the Pipeline expression builder page, select the **Functions (1)** tab. Here, you can explore various functions that exist within the expression library. These functions provide powerful tools for creating dynamic expressions. When you're ready copy and paste the code block (2) below into the expression input box. Press **Ok (3)** when complete.
 
 	```
 	@formatDateTime(
@@ -790,10 +608,9 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 			),
 		'yyyy/MM/dd'
 	)
-	```
+    ```
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image114.png)
+    ![01](./media/ex1-86.png)
 
 	**Note:** This expression will be used to create a folder structure
 	within your pipeline that writes the file to nested folders based on the
@@ -802,67 +619,49 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	defined. This dynamic folder structure helps in organizing your data
 	based on the date, making it easier to manage and retrieve.
 
-33. From the **Home** tab, select the **Validate** once again.
+1. From the **Home** tab, select the **Validate** once again.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image115.png)
 
-34. Select the **Run** option to start the pipeline and begin data
+1. Select the **Run** option to start the pipeline and begin data
     ingestion process. Running the pipeline initiates the data transfer
     from the source to the updated destination folder path.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image116.png)
 
-35. On the **Save and run?** dialog box, click on **Save and
-    run** button to execute these activities. This activity will take
-    less than 1 min.
+1. Click **Save and run** to confirm and execute the pipeline with the configured settings.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image117.png)
+    ![01](./media/ex1-76.png)
 
-36. The global properties and **Output** view will then become visible.
-    After starting the run of your pipeline, both the **Pipeline
-    status** and the **Activity status** should be **Succeeded**. This
-    indicates that everything ran as intended, confirming that your data
-    ingestion process is successful.
+1. The global properties and **Output** view will then become visible. After starting the run of your pipeline, both the **Pipeline status** and the **Activity status** should be **Succeeded**. This indicates that everything ran as intended, confirming that your data ingestion process is successful.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image118.png)
+    ![01](./media/ex1-87.png)
 
-37. From the top navigation, select the **bronze_Lakehouse lakehouse**
-    that has been created in the previous task.
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image119.png)
+    ![01](./media/ex1-46.png)
 
-38. The file has been successfully added to the **Files** section,
-    organized within a nested folder structure based on the **year,
-    month, and date** of execution. This confirms that the dynamic file
-    output is functioning correctly and that the data is being
-    structured as intended.
+1. Select the **bronze_Lakehouse** item listed under the **Bronze data** stage in your Medallion workflow.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image120.png)
+    ![01](./media/latest13.png)
+
+1. The file has been successfully added to the **Files** section, organized within a nested folder structure based on the **year, month, and date** (**2026 → 04 → 15**) of execution. This confirms that the dynamic file output is functioning correctly and contains the generated Parquet file, confirming successful data organization based on date.
+
+    ![01](./media/ex1-88.png)
 
 	**Note:** If the contents are not yet visible, navigate to the Home tab
 	and select the Refresh icon to start the metadata sync process and
 	update the lakehouse viewer content.
 
-39. Select the **ellipses (...)** next to the top level year folder and
-    then select **Delete** to remove the **sample data**
+1. Click the **ellipses (...)** next to the **Year** folder and select **Delete** to remove the folder.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image121.png)
+    ![01](./media/ex1-89.png)
 
-40. A confirmation window will appear, select **Delete** to proceed with
-    removing the contents.
+1. Click **Delete** to permanently remove the **2026** folder along with all its contents from the lakehouse.
 
-    ![A screenshot of a computer error AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image122.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image123.png)
+    ![01](./media/ex1-90.png)
 
 ## Task 7: Create a Data Pipeline and Establish a Connection to ADLS Gen2 Storage
 
@@ -874,144 +673,71 @@ files under a date-based folder structure, ensuring scalable and
 well-structured ingestion. The result is a clean and accessible Bronze
 layer containing raw datasets ready for further processing.
 
-1. On the left navigation, select ***Data Factory-medallion@lab.LabInstance.Id***, as
-    shown in the image below.
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image124.png)
+    ![01](./media/ex1-46.png)
 
-2.  Now proceed to select and add a **New item** from the **High-volume
-    data ingest** task.
+1. Click **+ New item** under **High-volume data ingest** to add a new data ingestion component.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image125.png)
+    ![01](./media/ex1-91.png)
 
-3. On the **New item** page, the available options within Microsoft
-    Fabric have been filtered down to **Recommended items**. Select
-    the **Pipeline** item.
+1. Select **Pipeline** under the **High-volume data ingest** task to create a new data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image126.png)
+    ![01](./media/ex1-92.png)
 
-4. On the New pipeline pane, set the data pipeline name to
-    **getContosoSample** and then select **Create**.
+1. Enter the pipeline name as **getContosoSample**, ensure it is assigned to **High-volume data ingest**, and click **Create**.
 
-    ![A screenshot of a new pipeline AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image127.png)
+    ![01](./media/ex1-93.png)
 
-5. From the new and empty data pipeline, select the **Pipeline
-    activity** watermark option and then choose **Copy data** to add
-    this activity to the authoring canvas.
+1. Select **Pipeline activity** and then choose **Copy data** to start building the data movement pipeline.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image128.png)
+    ![01](./media/ex1-94.png)
 
-6. With the **Copy data** activity selected, navigate to
-    the **Source** tab. Within the **Connection** drop-down menu,
-    select **Browse all** to launch the **Get data** navigator. 
+1. Go to the **Source** tab, open the **Connection** dropdown, and click **Browse all** to select a data source connection.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image129.png)
+    ![01](./media/ex1-95.png)
 
-	This navigator provides a comprehensive interface for connecting to
-	various data sources, ensuring that you can easily integrate different
-	data streams into pipeline.
+1. Click **New**, search for **Azure Blobs**, and select **Azure Blobs** as the data source.
 
-7. From the Get data navigator, select **New** from the left pane.
+    ![01](./media/ex1-96.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image130.png)
+1. On the **Connect to data source** window, enter the details from the table below and select **Connect (6)**.
 
-8. From the list of **New sources**, select **View more**, search
-    for **Azure Blobs** and select it.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image131.png)
-
-9. On the **Connect to data source** window, enter the details from the
-    table below and select **Connect**.
-
-    |   |   |
-    |----|---|
     |Property	|Value|
-    |Account name or URL|	Enter your storage account |
-    |Connection	|Create a new connection|
-    |Connection name|	**ContosoSample**|
-    |Data gateway	|None|
-    |Authentication kind|	Account key|
-    |Account key|	Enter storage account key|
+    |----|---|    
+    |Account name or URL|	Enter your **storage account name (1)** that you pasted in the Notepad in Task 2 Step 15|
+    |Connection	|**Create a new connection (2)**|
+    |Connection name|	**ContosoSample (3)**|
+    |Authentication kind|	**Account key (4)**|
+    |Account key|	Enter **storage account key (5)** that you pasted in the Notepad in Task 2 Step 15|
 
+    ![01](./media/ex1-97.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image132.png)
+1. In the **Source** tab, set the folder path to **contososales**, specify the file **ContosoSales.zip**, and click **Settings** to configure the file format options.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image133.png)
+    ![01](./media/ex1-98.png)
 
-10. Select the **Copy data** activity and then the **Source** tab. On
-    the **File path**, enter your **container name** and **File name**.
+1. In **File format settings**, keep **Compression type** as **ZipDeflate (.zip)** and click **OK**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image134.png)
+    ![01](./media/ex1-99.png)
 
-11. Select the **Copy data** activity and then the **Source** tab.
-    Select the **Settings** option next to the File format field.
+1. In the **Source** settings, expand **Advanced** and enable **Preserve zip file name as folder**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image135.png)
+    ![01](./media/ex1-100.png)
 
-12. On the **Compression type** setting, choose **ZipDeflate
-    (.zip)** and select **OK** to complete.
+1. Go to the **Destination** tab, open the **Connection** dropdown, and click **Browse all** to select the destination.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image136.png)
+    ![01](./media/ex1-101.png)
 
-13. On the Source tab, expand the **Advanced** section. Deselect the
-    option to **Preserve zip file name as folder**. This allows you to
-    customize the folder name for your zip contents, providing more
-    flexibility in organizing data.
+1. In **OneLake catalog**, select the **bronze_Lakehouse** as the destination.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image137.png)
+    ![01](./media/ex1-102.png)
 
-14. On the Copy data activity, navigate to the **Destination** tab.
+1. In the **Destination** tab, select **Files** as the root folder and click **Add dynamic content** to define the file path dynamically.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image138.png)
+    ![01](./media/ex1-103.png)
 
-15. From the list of connections, select the **Browse all**. 
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image139.png)
-
-16. Select the **bronze_Lakehouse** lakehouse item as the data
-    destination from the **OneLake catalog list**. It determines the
-    storage location for the data.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image140.png)
-
-	This step ensures that the data is being copied to the correct
-	destination, which is essential for maintaining data integrity and
-	organization.
-
-17. On the Destination settings, select the **Files** option and then
-    the **Directory** file path text input box. This will display
-    the **Add dynamic content \[Alt+Shift+D\]** property.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image141.png)
-
-18. Select the text to open the pipeline expression builder. The
-    expression builder allows us to create dynamic file paths, which can
-    be customized based on various dynamic parameters such as date and
-    time or static text values.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image142.png)
-
-19. On the Pipeline expression builder page, select
-    the **Functions** tab. Here, you can explore various functions that
-    exist within the expression library. In this example we'll use both
-    date and string functions to create a dynamic folder path. Copy and
-    paste the code block below into the expression input box.
-    Press **Ok** when complete.
+1. On the Pipeline expression builder page, select the **Functions (1)** tab. Here, you can explore various functions that exist within the expression library. These functions provide powerful tools for creating dynamic expressions. When you're ready copy and paste the **code block (2)** below into the expression input box. Press **Ok (3)** when complete.
 	
     ```
     @formatDateTime(
@@ -1022,78 +748,23 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     )
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image143.png)
+    ![01](./media/ex1-104.png)
 
-20. With the Copy data activity and Destination settings selected,
-    expand the **Advanced** section, select the drop-down for the **Copy
-    behavior** and then choose the **Preserve hierarchy** option.
+1. In the **Destination** tab, expand **Advanced** and set **Copy behavior** to **Preserve hierarchy**.
 
-21. This option maintains the original file names as they are within the
-    zip file, ensuring that the file structure is preserved during the
-    copy process.
+    ![01](./media/ex1-105.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image144.png)
+1. In the **General** tab, rename the activity to **Get and Unzip files**, then click **Validate** followed by **Run** to execute the pipeline.
 
-22. Navigate to the **General** tab with the Copy data activity
-    selected. Update the **Name** and **Description** fields with the
-    appropriate text. This step helps in identifying and managing the
-    activity within your pipeline, making it easier to understand its
-    purpose and functionality.
+    ![01](./media/ex1-106.png)
 
-    |  |   |
-    |------|---------|
-    |Property	|Text|
-    |Name|	**Get and Unzip files**|
+1. Verify that the pipeline run status is **Succeeded** for the **Get and Unzip files** activity in the **Output** tab.
 
+    ![01](./media/ex1-107.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image145.png)
+27. The contents of the **zip file** have been successfully added to the **Files** section, organized in a nested folder structure based on the data source title, year, month, and date of the pipeline run.
 
-23. From the **Home** tab, select the **Validate** option to first
-    confirm that there are no issues with your pipeline. This validation
-    step helps in identifying any errors to be fixed before running the
-    pipeline.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image146.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image147.png)
-
-24. Once validated, select the **Save** option and then **Run** to start
-    the ingestion from the data pipeline. Running the pipeline initiates
-    the data transfer, allowing you to see the results of your
-    configuration in action within the output window.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image148.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image149.png)
-
-25. This action will make the global properties and **Output** view
-    visible. After starting the run of your pipeline, both the Pipeline
-    status and any individual Activity statuses should show
-    a **Succeeded** status. This indicates that everything ran as
-    intended, confirming that your data ingestion process was
-    successful.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image150.png)
-
-26. From the top navigation, click **bronze_Lakehouse lakehouse**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image151.png)
-
-27. The contents of the **zip file** have been successfully added to the
-    **Files** section, organized in a nested folder structure based on
-    the data source title, year, month, and date of the pipeline run.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image152.png)
+    ![01](./media/ex1-108.png)
 
 # Exercise 2: Data Movement from Bronze to Silver Layer 
 
@@ -1119,144 +790,83 @@ section, later appearing in the Tables section of the Lakehouse. This
 ensures that data is transitioned from raw (Bronze) to structured
 (Silver) format, optimized for analytical queries.
 
-1. On the left navigation, click on ***Data Factory-Medallion@lab.LabInstance.Id***, as
-    shown in the image below.
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image155.png)
+    ![01](./media/ex1-46.png)
 
-2. Select the **New item** option on the **Silver data** block to add
-    another storage item to project. Within the **Item type** selection,
-    select **Lakehouse**.
+1. Click **+ New item** under the **Silver data** stage to add a new item.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image156.png)
+    ![01](./media/ex2-0.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image157.png)
+1. Select the **Silver data** task from *Assign to task (1)* and then choose **Lakehouse (2)** to create a new Silver layer storage for processed data.
 
-12. On the New lakehouse pane, set the lakehouse name to
-    **silver_Lakehouse** and **unselect** the lakehouses schemas.
-    Click on the **Create** button and open the new lakehouse.
+    ![01](./media/ex2-1.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image158.png)
+1. Enter **silver_Lakehouse (1)** as the name, ensure it is assigned to the **Silver data (2)** task, optionally review or leave the **Lakehouse schemas (3)** setting as default, and then click **Create (4)** to provision the Silver layer lakehouse for storing transformed and refined data.
 
-3. On the **Home** tab of the lakehouse, select **Get
-    data** **\>** **New pipeline**.
+    ![01](./media/ex2-2.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image159.png)
+1. Click **Get data (1)** in the toolbar and select **New copy job (2)** to start creating a data ingestion process into the Silver Lakehouse.
 
-4. On the New pipeline pane, set the data pipeline name to
-    **createContosoTables** and then select **Create**
+    ![01](./media/ex2-3.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image160.png)
+1. Enter **createContosoTables1 (1)** as the copy job name, ensure it is assigned to the **Initial process (2)** task to align with the data transformation stage, and then click **Create (3)** to set up the job for loading and structuring data into the Silver layer.
 
-5. In the **Home** tab , Select **SQL Server database**
+    ![01](./media/ex2-4.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image161.png)
+1. In the **Choose data source** step of the copy job, select **SQL Server database** to configure a connection and begin extracting data from a relational source for processing into the Silver layer.
 
-13. On the **Connect to data source** tab, enter the following details,
-    and click on the **Next** button.
+    ![01](./media/ex2-5.png)
+
+1. On the **Connect to data source** tab, enter the following details, and click on the **Next (4)** button.
 
 	- **Server:** Enter the **SQL connection string** for the mirrored
-	  database **WideWorldImporters**.
+	  database **WideWorldImporters** **(1)** that you copied and pasted in the Notepad in **Task 3 step 12**.
 
-	- **Database:** Enter the database as **WideWorldImporters**
+	- **Database:** Enter the database as **WideWorldImporters (2)**
 
-	- **Authentication kind:** Organizational account
+	- **Authentication kind:** **Organizational account (3)**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image77.png)
+      ![01](./media/ex2-6.png)
 
-17. From the Connect to data source page, select the Select all option
-    and then click the **Next** button
+1. In the **Choose data** step, select the required database tables by checking them under the source (1) to include them for ingestion, optionally review the preview pane on the right, and then click **Next (2)** to proceed to configuring the destination.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image162.png)
+    ![01](./media/ex2-7.png)
 
-18. On the **Connect to data destination** page, select **Tables** as
-    the root folder type, then click **Next** to proceed.
+1. In the **Choose data destination** step, navigate to the **OneLake catalog (1)**, locate and select the **silver_Lakehouse (2)** as the target destination, ensuring that the ingested data will be stored in the Silver layer for further transformation and refinement before proceeding to the next configuration step.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image163.png)
+    ![01](./media/ex2-8.png)
 
-19. In the Review + save tab, deselect the **Start data transfer
-    immediately** option and then select **OK** to continue.
+1. In the **Settings** step, choose **Full copy (1)** to load all data in one run, set the **Destination root folder to Tables (2)** so data is written as structured tables in the Silver Lakehouse, and then click **Next (3)** to proceed with mapping and final configuration.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image164.png)
+    ![01](./media/ex2-9.png)
 
-20. From the **Home** tab, select the **Validate** once again.
+1. In the **Map to destination** step, review and verify the table mappings between source and destination to ensure each source table is correctly aligned with its corresponding table in the Silver Lakehouse, make any necessary adjustments if required, and then click **Next** to proceed to the final review and execution stage.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image165.png)
+    ![01](./media/ex2-10.png)
 
-21. Click on **Close**
+1. In the **Review + save** step, review the summary of the source and destination configurations, optionally check **Start data transfer immediately (1)** if you want the copy job to run right away, and then click **Save (2)** to finalize and create the copy job.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image166.png)
+    ![01](./media/ex2-11.png) 
 
-22. Select the **Run** option to start the pipeline and begin your data
-    ingestion process. Running the pipeline initiates the data transfer
-    from the source to the destination.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image167.png)
+1. Click **Run** from the top menu to start executing the copy job, which will initiate the data transfer from the SQL Server source to the **silver_Lakehouse** destination; once triggered, monitor the **Results** section below where each table’s status will transition from *Not started* to *In progress* and finally *Succeeded*, along with details such as rows read, rows written, duration, and execution timestamps to validate that the data has been successfully loaded into the Silver layer.
 
-23. On the **Save and run?** dialog box, click **Save and run** to
-    execute these activities. This activity will take less than 1 min.
+    ![01](./media/ex2-12.png)  
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image168.png)
+    ![01](./media/ex1-76.png)
 
-24. Click **Ok**
+    ![01](./media/ex2-13.png)  
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image169.png)
+1. Click **Medallion-** in the left pane and then select **silver_Lakehouse** to open the Silver layer for data exploration and further processing.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image170.png)
+    ![01](./media/new0.png)
 
-25. The global properties and **Output** view will then become visible.
-    After starting the run of your pipeline, both the **Pipeline
-    status** and the **Activity status** should be **Succeeded**. This
-    indicates that everything ran as intended, confirming that your data
-    ingestion process is successful.
+1. Click the **ellipsis (...)** next to the **Tables** section in the Explorer pane to open additional options. Select **Refresh** to reload the table list and ensure all newly created tables from the copy job are visible. 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image171.png)
+1. Expand the **Tables** section and review the list of tables (such as **Dimension_City, Dimension_Customer, Dimension_Date, Fact_Order**, etc.), then click any table (for example, **Dimension_City**) to open it and validate the data preview, confirming that records have been successfully copied and are available for querying and downstream processing in the Silver Lakehouse.
 
-26. From the top menu, select the **silver_Lakehouse lakehouse** created
-    in the previous task.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image172.png)
-
-27. The tables now appear in the **Tables** section
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image173.png)
-
-28. On the left navigation, click on **Data Factory-medallion@lab.LabInstance.Id**, as
-    shown in the image below.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image174.png)
-
-29. Now proceed to select and add an **Assign item** from the **Initial process** task.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image175.png)
-
-30. Select **createContosoTables** and then click **Select**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image176.png)
-
-31. An item is assigned to the **Initial process**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image177.png)
+    ![01](./media/ex2-14.png) 
 
 ## Task 2: Configure a Variable for File Directory
 
@@ -1267,73 +877,43 @@ into date-partitioned folders (yyyy/MM/dd). Assigning such variables
 improves automation and modularity within pipelines, making maintenance
 and scaling easier.
 
-1. Select the **New item** option on the **Intial process** from your
-    task flow to add another storage item to project.
+1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image178.png)
+    ![01](./media/ex1-46.png)
 
-2. On the **New item** window, the available options within Microsoft
-    Fabric have been filtered down to **Recommended items**. Select the
-    **Pipeline** item.
+1. Click **+ New item** in the **Initial process** stage to create a new data processing component (such as a Copy job or transformation) for preparing data before moving it to the next layer.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image179.png)
+    ![01](./media/ex2-15.png) 
 
-4. On the New pipeline window, set the data pipeline name to
-    **ContosoTables** and then select **Create**
+1. Ensure **Initial process** is selected under **Assign to task**, then click **Pipeline** to create a new pipeline for performing data transformation and processing activities in this stage.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image180.png)
+    ![01](./media/ex2-16.png) 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image181.png)
+1. Enter **ContosoTables** as the pipeline name, ensure it is assigned to **Initial process**, and then click **Create** to create the pipeline for transforming data in this stage.
 
-	Note: If prompted with the **Copy data assistant** window, select **X**
-	in the top right corner to be taken into an empty authoring canvas. This
-	ensures that start with a clean slate for pipeline configuration.
+    ![01](./media/ex2-17.png) 
 
-3. On the **Home** tab of the lakehouse, select **Get data** from **New
-    data pipeline**.
+1. Click **Pipeline activity** under **Start with a blank canvas** to begin designing the pipeline and add transformation activities for processing data in the Initial process stage.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image182.png)
+    ![01](./media/ex2-18.png) 
 
-    ![A screenshot of a computer error message AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image183.png)
+1. Click **Activities** and then select **Set variable** to add a variable activity to the pipeline for controlling and storing values during execution.
 
-6. Select the **Activities** tab and then the **Set variable** activity
-    to add this to your canvas. The Set variable activity allows us to
-    define and assign values to variables that can be used throughout
-    pipeline.
+    ![01](./media/ex2-19.png) 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image184.png)
+1. Go to the **Settings** tab in the **Set variable** activity, ensure **Pipeline variable** is selected, and click **+ New** to create a new variable that can be used within the pipeline for dynamic value handling.
 
-7. With the Set variable activity selected, navigate to the
-    **Settings** tab. Next to the Name property, select '**New'** to
-    create a variable that will be used within the pipeline.
+    ![01](./media/ex2-20.png) 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image185.png)
+1. Enter **fileDirectory** as the variable name, keep the type as **String**, and click **Confirm** to create the pipeline variable.
 
-8. On the **Add new** **variable** pane, set the **Name** value
-    to **fileDirectory** and ensure the Type remains as a string
-    before selecting **Confirm.**
+    ![01](./media/ex2-21.png) 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image186.png)
+1. Select the **Value** text input box. This will display the **Add dynamic content** property. Select this text to open the pipeline expression builder.
 
-9. Select the **Value **text input box. This will display the **Add
-    dynamic content** \[Alt+Shift+D\] property. Select this text to open
-    the pipeline expression builder.
+    ![01](./media/ex2-22.png) 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image187.png)
-
-10. On the Pipeline expression builder page, **copy and paste** the code
-    block below into the expression input box. Press **Ok** when
-    complete.
+1. Enter the dynamic expression (1) to build the folder path (combining **'ContosoSales\'** with the formatted current date), verify it under **Functions (2)**, and click **OK (3)** to assign it as the value for the **fileDirectory** variable.
 	
     ```
     @concat(
@@ -1347,17 +927,11 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     )
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image188.png)
+    ![01](./media/ex2-23.png) 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image189.png)
+1. Go to the **General** tab and enter **Set file directory** as the activity name to clearly identify this step as setting the dynamic folder path for the pipeline execution.
 
-4. Navigate to the **General** tab with the Set variable activity
-    selected. Update the **Name** field with the text **Set file directory**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image190.png)
+    ![01](./media/ex2-24.png)
 
 This step helps in identifying and managing the activity within your
 pipeline in subsequent steps, making it easier to understand its purpose
@@ -1372,97 +946,49 @@ activity dynamically identifies child files in the Bronze Lakehouse.
 This setup ensures the pipeline can automatically discover and process
 incoming files without manual configuration
 
-1. Navigate to the **Activities** tab and select the **Get
-    metadata** activity to add it to your canvas.
+1. Click **Activities** and then select **Get metadata** to add a metadata activity that can retrieve information (such as file or folder details) based on the dynamically set directory.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image191.png)
+    ![01](./media/ex2-25.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image192.png)
+1. Go to **Settings → Connection dropdown → Browse all**, then select your **Lakehouse (e.g., bronze_Lakehouse)** from the OneLake catalog.
 
-2. On the **Settings** options, set
-    the **Connection** to **bronze_Lakehouse** from the available
-    connection options.
+    ![01](./media/ex2-26.png)
 
-3. Choose the **Files** option and then click on the **Directory** file
-    path text input box. This will display the **Add dynamic content
-    \[Alt+Shift+D\]**. Click on this text to open the pipeline
-    expression builder.
+1. Select **OneLake catalog**, then choose the **bronze_Lakehouse** as your data source.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image193.png)
+    ![01](./media/ex2-27.png)
 
-4. On the Pipeline expression builder window, select
-    the **Variables** option. Within the available variable list,
-    select **fileDirectory** and then **OK**.
+1. Select **Files** as the root folder, then click **Add dynamic content** to set the directory path dynamically.
 
-5. This step ensures that the file path for the metadata retrieval is
-    dynamically set based on the value of the fileDirectory variable.
+    ![01](./media/ex2-28.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image194.png)
+1. Select **Variables (1) → fileDirectory (2)**, following expression will generate `@variables('fileDirectory')` **(3)**, and click **OK (4)**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image195.png)
+    ![01](./media/ex2-29.png)
 
-6. Select **Get metadata** activity, navigate to the **Settings** tab.
-    From the **Field list** select **New**.
+1. In **Settings → Field list**, click **+ New**, open the dropdown, and select **Child items** to retrieve the list of files in the folder.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image196.png)
+    ![01](./media/ex2-30.png)
 
-7. From the drop-down menu, configure the value as **Child items**.
-    This ensures that the metadata activity retrieves information about
-    the child items and their names within the specified directory.
+1. Go to the **General** tab, rename the activity to **Get items in folder**, and connect it after the **Set file directory** activity.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image197.png)
+    ![01](./media/ex2-31.png)
 
-8. Select the **Get Metadata** activity and update the **Name** field
-    with the text **Get items in folder**.
+1. Click **Validate** to verify the pipeline, confirm the message **“No errors were found”**, and then click **Run** to execute the pipeline.
 
-9. This step aids in identifying and managing the activity within the
-    pipeline, enhancing clarity around its purpose and
-    functionality**.**
+    ![01](./media/ex2-32.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image198.png)
+1. Click **Save and run** to save the pipeline and start execution.
 
-10. Create a conditional path by dragging and dropping the **On
-    completion** option between the **Set file directory** activity and
-    the **Get items in folder** activity.
+    ![01](./media/ex2-33.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image199.png)
+1. Verify the pipeline run shows **Succeeded** for both activities (**Set file directory** and **Get items in folder**) in the **Output** tab.
 
-11. Select **Validate** on the **Home** tab to ensure there are no
-    errors within the pipeline.
+    ![01](./media/ex2-34.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image200.png)
+1. From the **'Get items in folder**' activity, select the last column labeled '**Output**' to review the activity's contents. This step verifies that the filenames from the directory have been correctly retrieved and included in the output.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image201.png)
-
-12. After validation, select **Run** to start the pipeline.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image202.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image203.png)
-
-13. Both the Pipeline status and the Activity status should display
-    status as **Succeeded**, indicating that the execution completed
-    successfully.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image204.png)
-
-14. From the **'Get items in folder**' activity, select the last column
-    labeled '**Output**' to review the activity's contents. This step
-    verifies that the filenames from the directory have been correctly
-    retrieved and included in the output**.**
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image205.png)
+    ![01](./media/ex2-35.png)
 
 ## Task 4: Implement conditional paths (Dimension vs Fact logic)
 
@@ -1475,158 +1001,87 @@ refreshed completely). For fact tables, the pipeline appends new data
 Silver layer is properly maintained and aligned with real-world data
 warehouse practices.
 
-1. Select the **Activities** tab and then the **ForEach** activity to
-    add this to your canvas. This activity allows you to iterate over a
-    collection of items, performing a set of actions for each item in
-    the collection.
+1. Go to the **Activities** tab, drag the **ForEach** activity onto the canvas, select it, and in the **General** tab set the name to **“For each file”**. Then, click the **+** inside the activity to add actions that will run for each file (e.g., processing or copying each item).
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image206.png)
+    ![01](./media/ex2-36.png)
 
-2. With the **ForEach** activity selected, navigate to the **General**
-    tab and update the **Name** field with the text **For each file**.
+1. Select the **ForEach** activity and connect it to the **Get Metadata** activity output. Then go to the **Settings** tab, and in the **Items** field click **Add dynamic content**. Choose the output from the **Get Metadata** activity (typically `childItems`) so that the loop iterates through each file retrieved from the folder.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image207.png)
+    ![01](./media/ex2-37.png)
 
-3. Next, create a conditional path by dragging and dropping the **On
-    success** option between the **Get items in folder activity** and
-    the **For each file activity**.
+1. In the **Pipeline expression builder**, go to the **Activity outputs** tab, select **Get items in folder childItems**, which auto-populates the expression as `@activity('Get items in folder').output.childItems`, and then click **OK** to apply it.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image208.png)
+    ![01](./media/ex2-38.png)
 
-4. Select **For each file activity**, navigate to the **Settings** tab.
-    Select the **Items** text input box. This will display the **Add
-    dynamic content \[Alt+Shift+D\]** property. Select this text to open
-    the pipeline expression builder. The sequential order ensures that
-    the items are processed one after another, maintaining the order of
-    execution.
+1. Inside the **ForEach** activity, click the **+ (Add activity)** button and select **Copy data** from the list to add it as the activity that will run for each file in the loop.
 
-   ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image209.png)
+    ![01](./media/ex2-39.png)
 
-5. On the Pipeline expression builder page, select the **Activity
-    outputs** section. Then, choose the **Get items in folder** output
-    of **childItems**. The full option title is **Get items in folder
-    childItems**. This step ensures that the ForEach activity iterates
-    over the child items retrieved from the specified directory.
+1. Inside the **ForEach** activity, click the **edit (pencil) icon** on the added **Copy data** activity to configure its source and destination settings for processing each file.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image210.png)
+    ![01](./media/ex2-40.png)
 
-6. Select the **add** option on the **For each activity** and then
-    select **Copy data**. This step will allow us to repeatedly execute
-    the copy data activity for each item in the array.
+1. Select the **Copy data** activity inside the **ForEach**, go to the **General** tab, and set the **Name** to **“Copy tables”** while keeping the activity state as **Activated**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image211.png)
+    ![01](./media/ex2-41.png)
 
-7. Select the **Edit** option on the **For each activity** to drill
-    into the nested authoring canvas. This step allows you to configure
-    the activities that will be executed for each item in the
-    collection.
+1. Go to the **Source** tab of the **Copy data** activity, click the **Connection** dropdown, and select **Browse all** to choose or create the required data source connection.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image212.png)
+    ![01](./media/ex2-42.png)
 
-8. Navigate to the **General** tab with the **Copy data activity**
-    selected. Update the **Name** field with the text **Copy tables**.
+1. In the **Get data** window, select **OneLake catalog** from the left pane, then choose the **bronze_Lakehouse** from the list to use it as the source.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image213.png)
+    ![01](./media/ex2-43.png)
 
-9. With the **Copy data** activity selected, configure the following
-    options in the **Source** tab. Once complete select
-    the **Directory** text input box. This will display the **Add
-    dynamic content \[Alt+Shift+D\]** property.
+1. In the **Source** tab, select the connected **bronze_Lakehouse**, choose **Files** as the root folder, set the **File format** to **Parquet**, and click **Add dynamic content** for the **File path** to dynamically pass the folder or file details from the loop.
 
+    ![01](./media/ex2-44.png)
 
-    |   |  |
-    |---|---|
-    |Property|	Value|
-    |Source	|Select the previously configured bronge_Lakehouse lakehouse.|
-    |Root folder|	Files|
-    |File path|	File path|
-    |File format|	Parquet|
+1. In the **Pipeline expression builder**, go to the **Variables** tab, select **fileDirectory**, which sets the expression to `@variables('fileDirectory')`, and then click **OK** to apply it.
 
+    ![01](./media/ex2-45.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image214.png)
+1. In the **Source** tab, click **Add dynamic content** for the **File name** field to dynamically pass the current file name from the ForEach loop.
 
-10. Select this text to open the pipeline **Add dynamic content
-    \[Alt+Shift+D\]** property expression builder.
+    ![01](./media/ex2-46.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image215.png)
+1. Select the item **For each file** within the expression builder's **ForEach iterator** section. Within the expression builder, add the suffix ".name" to access the name property of the current items array and then **OK** to continue once complete.
 
-11. Select the variable **fileDirectory** within the expression
-    builder's **Variables** section and **OK** to continue.
+1. Copy and paste the code block below into the expression input box.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image216.png)
+	```
+    @item().name
+    ```
 
-12. Select the **File name** text input box. This will display the **Add
-    dynamic content \[Alt+Shift+D\]** property. Select this text to open
-    the pipeline expression builder.
+    ![01](./media/ex2-47.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image217.png)
+1. Go to the **Destination** tab, open the **Connection** dropdown, and select **Browse all** to choose or create the destination connection.
 
-13. Select the item **For each file** within the expression builder's
-    **ForEach iterator** section. Within the expression builder, add the
-    suffix ".name" to access the name property of the current items
-    array and then **OK** to continue once complete.
+    ![01](./media/ex2-48.png)
 
-14. Copy and paste the code block below into the expression input box.
+1. In the **Get data** window, select **OneLake catalog** from the left pane, then choose the **silver_Lakehouse** as the destination.
 
-	**@item().name**
+    ![01](./media/ex2-49.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image218.png)
+1. In the **Destination** tab, select **Tables** as the root folder, then click **Add dynamic content** for the **Table** field to dynamically pass the table name, and keep the **Table action** set to **Append**.
 
-15. With the **Copy data activity** selected, configure the following
-    options in the **Destination** tab. Once complete select
-    the Table text input box. This will display the Add dynamic content
-    \[Alt+Shift+D\] property. Select this text to open the pipeline
-    expression builder.
+    ![01](./media/ex2-50.png)
 
-	|   |   |
-	|---|----|
-	|Property	|Value|
-	|Source|	Select the previously configured silver_Lakehouse lakehouse.|
-	|Destination	|Tables|
+1. In the **Pipeline expression builder**, go to the **Functions** tab, expand **String Functions**, select **split**, and enter the following expression, then click **OK** to apply it.
 
+    ```
+    @split(item().name, '.')[0]
+    ```
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image219.png)
+    ![01](./media/ex2-51.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image220.png)
+1. In the **Destination** tab, ensure **Append** is selected as the **Table action**, and use **Add dynamic content** if any further parameterization is needed.
 
-16. In the **Pipeline expression builder**, select **Functions** and
-    then choose **split** from the **String functions group** to divide
-    each item name using the period delimiter **'.' .** From the
-    resulting array, select the first item. Once complete, select
-    '**OK**' to proceed
+    ![01](./media/ex2-52.png)
 
-17. Copy and paste the code block below into the expression input box.
+1. In the expression builder, we'll use the if condition from the logical **functions** group and the startswith function from the string functions group to determine if the string starts with the prefix of **Dim** for our dimension tables. If true, we'll set the value to **Overwrite**, if false **Append**. Once complete select **OK** to continue.
 
-	**@split(item().name, '.')[0]**
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image221.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image222.png)
-
-18. On the **Destination** tab, select '**Append**' from the **Table action**
-    values to display the **'Add dynamic content \[Alt+Shift+D\]'
-    property**. Select this text to open **the Pipeline Expression
-    Builder.**
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image223.png)
-
-19. In the expression builder, we'll use the if condition from the
-    logical **functions** group and the startswith function from the
-    string functions group to determine if the string starts with the
-    prefix of **Dim** for our dimension tables. If true, we'll set the
-    value to **Overwrite**, if false **Append**. Once complete
-    select **OK** to continue.
-
-20. Copy and paste the code block below into the expression input box.
+1. Copy and paste the code block below into the expression input box.
 
     ```
     @if(
@@ -1636,57 +1091,27 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     )
     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image224.png)
+    ![01](./media/ex2-53.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image225.png)
+1. Select the **Main canvas** option from the breadcrumb trail to return to the top level of pipeline.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image226.png)
+    ![01](./media/ex2-54.png)
 
-21. Select the **Main canvas** option from the breadcrumb trail to
-    return to the top level of pipeline.
+1. From the **Home** tab, select the **Validate** option to first confirm that there are no issues within the pipeline. 
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image227.png)
+1. Once validated, select **Run** to start the ingestion from the data pipeline.
 
-22. From the **Home** tab, select the **Validate** option to first
-    confirm that there are no issues within the pipeline. 
+    ![01](./media/ex2-55.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image228.png)
+1. Confirm by selecting **Save and run**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image229.png)
+    ![01](./media/ex1-76.png)
 
-23. Once validated, select **Run** to start the ingestion from the data
-    pipeline.
+1. Running the pipeline initiates the data transfer, allowing you to see the results of your configuration in action within the output window.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image230.png)
+1. The data pipeline runs multiple activities sequentially, writing to the Silver data layer as delta parquet tables. v-Order optimized tables enhance performance, reduce storage costs, and supportefficient querying and data updates-ideal for analytical workloads in Microsoft Fabric.
 
-24. Confirm by selecting **Save and run**.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image231.png)
-
-25. Running the pipeline initiates the data transfer, allowing you to
-    see the results of your configuration in action within the output
-    window.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image232.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image233.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image234.png)
-
-26. The data pipeline runs multiple activities sequentially, writing to
-    the Silver data layer as delta parquet tables. v-Order optimized
-    tables enhance performance, reduce storage costs, and support
-    efficient querying and data updates-ideal for analytical workloads
-    in Microsoft Fabric.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image235.png)
+    ![01](./media/ex2-56.png)
 
 # Exercise 3: Initial Gold Layer Preparation
 
