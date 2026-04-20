@@ -20,7 +20,7 @@ enhance its location strategy, customer behavior analysis, and logistics
 optimization. To achieve this, the company selected the NYC Taxi
 dataset—a rich, publicly available dataset capturing millions of taxi
 trips across New York City—as the core dataset for its pilot
-implementation.
+implementation
 
 You, as a Data Engineer at Contoso Retail, were tasked with setting up
 the entire flow—from data ingestion and transformation, to monitoring,
