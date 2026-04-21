@@ -57,7 +57,7 @@ efficiently captured and structured for downstream processing.
 
 1. In the Azure portal search bar, search for **Resource groups (1)**, then select **Resource groups (2)** from the results.
    
-   ![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/ex1-0.png)
 
 1. From the **Resource groups** list, select the **Fabric** resource group to open it.
@@ -82,33 +82,33 @@ incorrect.](./media/new38.png)
 
 1. In the **Sign in to SQL Server Management Studio** window, click **Sign in with Microsoft** to continue.
 
-   ![](./media/new39.png)
+    ![](./media/new39.png)
 
 1. Select **Work or school account (1)** and click **Continue (2)** to sign in using your assigned credentials.
 
-   ![](./media/new40.png)
+    ![](./media/new40.png)
 
 1. On the **Sign in** page, enter the following email/username, and click on **Next (2)**. 
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+     - **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-     ![Image](./media/latest3.png)
+       ![Image](./media/latest3.png)
      
 1. Now, enter the following Temporary Access Pass and click on **Sign in (2)**.
    
-   * **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
+    - **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
 
        ![Image](./media/latest4.png)   
 
-       > **Note:** I may ask you to select the user **<inject key="AzureAdUserEmail"></inject>**.
+        > **Note:** I may ask you to select the user **<inject key="AzureAdUserEmail"></inject>**.
 
 1. In the sign-in prompts, click **Yes** to enable sign-in to all apps and websites on this device.
 
-   ![Image](./media/latest1.png)
+    ![Image](./media/latest1.png)
 
 1. On the confirmation screen, click **Done** to complete the account setup and start accessing your organization’s apps and services.  
 
-   ![Image](./media/latest2.png)
+    ![Image](./media/latest2.png)
 
 1. In the **Connect** window, provide the following details to connect to the SQL Server:
 
@@ -168,7 +168,7 @@ incorrect.](./media/new38.png)
 
     > **Congratulations**! You are now connected to the **WideWorldImporters** Database and are ready to import your schema and data.
 
-15. Repeat steps **15 to 23** to upload all the remaining files.
+1. Repeat steps **15 to 23** to upload all the remaining files.
 
     - Dimension_Customer
     - Dimension_Date
@@ -198,7 +198,7 @@ Architecture.
 
 1. In the Azure portal search bar, type **Storage accounts (1)** from the results, select **Storage accounts (2)** under Services.
 
-    ![Image](./media/ex1-12.png)
+     ![Image](./media/ex1-12.png)
 	
 1. Click **+ Create** to start creating a new storage resource.
 
@@ -208,9 +208,9 @@ Architecture.
 
     | | |
     |---|---|
-	| Resource Group | **Fabric (1)** |
-    | Storage Account Name | **fabricstorage (2)** |
-	| Region | ** (3)** |  
+	| Resource Group | Select **Fabric (1)** resource group |
+    | Storage Account Name | Enter **fabricstorage<inject key="DeploymentID" enableCopy="false"/> (2)** |
+	| Region | Select **<inject key="Region" enableCopy="false"></inject> (3)** |  
     | Performanace | **Standard (4)** |
     | Redundancy | **Locally-redundant storage (LRS) (5)** |
 
@@ -287,33 +287,33 @@ assets. By naming it appropriately-such as **Data Factory –
 Medallion**-you ensure a well-organized environment for managing the
 entire data lifecycle, from raw ingestion to curated analytics.
 
-2.  In the new tab, navigate to the **Microsoft Fabric** portal by copying and pasting the following URL into the address bar.
+1.  In the new tab, navigate to the **Microsoft Fabric** portal by copying and pasting the following URL into the address bar.
 
       ```
       https://app.fabric.microsoft.com
       ```
 
-3. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
+1. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
  
        ![01](./media/uc1-0.png)
  
-4. Next, provide your Temporary Access Password **(1)** and click on **Sign in (2)**:
+1. Next, provide your Temporary Access Password **(1)** and click on **Sign in (2)**:
  
-   - **Temprory Access Pass:** <inject key="AzureAdUserPassword"></inject>
+    - **Temprory Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
        ![01](./media/latest3.png)
 
-5. If you see the pop-up Stay Signed in?, select **No**.
+1. If you see the pop-up Stay Signed in?, select **No**.
    
     ![01](./media/latest6.png)
 
-6. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
+1. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
 
     ![01](./media/latest7.png)
 
-7. When the **Welcome to the Fabric view** dialog appears, click **Cancel**.   
+1. When the **Welcome to the Fabric view** dialog appears, click **Cancel**.   
 
     ![01](./media/latest8.png)
 
@@ -321,8 +321,7 @@ entire data lifecycle, from raw ingestion to curated analytics.
 
     ![01](./media/latest10.png)
 
-1. In the **Create a workspace tab**, enter the following details and
-    click on the **Apply (5)** button.
+1. In the **Create a workspace tab**, enter the following details and click on the **Apply (5)** button.
 	
     |   |   |
     |----|---|
@@ -353,7 +352,6 @@ for downstream processing.
 
 1. From the **Select a predesigned task flow** pane, choose **Medallion** and click **Select** to create the predefined task flow.
 
-
     ![01](./media/ex1-34.png)
 
 	> This option includes the description "Organize and improve data progressively as it moves through each layer," which is crucial for data projects. The medallion architecture helps in structuring data into different layers, such as bronze, silver, and gold, to enhance data quality and accessibility.
@@ -376,25 +374,25 @@ for downstream processing.
 
 1. On the **New source** tab, enter the following details, and click on the **Connect (6)** button.
 
-	- **Server:** Enter your SQL server URL that you copied in Task 1 step 4 **wwi-sqlserver-@lab.LabInstance.Id.database.windows.net (1)**
+	 - **Server:** Enter your SQL server URL that you copied in Task 1 step 4 in Format **wwi-sqlserver-<inject key="DeploymentID" enableCopy="false"/>.database.windows.net (1)**
 
-	- **Database:** Enter the database as **WideWorldImporters (2)**
+	 - **Database:** Enter the database as **WideWorldImporters (2)**
 
-    - **Connection:** Select **Create new connection (3)**
+     - **Connection:** Select **Create new connection (3)**
 
-    - **Username**: **sqladminuser (4)** 
+     - **Username**: **sqladminuser (4)** 
 
-    - **Password**: **P@ssw0rd1234! (5)** 
+     - **Password**: **P@ssw0rd1234! (5)** 
 
-      ![01](./media/ex1-39.png)
+       ![01](./media/ex1-39.png)
 
 1. On the **Choose data** tab, select **Select all (1)** and click on **Connect (2)** button
 
-    ![01](./media/ex1-40.png)
+     ![01](./media/ex1-40.png)
 
 1. On the **Destination** tab, click **Create mirrored database**.
 
-    ![01](./media/ex1-41.png)
+     ![01](./media/ex1-41.png)
 
 1. Verify that the replication **Status** shows **Running**, indicating the mirroring process has started successfully.
 
@@ -408,7 +406,7 @@ for downstream processing.
 
     ![01](./media/latest12.png)   
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -432,7 +430,7 @@ for downstream processing.
 
     ![01](./media/ex1-51.png)
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -458,14 +456,14 @@ for downstream processing.
 
 1. On the **Connect to data source** tab, enter the following details, and click on the **Next (4)** button.
 
-	- **Server:** Enter the **SQL connection string** for the mirrored
+	 - **Server:** Enter the **SQL connection string** for the mirrored
 	  database **WideWorldImporters** **(1)** that you copied and pasted in the Notepad in **Task 3 step 12**.
 
-	- **Database:** Enter the database as **WideWorldImporters (2)**
+	 - **Database:** Enter the database as **WideWorldImporters (2)**
 
-	- **Authentication kind:** **Organizational account (3)**
+	 - **Authentication kind:** **Organizational account (3)**
 
-      ![01](./media/ex1-57.png)
+       ![01](./media/ex1-57.png)
 
 1. Select sqldatabase and click on **Next** button.
 
@@ -487,7 +485,7 @@ for downstream processing.
 
     ![01](./media/ex1-62.png)
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -513,7 +511,7 @@ with a dynamic expression that creates a date-based folder structure
 scalable, and well-structured, with validation confirming successful
 execution.
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -565,7 +563,7 @@ execution.
 
     ![01](./media/ex1-77.png)
 
-1. Click on **Medallion- (1)** workspace from the left navigation pane and then select **bronze_Lakehouse (2)** to open the lakehouse.
+1. Click on **Medallion-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace from the left navigation pane and then select **bronze_Lakehouse (2)** to open the lakehouse.
 
     ![01](./media/ex1-78.png)
 
@@ -585,7 +583,7 @@ execution.
 
     ![01](./media/ex1-82.png)
 
-1. Click on **Medallion- (1)** workspace from the left navigation pane and then select **samplePipeline (2)** to open the pipeline.
+1. Click on **Medallion-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace from the left navigation pane and then select **samplePipeline (2)** to open the pipeline.
 
     ![01](./media/ex1-83.png)
 
@@ -601,23 +599,18 @@ execution.
 
 1. On the Pipeline expression builder page, select the **Functions (1)** tab. Here, you can explore various functions that exist within the expression library. These functions provide powerful tools for creating dynamic expressions. When you're ready copy and paste the code block (2) below into the expression input box. Press **Ok (3)** when complete.
 
-	```
-	@formatDateTime(
-		convertFromUtc(
-			utcnow(), 'Central Standard Time'
-			),
-		'yyyy/MM/dd'
-	)
-    ```
+     ```
+     @formatDateTime(
+         convertFromUtc(
+             utcnow(), 'Central Standard Time'
+             ),
+         'yyyy/MM/dd'
+     )
+     ```
 
-    ![01](./media/ex1-86.png)
+     ![01](./media/ex1-86.png)
 
-	**Note:** This expression will be used to create a folder structure
-	within your pipeline that writes the file to nested folders based on the
-	current year, the current month, and the current date of the run time.
-	The forward slash "**/**" character is how the folder structure is
-	defined. This dynamic folder structure helps in organizing your data
-	based on the date, making it easier to manage and retrieve.
+	  > **Note:** This expression will be used to create a folder structure within your pipeline that writes the file to nested folders based on the current year, the current month, and the current date of the run time. The forward slash "**/**" character is how the folder structure is defined. This dynamic folder structure helps in organizing your data based on the date, making it easier to manage and retrieve.
 
 1. From the **Home** tab, select the **Validate** once again.
 
@@ -639,7 +632,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
     ![01](./media/ex1-87.png)
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -673,7 +666,7 @@ files under a date-based folder structure, ensuring scalable and
 well-structured ingestion. The result is a clean and accessible Bronze
 layer containing raw datasets ready for further processing.
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -739,14 +732,14 @@ layer containing raw datasets ready for further processing.
 
 1. On the Pipeline expression builder page, select the **Functions (1)** tab. Here, you can explore various functions that exist within the expression library. These functions provide powerful tools for creating dynamic expressions. When you're ready copy and paste the **code block (2)** below into the expression input box. Press **Ok (3)** when complete.
 	
-    ```
-    @formatDateTime(
-        convertFromUtc(
-            utcnow(), 'Central Standard Time'
-        ),
-        'yyyy/MM/dd'
-    )
-    ```
+     ```
+     @formatDateTime(
+         convertFromUtc(
+             utcnow(), 'Central Standard Time'
+         ),
+         'yyyy/MM/dd'
+     )
+     ```
 
     ![01](./media/ex1-104.png)
 
@@ -762,7 +755,7 @@ layer containing raw datasets ready for further processing.
 
     ![01](./media/ex1-107.png)
 
-27. The contents of the **zip file** have been successfully added to the **Files** section, organized in a nested folder structure based on the data source title, year, month, and date of the pipeline run.
+1. The contents of the **zip file** have been successfully added to the **Files** section, organized in a nested folder structure based on the data source title, year, month, and date of the pipeline run.
 
     ![01](./media/ex1-108.png)
 
@@ -790,7 +783,7 @@ section, later appearing in the Tables section of the Lakehouse. This
 ensures that data is transitioned from raw (Bronze) to structured
 (Silver) format, optimized for analytical queries.
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -820,14 +813,14 @@ ensures that data is transitioned from raw (Bronze) to structured
 
 1. On the **Connect to data source** tab, enter the following details, and click on the **Next (4)** button.
 
-	- **Server:** Enter the **SQL connection string** for the mirrored
+	 - **Server:** Enter the **SQL connection string** for the mirrored
 	  database **WideWorldImporters** **(1)** that you copied and pasted in the Notepad in **Task 3 step 12**.
 
-	- **Database:** Enter the database as **WideWorldImporters (2)**
+	 - **Database:** Enter the database as **WideWorldImporters (2)**
 
-	- **Authentication kind:** **Organizational account (3)**
+	 - **Authentication kind:** **Organizational account (3)**
 
-      ![01](./media/ex2-6.png)
+        ![01](./media/ex2-6.png)
 
 1. In the **Choose data** step, select the required database tables by checking them under the source (1) to include them for ingestion, optionally review the preview pane on the right, and then click **Next (2)** to proceed to configuring the destination.
 
@@ -849,7 +842,6 @@ ensures that data is transitioned from raw (Bronze) to structured
 
     ![01](./media/ex2-11.png) 
 
-
 1. Click **Run** from the top menu to start executing the copy job, which will initiate the data transfer from the SQL Server source to the **silver_Lakehouse** destination; once triggered, monitor the **Results** section below where each table’s status will transition from *Not started* to *In progress* and finally *Succeeded*, along with details such as rows read, rows written, duration, and execution timestamps to validate that the data has been successfully loaded into the Silver layer.
 
     ![01](./media/ex2-12.png)  
@@ -858,7 +850,7 @@ ensures that data is transitioned from raw (Bronze) to structured
 
     ![01](./media/ex2-13.png)  
 
-1. Click **Medallion-** in the left pane and then select **silver_Lakehouse** to open the Silver layer for data exploration and further processing.
+1. Click **Medallion-<inject key="DeploymentID" enableCopy="false"/>** in the left pane and then select **silver_Lakehouse** to open the Silver layer for data exploration and further processing.
 
     ![01](./media/new0.png)
 
@@ -877,7 +869,7 @@ into date-partitioned folders (yyyy/MM/dd). Assigning such variables
 improves automation and modularity within pipelines, making maintenance
 and scaling easier.
 
-1. Navigate to **Workspaces** and select the **Medallion- workspace** to continue working with your data pipeline.
+1. Navigate to **Workspaces** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace** to continue working with your data pipeline.
 
     ![01](./media/ex1-46.png)
 
@@ -916,18 +908,18 @@ and scaling easier.
 1. Enter the dynamic expression (1) to build the folder path (combining **'ContosoSales\'** with the formatted current date), verify it under **Functions (2)**, and click **OK (3)** to assign it as the value for the **fileDirectory** variable.
 	
     ```
-    @concat(
-        'ContosoSales\',
-        formatDateTime(
-            convertFromUtc(
-                utcnow(), 'Central Standard Time'
-            ),
-            'yyyy/MM/dd'
-        )
-    )
+     @concat(
+         'ContosoSales\',
+         formatDateTime(
+             convertFromUtc(
+                 utcnow(), 'Central Standard Time'
+             ),
+             'yyyy/MM/dd'
+         )
+     )
     ```
 
-    ![01](./media/ex2-23.png) 
+     ![01](./media/ex2-23.png) 
 
 1. Go to the **General** tab and enter **Set file directory** as the activity name to clearly identify this step as setting the dynamic folder path for the pipeline execution.
 
@@ -1049,11 +1041,11 @@ warehouse practices.
 
 1. Copy and paste the code block below into the expression input box.
 
-	```
-    @item().name
-    ```
+	 ```
+     @item().name
+     ```
 
-    ![01](./media/ex2-47.png)
+     ![01](./media/ex2-47.png)
 
 1. Go to the **Destination** tab, open the **Connection** dropdown, and select **Browse all** to choose or create the destination connection.
 
@@ -1069,11 +1061,11 @@ warehouse practices.
 
 1. In the **Pipeline expression builder**, go to the **Functions** tab, expand **String Functions**, select **split**, and enter the following expression, then click **OK** to apply it.
 
-    ```
-    @split(item().name, '.')[0]
-    ```
+     ```
+     @split(item().name, '.')[0]
+     ```
 
-    ![01](./media/ex2-51.png)
+     ![01](./media/ex2-51.png)
 
 1. In the **Destination** tab, ensure **Append** is selected as the **Table action**, and use **Add dynamic content** if any further parameterization is needed.
 
@@ -1083,15 +1075,15 @@ warehouse practices.
 
 1. Copy and paste the code block below into the expression input box.
 
-    ```
-    @if(
-        startswith(item().name, 'Dim'),
-        'Overwrite',
-        'Append'
-    )
-    ```
+     ```
+     @if(
+         startswith(item().name, 'Dim'),
+         'Overwrite',
+         'Append'
+     )
+     ```
 
-    ![01](./media/ex2-53.png)
+     ![01](./media/ex2-53.png)
 
 1. Select the **Main canvas** option from the breadcrumb trail to return to the top level of pipeline.
 
@@ -1115,16 +1107,7 @@ warehouse practices.
 
 # Exercise 3: Initial Gold Layer Preparation
 
-With structured data in place, you turn your attention to curating
-datasets for business intelligence in the **Gold** layer, the
-destination for analytics and reporting. This phase involves
-transforming and loading data using Data Factory and Power Query Online,
-supported by Fabric’s scalable compute and storage architecture. You
-build Dataflow Gen2 to apply final transformations and configure
-pipelines to route data accurately. You also create a semantic model to
-define relationships across key tables, enabling intuitive reporting.
-The process concludes with a streamlined data ingestion setup and a
-Power BI dashboard, completing the end-to-end data lifecycle.
+With structured data in place, you turn your attention to curating datasets for business intelligence in the **Gold** layer, the destination for analytics and reporting. This phase involves transforming and loading data using Data Factory and Power Query Online, supported by Fabric’s scalable compute and storage architecture. You build Dataflow Gen2 to apply final transformations and configure pipelines to route data accurately. You also create a semantic model to define relationships across key tables, enabling intuitive reporting. The process concludes with a streamlined data ingestion setup and a Power BI dashboard, completing the end-to-end data lifecycle.
 
 ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image237.svg)
 
@@ -1135,30 +1118,21 @@ serves as the curated Gold layer. This warehouse is optimized for
 analytics and reporting, offering a structured and performant
 environment for business intelligence workloads.
 
-1. On the left navigation, click on ***Data Factory-medallion@lab.LabInstance.Id***, as
-    shown in the image below.
+1. Navigate to **Workspaces (1)** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace (2)** to continue working with your data pipeline.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image238.png)
+    ![01](./media/ex1-46.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image239.png)
+1. From the task flow, click **+ New item** in the **Golden data** stage, to add the next component for storing or processing curated data.
 
-2. Select the **New item** option on the **Gold data** from task flow
-    to add another storage item.
+    ![01](./media/ex2-57.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image240.png)
+1. In the **New item** window, ensure **Golden data (1)** is selected, search for **Warehouse (2)**, and then select the **Warehouse (3)** option to create it.
 
-3. On the **Create an item** tab, select **Warehouse**.
+    ![01](./media/ex2-58.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image241.png)
+1. Enter the name **gold_Warehouse (1)** and click **Create (2)** to create the warehouse.
 
-4. On the New **warehouse** window, set the warehouse name to
-    **gold_Warehouse** and then select **Create**.
-
-    ![A screenshot of a login box AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image242.png)
+    ![01](./media/ex2-59.png)
 
 ## Task 2: From Silver to Gold: Persisting Mirrored SQL Tables
 
@@ -1167,308 +1141,204 @@ all structured Silver Lakehouse tables into the Gold Warehouse. This
 step ensures persistence, centralization, and optimized availability of
 refined data for analytics.
 
-1. From the **Home** tab of the warehouse, select **Get
-    data** from **New pipeline**.
+1. Go to the **Home (1)** tab, click on the **Get data (2)** dropdown, and select **Ingest data with Copy job (3)** to start loading data into the warehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image243.png)
+    ![01](./media/ex3-0.png)
 
-2. On the New pipeline window, set the data pipeline name to
-    **Copydata_silver to gold** and then select **Create**
+1. Enter the name **Copydata_silver to gold (1)**, ensure it is assigned to **Golden data (2)**, and click **Create (3)** to create the copy job.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image244.png)
+    ![01](./media/ex2-60.png)
 
-3. On the **Choose a data into Lakehouse** window, select **OneLake
-    catalog** and then select **silver_Lakehouse** lakehouse
+1. Select **Tables (1)**, choose the **silver_Lakehouse (2)** and required tables, then click **Next (3)** to proceed.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image245.png)
+    ![01](./media/ex2-61.png)
 
-4. From the **Connect to data source** page, select all tables and then
-    click the **Next** button
+1. In the **Choose data source** step, select **OneLake catalog (1)**, then from the list of available items choose **silver_Lakehouse (2)** as the source. This ensures that the copy job pulls data from the Silver layer, which contains the cleaned and transformed data prepared for further processing. After selecting the lakehouse, proceed to the next step to configure the destination.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image246.png)
+    ![01](./media/ex2-62.png)
 
-5. Click **Next** again.
+1. Select **OneLake catalog (1)** from the top menu, then choose **gold_Warehouse (2)** as the destination. This ensures that all the selected tables from the source will be loaded into the warehouse created in the **Golden data** layer. After selecting it, proceed to the next step to configure settings and mapping for the data load.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image247.png)
+    ![01](./media/ex2-63.png)
 
-6. Click **Next** on the **Settings** tab.
+1. In the **Settings** step, under **Read method**, select **Full copy (1)** to copy all data at once during each run of the job. This option ensures a complete refresh of the data in the destination. After selecting it, click **Next (2)** to continue to the mapping configuration.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image248.png)
+    ![01](./media/ex2-65.png)
 
-7. On the **Review + save** tab, click **Save + Run**
+1. Review the **Map to destination** step where each source table from the **silver_Lakehouse** is automatically mapped to corresponding tables in the destination warehouse under the **dbo** schema. Verify that the table names are correctly aligned (e.g., *Address → Address*, *Customer → Customer*, *DimCustomer → DimCustomer*), and adjust them if needed using the edit option. You can also use **Edit column mapping** to fine-tune column-level mappings for each table if required. Once all mappings are confirmed, click **Next** to proceed.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image249.png)
+    ![01](./media/ex2-66.png)
 
-8. Click **OK**
+1. Review the **Summary** to confirm the source (**silver_Lakehouse**) and destination (**gold_Warehouse**) along with the number of tables being copied. Uncheck **Start data transfer immediately (1)** if you want the job to run right away, then click **Save (2)** to complete the setup of the copy job.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image250.png)
+    ![01](./media/ex2-67.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image251.png)
+1. Review the **Copy job results** to confirm successful execution. Verify that the overall **Status** shows **Succeeded**, and check key metrics such as **Rows read**, **Rows written**, and **Throughput** to ensure data was copied correctly from **silver_Lakehouse** to **gold_Warehouse**.
 
-9. On the top navigation menu, navigate and click on
-    ***gold_Warehouse***, as shown in the below image.
+    ![01](./media/ex2-68.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image252.png)
+1. In the left navigation pane, select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click on **gold_Warehouse (2)** to open it and view its contents.
 
-10. The tables now appear in the **dbo** section
+    ![01](./media/ex3-39.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image253.png)
+1. In the **Explorer** pane, expand **Schemas** under **gold_Warehouse**, then open the **dbo (1)** schema and expand **Tables (2)** to view all the loaded tables **(3)**. Verify that tables such as *Address, Customer, DimCustomer, DimDate,* and others are present, confirming that data has been successfully copied into the Gold layer.
+
+    ![01](./media/ex2-69.png)
 
 ## Task 3: Create initial Dataflow Gen2 structure
 
-Here, you create a Dataflow Gen2 object called *PrepContoso* using Power
-Query Online. This Dataflow is designed to apply transformations and
-prepare data for downstream analytics by leveraging Fabric’s staging
-architecture for large-scale compute
+Here, you create a Dataflow Gen2 object called *PrepContoso* using Power Query Online. This Dataflow is designed to apply transformations and prepare data for downstream analytics by leveraging Fabric’s staging architecture for large-scale compute.
 
-1. On the left navigation, click on **Data Factory-medallion@lab.LabInstance.Id**, as
-    shown in the image below.
+1. Navigate to **Workspaces (1)** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace (2)** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image254.png)
+    ![01](./media/ex1-46.png)
 
-2. From the task flow, select the **Further transform** task and click
-    on the **New item** option. Within the Create an item pane display
-    properties, change the toggle to the **All items** option.
+1. In the **Further transform** stage, click **+ New item** to add the next transformation step for processing the Silver data into the Gold layer.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image255.png)
+    ![01](./media/ex3-1.png)
 
-3. From the list of available items, select the **Dataflow Gen2** item
+1. In the **New item** window, ensure the task is set to **Further transform (1)**, then select **Dataflow Gen2 (2)** to create a transformation flow for processing and refining the data.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image256.png)
+    ![01](./media/ex3-2.png)
 
-5. On the **New Dataflow Gen2** window, click on **Dataflow1** and
-    rename it to **PrepContoso**
+1. Enter the name **PrepContoso (1)** for the Dataflow Gen2 item, then click **Create (2)** to create the data transformation flow.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image257.png)
+    ![01](./media/ex3-3.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image258.png)
+1. In the **Power Query (Dataflow Gen2)** editor, click **Get data from another source** to start connecting to a data source for building your transformation logic.
+
+    ![01](./media/ex3-4.png)
 
 ## Task 4: Connecting to warehouse tables
 
 In this task, you connect the Dataflow to the *gold_Warehouse* and
 select relevant tables (dimensions and facts).
 
-1. From the **Home** tab, select **Get data** and then
-    the **More...** option.
+1. Expand the **toolbar (1)** if needed, then click **Get data (2)**, and select **More... (3)** to open the full list of available data sources.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image259.png)
+    ![01](./media/ex3-5.png)
 
-2. On the **Get data** explorer's search bar,
-    type **gold_Warehouse** to locate the gold Warehouse item.
-    Select the **gold_Warehouse** item within the OneLake catalog's
-    returned results.
+1. In the **Get data** window, select **OneLake catalog** from the left pane, then choose **gold_Warehouse** from the list to use it as the data source for building transformations in the dataflow.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image260.png)
+    ![01](./media/ex3-6.png)
 
-3. From the Get data table navigator, select the tables listed below to
-    perform data transformation operations and merge the tables for our
-    downstream business intelligence projects.
+1. In the **Choose data** window, select the following tables from the **gold_Warehouse**. Review the preview on the right to confirm the data selection, then click **Create** to load these tables into the Dataflow Gen2 for further transformation.
 
     |  |
     |---|
     |Table Name|
-    |bdo_ Dimension_City|
-    |bdo_Dimension_Customer|
-    |bdo_Dimension_Date|
-    |bdo_Dimension_Employee|
-    |bdo_Dimension_Payment_Method|
-    |bdo_Dimension_Supplier|
-    |bdo_Dimension_Transaction_Type|
-    |bdo_Fact_Order|
-    |bdo_Fact_Purchase|
-    |bdo_Fact_Sale|
-    |bdo_Fact_Stock_Holding|
-    |bdo_Fact_Transaction|
+    |Dimension_Customer|
+    |Dimension_Date|
+    |Dimension_Employee|
+    |Dimension_Payment_Method|
+    |Dimension_Supplier|
+    |Dimension_Transaction_Type|
+    |Fact_Order|
+    |Fact_Purchase|
+    |Fact_Sale|
+    |Fact_Stock_Holding|
+    |Fact_Transaction|
 
+    ![01](./media/ex3-7.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image261.png)
+1. In the **Power Query editor**, select the **Fact_Sale (1)** query from the left pane, then click **Combine (2)** in the toolbar, choose **Merge queries (3)**, and select **Merge queries as new (4)** to create a new query by combining it with another table.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image262.png)
+    ![01](./media/ex3-8.png)
 
-4. Select the **Fact_Sale** table and from the Home tab, navigate to
-    the **Merge queries** option and select **Merge queries as new**.
+1. In the **Merge** window, set **Fact_Sale (1)** as the left table and **Fact_Order (2)** as the right table, click on the **bulb icon (3)** then use the suggested column mappings (such as *Customer_Key → Customer_Key* and *Sale_Key → Order_Key*) **(4)**. 
 
-	> Note that there are two options: Merge queries, which will merge a
-	> table with the existing query, or Merge queries as new, which will
-	> create a new query in your editor. This step allows you to combine
-	> data from different tables, enhancing the comprehensiveness of your
-	> dataset.
+    ![01](./media/ex3-9.png)
 
+1. In the **Merge** configuration, select the **Inner (1)** join type to return only matching records from both **Fact_Sale** and **Fact_Order** tables. Verify the match count shown at the bottom, then click **OK (2)** to apply the merge.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image263.png)
+    ![01](./media/ex3-10.png)
 
-5. From the Merge query window, set the **Right table for
-    merge** to **dbo**\_**Fact_Order**. In the top right corner, select
-    the lightbulb which has detected a possible column match. In this
-    example, both tables contain a column titled **City Key** Select
-    this option to set the columns to be merged on. For the join kind,
-    select **Inner** and then **OK** to proceed. This activity ensures
-    that the data is accurately combined based on matching columns.
+1. In the merged query, scroll to the right **(1)**, click on **opposite side errors (2)** next to the **Fact_Order** column, uncheck fields **City_Key (3)** and **Stock_Item_Key (4)**, keep only the required columns, and click **OK (5)** to apply the selection.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image264.png)
+    ![01](./media/ex3-11.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image265.png)
+1. Verify that the merged query now includes columns from both **Fact_Sale** and **Fact_Order**, with the selected fields successfully expanded (such as *Order_Key, Customer_Key, Order_Date_Key, Picked_Date_Key*). Confirm that the data looks correct and that the merge has been applied as expected before proceeding with further transformations.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image266.png)
+    ![01](./media/ex3-12.png)    
 
-6. Navigate to the far right for the **Merge** table and select the
-    joined **dbo_Fact_Orders** table column's top right corner to expand
-    the table, from the avaialble column selections deselect **City
-    Key** and **Stock Item Key** since this column is what we used to
-    merge on and already exists in the dataset before
-    selecting **OK** to continue
+1. Select the **Merge (1)** query, click **Add data destination (2)**, and choose **Warehouse (3)** to load the transformed data into a warehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image267.png)
+    ![01](./media/ex3-13.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image268.png)
+    ![01](./media/ex3-14.png)    
 
-7. Select the **Merge** query and from the **Home** tab, select **Add
-    data destination** and then choose the **Warehouse** option.
+1. In the **Choose destination target** step, select **gold_Warehouse (1)**, keep **New table** selected, confirm the table name as **Merge**, and then click **Next (2)** to continue.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image269.png)
+    ![01](./media/ex3-15.png)
 
-8. On the **Connect to data destination** dialog box, your connection
-    should already be selected. Select **Next** to continue.
+1. In the **Choose destination settings** step, set the **Update method** to **Replace** to overwrite existing data, keep the **Schema option** as **Fixed schema**, review the column mappings, and then click **Save settings** to apply the configuration.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image270.png)
+    ![01](./media/ex3-16.png)
 
-9. On the **Choose destination target** dialog, browse to the warehiuse
-    where you wish to load the data and name the new table, then
-    select **Next** again.
+1. Click on **Save & run (1)** from the top menu. From the dropdown, select **Save & run (2)** to both save your changes and execute the Dataflow.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image271.png)
+    ![01](./media/ex3-17.png)
 
-10. On the **Choose destination settings** dialog, you can use the
-    automatic settings or deselect the automatic settings and leave the
-    default **Replace** update method, double check that your columns
-    are mapped correctly, and select **Save settings**.
+1. Navigate to **Workspaces (1)** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace (2)** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image272.png)
+    ![01](./media/ex1-46.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image273.png)
+1. Click the **ellipsis (...) (1)** next to **PrepContoso** and select **Check validation (2)** to validate the Dataflow.
 
-11. On the Home window, select **Save & run** and click on **Save &
-    run** button
+    ![01](./media/ex3-18.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image274.png)
+1. Click the **Close (X)** button to exit the validation status window after confirming it succeeded.
 
-12. On the left navigation, select ***Data Factory-medallion@lab.LabInstance.Id***, as
-    shown in the image below.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image275.png)
-
-13. On the Fabric workspace, select the more options ellipsis icon next
-    to the **PrepContoso** dataflow and select the **Check validation**
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image276.png)
-
-    ![A screenshot of a computer error AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image277.png)
-
-14. On the top menu, select **gold_Warehouse** that you have created in
-    the previous task.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image278.png)
+    ![01](./media/ex3-19.png)
 
 ## Task 5: Build Report(Optional) 
 
 In this task, you build a Power BI Report.
 
-1. On gold_Warehouse page, select the **Home** tab and then
-    select **New semantic model**.
+1. In the left navigation pane, select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click on **gold_Warehouse (2)** to open it and view its contents.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image279.png)
+    ![01](./media/ex3-39.png)
 
-2. On the *New Semantic Model* tab, enter the name as **Sample
-    model**, select the **dbo** schema, choose the below tables, and
-    then click **Confirm**
+1. On gold_Warehouse page, select the **Home** tab and then select **New semantic model**.
 
-	|  |
-	|---|
+    ![01](./media/ex3-40.png)
+
+1. Enter **Sample model (1)** as the semantic model name, select **Direct Lake on SQL (2)** as the storage mode. Choose the following  tables **(3)** then click **Confirm (4)** to create the semantic model.
+
 	|Table Name|
-	|bdo_ Dimension_City|
-	|bdo_Dimension_Customer|
-	|bdo_Dimension_Date|
-	|bdo_Dimension_Employee|
-	|bdo_Dimension_Payment_Method|
-	|bdo_Dimension_Supplier|
-	|bdo_Dimension_Transaction_Type|
-	|bdo_Fact_Order|
-	|bdo_Fact_Purchase|
-	|bdo_Fact_Sale|
-	|bdo_Fact_Stock_Holding|
-	|bdo_Fact_Transaction|
+    |---|
+	|Dimension_City|
+	|Dimension_Customer|
+	|Dimension_Date|
+	|Dimension_Employee|
+	|Dimension_Payment_Method|
+	|Dimension_Supplier|
+	|Dimension_Transaction_Type|
+	|Fact_Order|
+	|Fact_Purchase|
+	|Fact_Sale|
+	|Fact_Stock_Holding|
+	|Fact_Transaction|
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image280.png)
+    ![01](./media/ex3-20.png)
 
-5. On the left navigation, click on ***Data Factory-Medallion@lab.LabInstance.Id***.
+1. Select **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace (1)** from the left navigation pane, click **Sample model (2)** to open the newly created semantic model.
 
-6. Select ***Sample model***
+    ![01](./media/ex3-39.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image281.png)
+1. Click **Open** to launch the semantic model and start working with it.
 
-7. On the sample model home page, click **Open Semantic Model** to
-    access the model.
+    ![01](./media/ex3-21.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image282.png)
+1. Switch from **Viewing (1)** mode to **Editing** mode by selecting **Editing (2)** from the top-right dropdown.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image283.png)
+    ![01](./media/ex3-24.png)
 
-8. Ensure from the top-right corner that the data model designer is
-    selected in the **Editing** mode. This should change the drop-down
-    text to “Editing”.
+1. Create a relationship by dragging **City_Key** from **Fact_Sale** to **City_Key** in **Dimension_City**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image284.png)
+    ![01](./media/ex3-41.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image285.png)
-
-9. From the dbo\_**fact_sale** table, drag the **CityKey** field and
-    drop it on the **CityKey** field in
-    the dbo\_**dimension_city** table to create a relationship.
-    The **Create Relationship** dialog box appears..
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image286.png)
-
-	in the **Create Relationship** dialog box:
+1. In the **Create Relationship** dialog box review the following details:
 
 	- **Table 1** is populated with **dbo_fact_sale** and the column
 	  of **CityKey**.
@@ -1482,177 +1352,98 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 	- Leave the box next to **Make this relationship active** selected.
 
-	- Select the box next to **Assume referential integrity.**
+	- Select the box next to **Assume referential integrity (1)**
 
-	- Select **Save.**
+	- Select **Save (3)**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image287.png)
+    ![01](./media/ex3-25.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image288.png)
-
-10. Next, add these relationships with the same **Create
-    Relationship** settings as shown above but with the following tables
-    and columns:
+1. Next, add these relationships with the same **Create Relationship** settings as shown above but with the following tables and columns:
 
 	- **Salespersonkey(dbo_Fact_Sale)** - **EmployeeKey(dbo_Dimension_Employee)**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image289.png)
+      ![01](./media/ex3-26.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image290.png)
+      ![01](./media/ex3-43.png)
 
-11. Ensure to create the relationships between the below two sets using
-    the same steps as above.
+1. Ensure to create the relationships between the below two sets using the same steps as above.
 
     - **CustomerKey(dbo_Fact_Sale)** - **CustomerKey(dbo_Dimension_Customer)**
 
-12. After you add these relationships, your data model should be as
-    shown in the below image and is ready for reporting.
+1. After you add these relationships, your data model should be as shown in the below image and is ready for reporting.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image291.png)
+      ![01](./media/ex3-44.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image292.png)
+      ![01](./media/ex3-46.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image293.png)
+1. Ensure to create the relationships between the below two sets using the same steps as above.
 
 	- **InvoiceDateKey(dbo_Fact_Sale)** - **Date(dbo_Dimension_Date)**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image294.png)
+      ![01](./media/ex3-45.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image295.png)
+      ![01](./media/ex3-27.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image296.png)
+1. From the top ribbon, select **File** and select **Create new report** to start creating reports/dashboards in Power BI.
 
-13. From the top ribbon, select **File** and select **Create new
-    report** to start creating reports/dashboards in Power BI.
+    ![01](./media/ex3-47.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image297.png)
+    ![01](./media/ex3-28.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image298.png)
+1. On the **Data** pane, expand **dbo_fact_sales** and check the box next to **Profit**. This selection creates a column chart and adds the field to the Y-axis.
 
-14. On the **Data** pane, expand **dbo_fact_sales** and check the box
-    next to **Profit**. This selection creates a column chart and adds
-    the field to the Y-axis.
+    ![01](./media/ex3-49.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image299.png)
+1. With the bar chart selected, select the **Card** visual in the visualization pane.
 
-15. With the bar chart selected, select the **Card** visual in the
-    visualization pane.
+    ![01](./media/image300.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image300.png)
+1. From the Data pane, select **Profit** from **Fact_Sale** and **Fiscal_Month_Number** from **Dimension_Date** to add them to the report.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image301.png)
+    ![01](./media/ex3-29.png)
 
-16. Click anywhere on the blank canvas (or press the Esc key) so the
-    Card that we just placed is no longer selected.
+1. Select the **Area chart** visual and set **Fiscal_Month_Number** on the X-axis and **Sum of Profit** on the Y-axis.
 
-	**Add a Bar chart:**
+    ![01](./media/ex3-30.png)
 
-17. On the **Visualizations** pane, select the **Stacked area
-    chart** visual.
+1. Add **Month** from **Dimension_Date** to the **Legend** field to break down the chart by month.
 
-18. On the **Data** pane, expand **Fact_Sales** and check the box next
-    to **Profit**. This selection creates a column chart and adds the
-    field to the Y-axis.
+    ![01](./media/ex3-31.png)
 
-19. Expand **Dimension_Date** and check the box
-    for **FiscalMonthNumber**. This selection adds the field to the
-    X-axis. This selection creates a filled line chart showing profit by
-    fiscal month.
+1. Click anywhere on the blank canvas (or press the Esc key) so the Card that we just placed is no longer selected.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image302.png)
+1. Now, select **Employee** from **Dimension_Employee** and use it as the X-axis with **Profit** from **Fact_Sale** as the Y-axis to visualize profit by employee.
 
-20. On the **Data** pane, expand **Dimension_Stock_Item** and
-    drag **BuyingPackage** into the Legend field well. This selection
-    adds a line for each of the Buying Packages
+    ![01](./media/ex3-32.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image303.png)
+1. Click **File** and select **Save** to save the report.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image304.png)
+    ![01](./media/ex3-33.png)
 
-21. With the bar chart selected, select the **Clustered bar
-    chart** visual in the visualization pane. This selection converts
-    the column chart into a bar chart.
+1. Enter **Profit Reporting** as the report name, ensure **Data visualize** is selected, and click **Save**.
 
-22. On the **Data** pane, expand **Fact_Sales** and check the box next
-    to **Profit**. This selection creates a column chart and adds the
-    field to the Y-axis.
+    ![01](./media/ex3-34.png)
 
-23. Expand **Dimension_Employee** and check the box for **Employee**.
-    This selection adds the field to the Y-axis.
+1. Your report is successfully created with a profit summary card, monthly trend chart, and employee-wise profit visualization.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image305.png)
+    ![01](./media/ex3-35.png)
 
-24. Click anywhere on the blank canvas (or press the Esc key) so the
-    chart is no longer selected.
-
-25. From the ribbon, select **File** \> **Save**.
-
-    ![A screenshot of a graph AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image306.png)
-
-26. Enter the name of your report as **Profit Reporting**.
-    Select **Save**.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image307.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image308.png)
-
-27. On the left navigation, select ***Data Factory-XX***, as shown in
-    the image below.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image309.png)
-
-28. From the task flow, select the **Data visualize** task and click on
-    the paper clip icon to assign a previously created item.
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image310.png)
-
-29. Select the **Profit Reporting** item and then press **Select**.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image311.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image312.png)
 
 ## Task 6: Clean up resources
 
-1. From the top-right corner of the Fabric Workspace page,
-    select **Workspace settings**. If you do not see this option, select
-    the **...** option at the top right of the page and then
-    select **Workspace settings**.
+1. Navigate to **Workspaces (1)** and select the **Medallion-<inject key="DeploymentID" enableCopy="false"/> workspace (2)** to continue working with your data pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image313.png)
+    ![01](./media/ex1-46.png)
 
-2. Select **General** and then select **Remove this workspace**.
+1. From the top-right corner of the Fabric Workspace page,click **Workspace settings** to open the workspace configuration options.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image314.png)
+    ![01](./media/ex3-38.png)
 
-3. Click **Delete** to delete the workspace.
+   > **Note:** If you do not see this option, select the **...** option at the top right of the page and then select **Workspace settings**.
 
-    ![A white background with black text AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2001/media/image315.png)
+1. Select **General (1)** tab and **Remove this workspace (2)** to clean up the resources.
+
+    ![01](./media/ex3-48.png)
 
 **Summary**
 
