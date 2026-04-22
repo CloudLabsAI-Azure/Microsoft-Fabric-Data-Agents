@@ -134,13 +134,13 @@ incorrect.](./media/image9.png)
 incorrect.](./media/image10.png)
 
 3. On the **New lakehouse** dialog box,
-    enter **datafactory_lakehouse** in the **Name** field, click
-    on the **Create** button and open the new lakehouse.
+    enter **datafactory_lakehouse (1)** in the **Name** field, use default location **(2)** then uncheck the L**akehouse schemas** **(3)** click
+    on the **Create (4)** button and open the new lakehouse.
 
-	**Note**: Ensure to remove space before **datafactory_lakehouse**.
+	> **Note**: Ensure to remove space before **datafactory_lakehouse**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image11.png)
+incorrect.](./media/up1.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image12.png)
@@ -157,7 +157,7 @@ incorrect.](./media/image13.png)
     point without needing raw data files.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image14.png)
+incorrect.](./media/e1t2s5.png)
 
 6. The **Use a sample** dialog is displayed, select the **NYCTaxi**
     sample data tile.The NYCTaxi sample gives realistic,
@@ -180,15 +180,12 @@ incorrect.](./media/image18.png)
 
 5. On the **Upload files** pane that appears on the right side, select
     the **folder icon** under the **Files/** and then browse
-    to **C:\LabFiles\Labfiles** and then select
+    to **C:\LabFiles\Lab file** and then select
     the **NYC-Taxi-Green-Discounts** file and click on
     the **Upload** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image19.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image20.png)
+incorrect.](./media/e1t2s8.png)
 
 6. On the Upload folder pane, click **Upload**.
 
@@ -359,7 +356,7 @@ incorrect.](./media/image47.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image48.png)
 
-	**Note:** After promoting the headers, you can see a new step added to
+	> **Note:** After promoting the headers, you can see a new step added to
 	the **Applied steps** pane at the top of the dataflow editor to the data
 	types of your columns.
 
@@ -428,7 +425,7 @@ a single unified view for reporting and analytics.
     and on the **Home** tab, Select the **Combine** menu and
     choose **Merge queries**, then **Merge queries as new**.
 
-    ![](./media/image60.png)
+    ![](./media/e1t5s1.png)
 
 2. From the Merge query window, set the **Right table for
     merge** to **nyc-taxi-green-discounts**. On the top right corner,
@@ -440,9 +437,6 @@ a single unified view for reporting and analytics.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image61.png)
-
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image62.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image63.png)
@@ -474,13 +468,15 @@ incorrect.](./media/image65.png)
     select **Currency** for the **Data type**, and provide the following
     M expression for the **Custom column formula**:
 
-	**if [tolls_amount]  0 then [tolls_amount] * ( 1 - [Discount] ) else [tolls_amount]**
+    ```
+	if [tolls_amount] > 0 then [tolls_amount] * ( 1 - [Discount] ) else [tolls_amount]
+    ```
 
-	Then select **OK**.
+	- Then select **OK**.
 
-    ![](./media/image67.png)
+       ![](./media/image67.png)
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image68.png)
 
 6. Select the newly created **TotalAfterDiscount** column and then
@@ -751,10 +747,9 @@ incorrect.](./media/image101.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image103.png)
 
-15. On the left navigation select ***Data Factory-@lab.LabInstance.Id***, as shown in the
-    image below.
+15. On the left navigation select ***Data Factory-@lab.LabInstance.Id***, as shown in the image below.
 
-![A screenshot of a computer AI-generated content may be
+    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image104.png)
 
 **Optional: Link Parameters to Other Queries**
@@ -799,7 +794,7 @@ incorrect.](./media/image108.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image109.png)
 
-	**Note:** You can view the **Recent runs** directly within the
+	> **Note:** You can view the **Recent runs** directly within the
 	Dataflow editor—located just after the **Save and run** and **Check
 	validation** options. This allows you to monitor execution history
 	without leaving the Dataflow interface
@@ -873,7 +868,7 @@ incorrect.](./media/image118.png)
 
 	- nyc_taxi_green_discount
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image119.png)
 
 6. On the Choose data destination tab, search for the data source
@@ -1115,7 +1110,7 @@ incorrect.](./media/image156.png)
     - Enter your email address in the **To** section. If you want to use
     several addresses, use **;** to separate them.
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image157.png)
 
 	- For the **Subject**, select the field so that the **Add dynamic
@@ -1139,7 +1134,7 @@ incorrect.](./media/image158.png)
 	activity('Copy_data1').output.rowsCopied, ' ; ','Throughput ',
 	activity('Copy_data1').output.throughput)**
 
-	**Note:** Replace **Copy_data1** with the name of your own
+	> **Note:** Replace **Copy_data1** with the name of your own
 	pipeline copy activity (example: **Copy_2ph**).
 
     ![A screenshot of a computer AI-generated content may be
