@@ -481,7 +481,7 @@ incorrect.](./media/image65.png)
     ![](./media/image67.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image68.png)
+incorrect.](./media/image68.png)
 
 6. Select the newly created **TotalAfterDiscount** column and then
     select the **Add column** tab at the top of the editor window. On
@@ -888,38 +888,38 @@ incorrect.](./media/image120.png)
     warehouse for faster analytics.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image121.png)
+incorrect.](./media/image121.png)
 
 8. On the **Map to destination** tab, you can review the added tables
     and update the schema or table names. Once reviewed,
     select **Next** to continue.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image122.png)
+incorrect.](./media/image122.png)
 
 9. On the **Review + save** step, deselect the **Start data transfer
     immediately** option and then select **Save** to continue.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image123.png)
+incorrect.](./media/image123.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image124.png)
+incorrect.](./media/image124.png)
 
 10. Now that you've reviewed the configuration, from the **Home** tab,
     select the **Run** option to begin copying data from the lakehouse
     into the warehouse.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image125.png)
+    ![](./media/image125.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image126.png)
+incorrect.](./media/image126.png)
 
 11. You can monitor the copy job in the **Results** tab at the bottom to
     confirm that it has successfully completed.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image127.png)
+incorrect.](./media/image127.png)
 
 12. Hover over the copy job on the left side-rail and select
     the **X** to close it.
@@ -928,19 +928,19 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     image below.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image128.png)
+incorrect.](./media/image128.png)
 
 14. To verify the tables in the warehouse, navigate to the warehouse
     explorer and review the list of tables
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image129.png)
+incorrect.](./media/image129.png)
 
 15. On the left navigation, select **Data Factory-@lab.LabInstance.Id**, as shown in the
     image below.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image130.png)
+incorrect.](./media/image130.png)
 
 ## Task 2: Create parameterized pipeline template
 
@@ -952,13 +952,13 @@ datasets, environments, or scenarios.
     Select **Pipeline** from the new item flyout menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image131.png)
+incorrect.](./media/image131.png)
 
 2. Provide a Pipeline Name as **sample_pipeline** and then
     select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image132.png)
+incorrect.](./media/image132.png)
 
 ## Task 3: Use a Copy activity in the pipeline to load sample data to a data Lakehouse
 
@@ -969,7 +969,7 @@ transforming a sample data (Public Holidays dataset) into a lakehouse.
     data** and select the **Add to canvas** to copy the sample data.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image133.png)
+incorrect.](./media/image133.png)
 
 2. The properties section below provides access to the configurations
     for Source, Destination, Settings, and more. These configurations
@@ -977,56 +977,55 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     set up and aligned with specific requirements.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image134.png)
+incorrect.](./media/image134.png)
 
 3. Click the **Source** tab, open the **Connection** drop-down menu,
     and select **Browse all**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image135.png)
+incorrect.](./media/image135.png)
 
 4. You will be landed on the **Copy data** page. On the **Choose data
     source** tab, select **Sample data** section and then select
     the **Public Holidays** data source type.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image136.png)
+incorrect.](./media/image136.png)
 
 5. A preview of the data source will now be displayed to verify the
     correct selection and understand the data structure. After reviewing
     the preview, select **OK** to proceed.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image137.png)
+incorrect.](./media/image137.png)
 
 6. Select the **Destination** tab
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image138.png)
+incorrect.](./media/image138.png)
 
 7. In the **Destination** tab, open the **Connection** drop-down menu,
     and select **Browse all**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image139.png)
+incorrect.](./media/image139.png)
 
 8. Select the **datafactory_lakehouse** lakehouse item as the data
     destination from the **OneLake catalog list**. It determines the
     storage location for the data
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image140.png)
+incorrect.](./media/image140.png)
 
 9. On the **Destination** tab of the **Copy data** activity, click
-    **+New** to create a new destination table for loading the data.   ![A
-    screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image141.png)
+    **+New** to create a new destination table for loading the data.
+   ![](./media/image141.png)
 
-10. Enter the table name as **holidaydatacontainer** and click on
+11. Enter the table name as **holidaydatacontainer** and click on
     **Create**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image142.png)
+incorrect.](./media/image142.png)
 
 **Task 5: Run and view the results of your Copy activity.**
 
@@ -1035,51 +1034,51 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     from the source to the destination.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image143.png)
+incorrect.](./media/image143.png)
 
 2. On the **Save and run?** dialog box, click **Save and run** to
     execute these activities. This activity will take less than 1 min.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image144.png)
+incorrect.](./media/image144.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image145.png)
+incorrect.](./media/image145.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image146.png)
+incorrect.](./media/image146.png)
 
 3. You can monitor the run and check the results on the **Output** tab
     below the pipeline canvas. Select the **activity name** to view the
     run details.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image147.png)
+incorrect.](./media/image147.png)
 
 4. The run details show rows Data read and Data written.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image148.png)
+incorrect.](./media/image148.png)
 
 5. Expand the **Duration breakdown** section to see the duration of
     each stage of the Copy activity. After reviewing the copy details,
     select **Close**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image149.png)
+incorrect.](./media/image149.png)
 
 3. Select the **Activities** tab in the pipeline editor and find
     the **Office Outlook** activity.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image150.png)
+incorrect.](./media/image150.png)
 
 4. Select and drag the **On success path** (a green checkbox on the top
     right side of the activity in the pipeline canvas) from your Copy
     activity to your new Office 365 Outlook activity.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image151.png)
+incorrect.](./media/image151.png)
 
 5. Select the Office 365 Outlook activity from the pipeline canvas,
     then select the **Settings** tab of the property area below the
@@ -1087,27 +1086,27 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     select **Browse all.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image152.png)
+incorrect.](./media/image152.png)
 
 6. On ‘choose a data source’ window, select **Office 365 Email**
     source.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image153.png)
+incorrect.](./media/image153.png)
 
 7. Sign in with the account from which you want to send the email. You
     can use the existing connection with the already signed in account.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image154.png)
+incorrect.](./media/image154.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image155.png)
+incorrect.](./media/image155.png)
 
 8. Click on **Connect** to proceed.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image156.png)
+incorrect.](./media/image156.png)
 
 9. Select the Office 365 Outlook activity from the pipeline canvas, on
     the **Settings** tab of the property area below the canvas to
@@ -1117,7 +1116,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     several addresses, use **;** to separate them.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image157.png)
+incorrect.](./media/image157.png)
 
 	- For the **Subject**, select the field so that the **Add dynamic
 	  content** option appears, and then select it to display the pipeline
@@ -1129,7 +1128,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	**@concat('DI in an Hour Pipeline Succeeded with Pipeline Run Id',pipeline().RunId)**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image158.png)
+incorrect.](./media/image158.png)
 
 11. For the **Body**, select the field again and choose the **View in
     expression builder** option when it appears below the text area. Add
@@ -1144,29 +1143,29 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	pipeline copy activity (example: **Copy_2ph**).
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image159.png)
+incorrect.](./media/image159.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image160.png)
+incorrect.](./media/image160.png)
 
 6. Finally select the **Home** tab at the top of the pipeline editor
     and choose **Run**. Then select **Save and run** on the confirmation
     dialog to execute these activities.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image161.png)
+incorrect.](./media/image161.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image162.png)
+incorrect.](./media/image162.png)
 
 12. After the pipeline runs successfully, check your email to find the
     confirmation email sent from the pipeline.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image163.png)
+incorrect.](./media/image163.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image164.png)
+incorrect.](./media/image164.png)
 
 ## Task 4: Schedule pipeline execution
 
@@ -1177,7 +1176,7 @@ runs help ensure data freshness without manual effort
     select **Schedule**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image165.png)
+incorrect.](./media/image165.png)
 
 2. Select **+ Add schedule** and configure the schedule as required
     then select **Save** and close the **Schedule** panel.
@@ -1186,13 +1185,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	daily at 8:00 PM until the end of the year.
 
     ![A screenshot of a schedule AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image166.png)
+incorrect.](./media/image166.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image167.png)
+incorrect.](./media/image167.png)
 
     ![A screenshot of a schedule AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image168.png)
+incorrect.](./media/image168.png)
 
 ## Task 5: Add a Dataflow activity to the pipeline
 
@@ -1205,12 +1204,12 @@ data processing steps are executed in sequence.
     select the **+** button to insert a new activity.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image169.png)
+incorrect.](./media/image169.png)
 
 2. Choose **Dataflow** from the menu that appears.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image170.png)
+incorrect.](./media/image170.png)
 
 3. The newly created Dataflow activity is inserted between the Copy
     activity and the Office 365 Outlook activity, and selected
@@ -1219,27 +1218,27 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     your dataflow created.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image171.png)
+incorrect.](./media/image171.png)
 
 13. Select the **Home** tab at the top of the pipeline editor and
     choose **Run**. Then select **Save and run** again on the
     confirmation dialog to execute these activities.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image172.png)
+incorrect.](./media/image172.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image173.png)
+incorrect.](./media/image173.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image174.png)
+incorrect.](./media/image174.png)
 
 14. Select your workspace,
     the [**Data-Factory@lab.LabInstance.Id**](mailto:Data-Factory@lab.LabInstance.Id) from
     the left-hand navigation menu. It opens the workspace item view.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image175.png)
+incorrect.](./media/image175.png)
 
 ## Task 6: Monitor data pipeline runs
 
@@ -1254,120 +1253,120 @@ In this task, you monitor the data pipeline runs.
     side of your screen with all your recent runs and run statuses.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image176.png)
+incorrect.](./media/image176.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image177.png)
+incorrect.](./media/image177.png)
 
 3. Select **Go to monitoring hub** from the prior screenshot to view
     more details and filter results. Use the filter to find specific
     data pipeline runs based on several criteria.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image178.png)
+incorrect.](./media/image178.png)
 
-    ![Screenshot of filter options.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image179.png)
+    ![Screenshot of filter options.](./media/image179.png)
 
 4. Select one of your pipelines runs to view detailed information.
     You're able to view what your pipeline looks like and view more
     properties like Run ID or errors if your pipeline run failed.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image180.png)
+incorrect.](./media/image180.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image181.png)
+incorrect.](./media/image181.png)
 
 5. If you have greater than 2000 activity runs in your pipelines,
     select **Load more** to see more results in the same monitoring
     page.
 
     ![Screenshot of activity runs with a load more text box
- highlighted.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image182.png)
+ highlighted.](./media/image182.png)
 
     ![Screenshot of all activity run details
- loaded.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image183.png)
+ loaded.](./media/image183.png)
 
 6. Use the **Filter** to filter by activity status or **Column
     Options** to edit the columns viewed in the monitoring view.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image184.png)
+incorrect.](./media/image184.png)
 
-    ![Screenshot of activity run filter options.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image185.png)
+    ![Screenshot of activity run filter options.](./media/image185.png)
 
 15. Select the column option and select the columns and click on
     **Apply** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image186.png)
+incorrect.](./media/image186.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image187.png)
+incorrect.](./media/image187.png)
 
 16. Select the **sample_pipeline**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image188.png)
+incorrect.](./media/image188.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image189.png)
+incorrect.](./media/image189.png)
 
 17. You can also search for an activity name, activity type, or activity
     run ID with the **Filter by keyword** box.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image190.png)
+incorrect.](./media/image190.png)
 
-    ![Screenshot of keyword filter box.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image191.png)
+    ![Screenshot of keyword filter box.](./media/image191.png)
 
-    ![Screenshot of keyword filtering results.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image192.png)
+    ![Screenshot of keyword filtering results.](./media/image192.png)
 
 7. If you want to export your monitoring data, select **Export to
     CSV**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image193.png)
+incorrect.](./media/image193.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image194.png)
+incorrect.](./media/image194.png)
 
 8. To find additional information on your pipeline
     runs **Input** and **Output**, select the input or output links to
     the right of the relevant row in the Activity Runs.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image195.png)
+incorrect.](./media/image195.png)
 
 9. You can select **Update pipeline** to make changes to your pipeline
     from this screen. This selection takes you back to the pipeline
     canvas.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image196.png)
+incorrect.](./media/image196.png)
 
 10. You can also **Rerun** your data pipeline. You can choose to rerun
     the entire pipeline or only rerun the pipeline from the failed
     activity.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image197.png)
+incorrect.](./media/image197.png)
 
 18. Select the **Rerun entire data pipeline**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image198.png)
+incorrect.](./media/image198.png)
 
 19. Select **Ok**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image199.png)
+incorrect.](./media/image199.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image200.png)
+incorrect.](./media/image200.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image201.png)
+incorrect.](./media/image201.png)
 
 # Exercise 3: Implementing CI/CD and ALM Solution Architectures for Dataflow Gen2 in Microsoft Fabric
 
@@ -1388,52 +1387,52 @@ IDs, lakehouse IDs, filter values) instead of static values.
     the **datafactory_lakehouse** lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image202.png)
+incorrect.](./media/image202.png)
 
 2. Copy the **workspace ID** and the **lakehouse object ID** in the URL
     and save it in the Notepad.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image203.png)
+incorrect.](./media/image203.png)
 
 3. On the left navigation, select **Data Factory-@lab.LabInstance.Id**, as shown in the
     image below.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image204.png)
+incorrect.](./media/image204.png)
 
 3. Repeat the preceding steps for the warehouseID.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image205.png)
+incorrect.](./media/image205.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image206.png)
+incorrect.](./media/image206.png)
 
 4. Navigate and click
     on **Data_Factory@lab.LabInstance.Id** 
     dev workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image207.png)
+incorrect.](./media/image207.png)
 
 5. In the Fabric Dev workspace, select **+ New item**, search for
     **Variable library**, and select the **Variable Library**
     tile.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image208.png)
+incorrect.](./media/image208.png)
 
 6. Name the library **dataflow-variables**, and then
     select **Create**.
 
     ![A screenshot of a library AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image209.png)
+incorrect.](./media/image209.png)
 
 7. Select **New variable**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image210.png)
+incorrect.](./media/image210.png)
 
 8. Create the following variables:
     |   |   |
@@ -1446,19 +1445,19 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image211.png)
+incorrect.](./media/image211.png)
 
 9. Select **Save** \ **Agree**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image212.png)
+incorrect.](./media/image212.png)
 
 10. Navigate and click
     on **Data_Factory@lab.LabInstance.Id** Workspace
     on the left navigation
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image213.png)
+incorrect.](./media/image213.png)
 
 11. Create a new Dataflow Gen2 by clicking on the **+New item** button
     in the navigation bar. From the list of available items select
@@ -1477,7 +1476,7 @@ incorrect.](./media/var1.png)
     the **More...** option.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image216.png)
+incorrect.](./media/image216.png)
 
 14. Within the **Get data** explorer's search bar,
     type **datafactory_lakehouse** to locate the silver lakehouse
@@ -1485,28 +1484,28 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     catalog's returned results.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image217.png)
+incorrect.](./media/image217.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image218.png)
+incorrect.](./media/image218.png)
 
 15. From the Get data table navigator, select the table
     **holidaydatacontainer** and click on **Create**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image219.png)
+incorrect.](./media/image219.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image220.png)
+incorrect.](./media/image220.png)
 
 16. From the **Home** tab, select **Get data** and then the **Blank
     query** option.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image221.png)
+incorrect.](./media/image221.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image222.png)
+incorrect.](./media/image222.png)
 
 17. Once your query is created and visible in the dataflow, rename it to
     **WorkspaceId** and update the formula in the **Source** step with
@@ -1520,26 +1519,26 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ```
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image223.png)
+incorrect.](./media/image223.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image224.png)
+incorrect.](./media/image224.png)
 
 18. In the **Power Query** editor, right-click the existing query (for
     example, **Query**) from the **Queries** pane, select **Rename**,
     and change its name to **WorkspaceId**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image225.png)
+incorrect.](./media/image225.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image226.png)
+incorrect.](./media/image226.png)
 
 19. From the **Home** tab, select **Get data** and then the **Blank
     query** option.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image227.png)
+incorrect.](./media/image227.png)
 
 20. Once your query is created and visible in the dataflow, rename it to
     **LakehouseID** and update the formula in the **Source** step with
@@ -1555,20 +1554,20 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ```
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image228.png)
+incorrect.](./media/image228.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image229.png)
+incorrect.](./media/image229.png)
 
 21. In the **Power Query** editor, right-click the existing query (for
     example, **Query**) from the **Queries** pane, select **Rename**,
     and change its name to **LakehouseID**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image230.png)
+incorrect.](./media/image230.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image231.png)
+incorrect.](./media/image231.png)
 
 22. Select the **holidaydatacontainer** table. Once your query is
     created and visible in the Dataflow, navigate to the 'Applied Steps'
@@ -1576,19 +1575,19 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     Query script and modify the formula as required.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image232.png)
+incorrect.](./media/image232.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image233.png)
+    ![](./media/image233.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image234.png)
+incorrect.](./media/image234.png)
 
 23. Once both queries are created, update the query script to reference
     them instead of using hardcoded values by manually replacing the
     original values in the formula bar with the **WorkspaceId** and
     **LakehouseID** query references.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image235.png)
+    ![](./media/image235.png)
 
 	And you notice that it still correctly evaluates the data preview in
 	the Dataflow editor with the direct references created in the diagram
@@ -1598,7 +1597,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     query** option.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image236.png)
+incorrect.](./media/image236.png)
 
 25. Once your query is created and visible in the dataflow, rename it to
     **Region** and update the formula in the **Source** step with the
@@ -1612,112 +1611,112 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ```
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image237.png)
+incorrect.](./media/image237.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image238.png)
+incorrect.](./media/image238.png)
 
 26. In the **Power Query** editor, right-click the existing query (for
     example, **Query**) from the **Queries** pane, select **Rename**,
     and change its name to **Region**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image239.png)
+    ![](./media/image239.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image240.png)
+incorrect.](./media/image240.png)
 
 27. On the Home tab, go to the **holidaydatacontainer** table, and
     select **CountryOrRegion** column
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image241.png)
+incorrect.](./media/image241.png)
 
 28. Select the **CountryOrRegion** column sort and filter dropdown menu,
     then select **Text filters**, and choose the **Equals...** 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image242.png)
+incorrect.](./media/image242.png)
 
 29. In the **Filter rows** dialog, click the pencil icon next to the
     value field, then select **Select a query** to dynamically filter
     rows based on a predefined parameter.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image243.png)
+incorrect.](./media/image243.png)
 
 30. Select the **Region** and click on **OK** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image244.png)
+incorrect.](./media/image244.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image245.png)
+incorrect.](./media/image245.png)
 
 31. In the Home window, select **Save** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image246.png)
+incorrect.](./media/image246.png)
 
 32. In the Home window, select **Check validation Dataflow**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image247.png)
+incorrect.](./media/image247.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image248.png)
+    ![](./media/image248.png)
 
 33. Once the query script has been updated, navigate to the **'Data
     destination'** pane on the right side, click the '**+'** icon, and
     select '**Warehouse**' as the destination to load the transformed
     data
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image249.png)
+    ![](./media/image249.png)
 
 34. On the **Connect to data destination** dialog, your connection
     should already be selected. Select **Next** to continue.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image250.png)
+incorrect.](./media/image250.png)
 
 35. On the **Choose destination target** dialog, browse to the Warehouse
     where you wish to load the data and name the new table , then
     select **Next** again.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image251.png)
+incorrect.](./media/image251.png)
 
 36. Click on **Save settings**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image252.png)
+incorrect.](./media/image252.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image253.png)
+incorrect.](./media/image253.png)
 
 37. In the Home window, select **Save & run** and click on **Save &
     run** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image254.png)
+incorrect.](./media/image254.png)
 
 38. In the left-sided navigation menu, navigate and click on ***Data
     Factory-@lab.LabInstance.Id***, as shown in the below image
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image255.png)
+incorrect.](./media/image255.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image256.png)
+incorrect.](./media/image256.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image257.png)
+incorrect.](./media/image257.png)
 
 39. Select the Warehouse
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image258.png)
+incorrect.](./media/image258.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image259.png)
+incorrect.](./media/image259.png)
 
 # Exercise 4: Enable GitHub Integration for Source Control and CI/CD in Microsoft Fabric
 
@@ -1739,14 +1738,14 @@ credentials that you have used in this lab.
     further.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image260.png)
+incorrect.](./media/image260.png)
 
 2. Now, to create a new GitHub account, enter
     the **email**, **password** and a unique **username** and click
     on **Continue** button.
 
     ![A screenshot of a login box AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image261.png)
+incorrect.](./media/image261.png)
 
 3. Start the **verification** **puzzle** by following the instruction
     on the screen. Click on **Submit.**
@@ -1754,18 +1753,18 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 4. Enter the **verification** **code** you’ve received on your mail.
 
     ![A screenshot of a email form AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image262.png)
+incorrect.](./media/image262.png)
 
 5. Now, with your credentials sign-in to GitHub and click on **Sign
     in.**
 
     ![A screenshot of a login page AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image263.png)
+incorrect.](./media/image263.png)
 
 6. You have successfully created a new account on GitHub.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image264.png)
+incorrect.](./media/image264.png)
 
 ## Task 1: Create a Repository in GitHub
 
@@ -1773,7 +1772,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     click on **Create Repository** under create your first project.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image265.png)
+incorrect.](./media/image265.png)
 
 2. After clicking **new repository** option, fill up the required
     fields like **Repository name**, **Choose the visibility, Add a
@@ -1781,17 +1780,17 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     Repository** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image266.png)
+incorrect.](./media/image266.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image267.png)
+incorrect.](./media/image267.png)
 
 3. After selecting **Create repository**, you will be directed to
     **CopyJobDev** page. Right now, the only file we have is
     a **readme** file.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image268.png)
+incorrect.](./media/image268.png)
 
 4. To create a **new folder** in GitHub, you must first create a new
     file and add that file to your new folder at the same time. Do this
@@ -1801,7 +1800,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     first option labelled "**Create new file."**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image269.png)
+incorrect.](./media/image269.png)
 
 5. To create a folder, provide a name to
     this **folder** **(Copyjob-Test)** as follows. The folder name will
@@ -1810,14 +1809,14 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     Type the **folder name followed by /** and hit Enter.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image270.png)
+incorrect.](./media/image270.png)
 
 6. You'll need to **commit** your changes. Give a commit message
     and **select commit directly to the main branch** option. Click
     on **Commit changes**.
 
     ![A screenshot of a chat box AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image271.png)
+incorrect.](./media/image271.png)
 
 ## Task 2: Generate a fine-grained token with *read* and *write* permissions for Contents, under repository permissions
 
@@ -1825,31 +1824,31 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     select **settings** option.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image272.png)
+incorrect.](./media/image272.png)
 
 2. Navigate to **Developer settings**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image273.png)
+incorrect.](./media/image273.png)
 
 3. Select **Personal access tokens** and Choose **Fine-grained
     tokens**. Click on **Generate new token.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image274.png)
+incorrect.](./media/image274.png)
 
 4. Provide a descriptive **name** and optional **description** for the
     token. Set an **expiration** **date** for the token. Choose
     the **resource owner** as your GitHub username.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image275.png)
+incorrect.](./media/image275.png)
 
 5. Choose the **specific repository** that you have created
     as **Copyjob-Dev** you want the token to access.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image276.png)
+incorrect.](./media/image276.png)
 
 6. **Specify Access Permissions:**
 
@@ -1859,24 +1858,24 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     - **Other Permissions:** You can also configure other permissions as
       needed, such as "Issues" or "Pull Requests".
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image277.png)
+    ![](./media/image277.png)
 
     ![A red rectangle with text AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image278.png)
+incorrect.](./media/image278.png)
 
 7. Click **Generate token.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image279.png)
+incorrect.](./media/image279.png)
 
     ![A screenshot of a computer error AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image280.png)
+incorrect.](./media/image280.png)
 
     **Important:** Copy and securely store the generated token, as it
     will not be displayed again.
 
     ![A screenshot of a chat AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image281.png)
+    incorrect.](./media/image281.png)
 
 ## Task 3: Connect to a Git repository
 
@@ -1888,14 +1887,14 @@ connect to a Git repository, as described here.
     settings**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image282.png)
+incorrect.](./media/image282.png)
 
 2. Select **Git integration**. Select your Git provider. Currently,
     Fabric only supports *Azure DevOps* or *GitHub*. If you use GitHub,
     you need to select **Add account** to connect your GitHub account.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image283.png)
+incorrect.](./media/image283.png)
 
 3. In Add **GitHub account page**, provide a **display name** for your
     account. In **personal access token**, paste the
@@ -1904,13 +1903,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     Click on **Add**.
 
     ![A screenshot of a login form AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image284.png)
+incorrect.](./media/image284.png)
 
 4. After you sign in, select **Connect** to allow Fabric to access your
     GitHub account.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image285.png)
+incorrect.](./media/image285.png)
 
 ## Task 4: Connect to a workspace
 
@@ -1928,13 +1927,13 @@ workspace, as described here.
 	Select **Connect and sync**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image286.png)
+incorrect.](./media/image286.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image287.png)
+incorrect.](./media/image287.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image288.png)
+incorrect.](./media/image288.png)
 
 2. After you connect, the Workspace displays information about **source
     control** that allows users to view the connected branch, the status
@@ -1944,7 +1943,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     to ensure all items have been pushed successfully
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image289.png)
+incorrect.](./media/image289.png)
 
 # Exercise 5: Setting Up Azure DevOps and Git Repository (Optional) 
 
@@ -1960,41 +1959,41 @@ deployment workflows.
     the following URL: **https://dev.azure.com/** and navigate to the project **DataFactory-@lab.LabInstance.Id**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image298.png)
+incorrect.](./media/image298.png)
 
 10. To create a new repository in Azure DevOps, navigate to **Repos \
     Files \ New repository dropdown \ New repository**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image299.png)
+    ![](./media/image299.png)
 
 5. On the **Crate a repository** tab, enter the Repository name as
     **DevOps-git** and select **Create.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image300.png)
+incorrect.](./media/image300.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image301.png)
+incorrect.](./media/image301.png)
 
 6. On the left navigation, navigate to **Repos** section, then click
     on **Branches**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image302.png)
+incorrect.](./media/image302.png)
 
 7. Click on **New branch** from the top-right corner.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image303.png)
+incorrect.](./media/image303.png)
 
 8. On the **Create a branch** window, set the name to
     **Datafactory-devbranch** and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image304.png)
+incorrect.](./media/image304.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image305.png)
+incorrect.](./media/image305.png)
 
 ## Task 2: Integrating the Fabric feature workspace with the Azure Devops Repo
 
@@ -2003,7 +2002,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     *Workspace settings*.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image306.png)
+incorrect.](./media/image306.png)
 
 2. Select **Git integration**. Select your **Git provider**. Currently,
     Fabric only supports *Azure DevOps* or *GitHub*. Select **Azure
@@ -2011,28 +2010,28 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     account.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image307.png)
+incorrect.](./media/image307.png)
 
 3. Select your **Organization, Project, Git repository, Branch** and
     **Git folder**. Click on **Connect and Sync**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image308.png)
+incorrect.](./media/image308.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image309.png)
+incorrect.](./media/image309.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image310.png)
+incorrect.](./media/image310.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image311.png)
+incorrect.](./media/image311.png)
 
 4. For us to submit a pull request, we need to navigate to the **Source
     control** pane and then click on **View repository**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image312.png)
+incorrect.](./media/image312.png)
 
 ## Task 3: Merge Fabric Data Factory Changes to Main Branch
 
@@ -2041,39 +2040,39 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     begin merging your Fabric Data Factory changes into the main branch.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image313.png)
+incorrect.](./media/image313.png)
 
 2. Provide **a Title and Description** for the pull request summarizing
     your changes (e.g., 'Committing 1 item from workspace'), then click
     on 'Create' to initiate the merge into the main branch
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image314.png)
+incorrect.](./media/image314.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image315.png)
+incorrect.](./media/image315.png)
 
 3. Select **Complete**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image316.png)
+incorrect.](./media/image316.png)
 
 4. In the **Complete pull request** page, ensure that 'Complete
     associated work items after merging' is selected, then click on
     'Complete merge' to finalize the integration into the main branch.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image317.png)
+incorrect.](./media/image317.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image318.png)
+incorrect.](./media/image318.png)
 
 5. Select **Branches** to see the merged branch.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image319.png)
+incorrect.](./media/image319.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image320.png)
+    ![](./media/image320.png)
 
 # Exercise 6: Get Started with deployment pipelines for Git
 
@@ -2098,74 +2097,74 @@ Before you get started, be sure to set up the following prerequisites:
     select **View** **deployment pipeline**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image321.png)
+incorrect.](./media/image321.png)
 
 2. Name the pipeline **Data Factory-Pipeline**, and then
     select **Next**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image322.png)
+incorrect.](./media/image322.png)
 
 3. On the deployment pipeline, select **Create and continue**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image323.png)
+incorrect.](./media/image323.png)
 
 4. For the **Development** stage:In the dropdown list, select **Data
     Factory_@lab.LabInstance.Id** for the workspace. Then select the **Assign** check
     mark.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image324.png)
+incorrect.](./media/image324.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image325.png)
+incorrect.](./media/image325.png)
 
 5. Select the **Test** stage, choose all the items, and click
     **Deploy**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image326.png)
+incorrect.](./media/image326.png)
 
 6. Click on **Deploy** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image327.png)
+incorrect.](./media/image327.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image328.png)
+incorrect.](./media/image328.png)
 
 7. The **Test workspace** has been successfully created, and the data
     has been deployed
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image329.png)
+incorrect.](./media/image329.png)
 
 8. Select the **Production** stage, choose **all the items**, and click
     the **Deploy** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image330.png)
+incorrect.](./media/image330.png)
 
 9. Click on **Deploy** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image331.png)
+incorrect.](./media/image331.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image332.png)
+incorrect.](./media/image332.png)
 
 10. The **Production workspace** has been successfully created, and the
     data has been deployed
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image333.png)
+incorrect.](./media/image333.png)
 
 11. To review the Test and Production workspaces, click on the workspace
     in the left navigation pane.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image334.png)
+incorrect.](./media/image334.png)
 
 ## Task 2: Create the Pipeline_Deploy pipeline and declare variables
 
@@ -2173,27 +2172,27 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     on **Data_Factory@lab.LabInstance.Id** dev workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image335.png)
+incorrect.](./media/image335.png)
 
 2. On the **Fabric** page, navigate to +**New item** section and then
     filter by, and select, **Pipeline** to create pipeline.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image336.png)
+incorrect.](./media/image336.png)
 
 3. Enter the name **data_movement_pipeline**, and then
     select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image337.png)
+incorrect.](./media/image337.png)
 
 4. Select **Copy data** \ **Add to canvas**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image338.png)
+incorrect.](./media/image338.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image339.png)
+incorrect.](./media/image339.png)
 
 ## Task 3: Get the workspace IDs and object IDs for lakehouses
 
@@ -2204,41 +2203,41 @@ library.
     the **datafactory_lakehouse** lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image340.png)
+incorrect.](./media/image340.png)
 
 2. Copy the **workspace ID** and the **lakehouse object ID** in the URL
     and save it in the Notepad.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image203.png)
+incorrect.](./media/image203.png)
 
 3. Copy the workspace ID and the lakehouse object ID in the URL and
     save it in the Notepad.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image341.png)
+incorrect.](./media/image341.png)
 
 5. Repeat the preceding steps for the **Data Factory \[Test**\] and
     **Data Factory \[Production\]** workspaces Id’s, including their
     lakehouse IDs.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image342.png)
+incorrect.](./media/image342.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image343.png)
+incorrect.](./media/image343.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image344.png)
+incorrect.](./media/image344.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image345.png)
+incorrect.](./media/image345.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image346.png)
+incorrect.](./media/image346.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image347.png)
+incorrect.](./media/image347.png)
 
 ## Task 4: Create a variable library with variables
 
@@ -2249,24 +2248,24 @@ Now, create the variable library
     dev workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image348.png)
+incorrect.](./media/image348.png)
 
 2. In the Fabric Dev workspace, select **+ New item**, search for
     **Variable library**, and select the **Variable Library**
     tile.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image349.png)
+incorrect.](./media/image349.png)
 
 3. Name the library **WS variables**, and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image350.png)
+incorrect.](./media/image350.png)
 
 4. Select **New variable**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image351.png)
+incorrect.](./media/image351.png)
 
 5. Create the following variables:
 
@@ -2282,18 +2281,18 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image352.png)
+incorrect.](./media/image352.png)
 
 6. On the **WS Variables** variable library page, select **Add value
     set**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image353.png)
+incorrect.](./media/image353.png)
 
 7. Enter **Prod VS** for the name, and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image354.png)
+incorrect.](./media/image354.png)
 
 8. Create the following variables:
 
@@ -2309,17 +2308,17 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image355.png)
+incorrect.](./media/image355.png)
 
 9. Select **Save** \ **Agree**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image356.png)
+incorrect.](./media/image356.png)
 
 10. Select the **data_movement_pipeline.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image357.png)
+incorrect.](./media/image357.png)
 
 ## Task 5: Create the Pipeline_Deploy pipeline and declare variables
 
@@ -2328,37 +2327,37 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     dev workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image358.png)
+incorrect.](./media/image358.png)
 
 2. Select **data_movement_pipeline**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image359.png)
+incorrect.](./media/image359.png)
 
 3. Select the canvas so that the focus is off **Copy data**.
 
 4. Select **Library variables (preview)**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image360.png)
+incorrect.](./media/image360.png)
 
 5. Select **Source_Lakehouse_ID** variable and click on **Select
     variable.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image361.png)
+incorrect.](../media/image361.png)
 
 6. Click on **+ New** and repeat the above step to select all the
     variables.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image362.png)
+incorrect.](./media/image362.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image363.png)
+incorrect.](./media/image363.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image364.png)
+incorrect.](./media/image364.png)
 
 ## Task 6: Configure the source connection for the Pipeline_Deploy pipeline
 
@@ -2369,7 +2368,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     **Browse all**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image365.png)
+incorrect.](./media/image365.png)
 
 3. Configure **SourceLH**:
 
@@ -2384,13 +2383,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
         Select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image366.png)
+incorrect.](./media/image366.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image367.png)
+incorrect.](./media/image367.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image368.png)
+incorrect.](./media/image368.png)
 
 4. Configure Source_Workspace_ID:
 
@@ -2406,13 +2405,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
         Select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image369.png)
+incorrect.](./media/image369.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image370.png)
+incorrect.](./media/image370.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image371.png)
+incorrect.](./media/image371.png)
 
 5. Configure **SourceTableName**:
 
@@ -2428,20 +2427,20 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
         Select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image372.png)
+incorrect.](./media/image372.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image373.png)
+incorrect.](./media/image373.png)
 
 7. Now that the source connection is set up, you can test it.
     Select **Preview data**, and then select **OK** on the flyout. After
     the data is populated, you can close the data preview.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image374.png)
+incorrect.](./media/image374.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image375.png)
+incorrect.](./media/image375.png)
 
 ## Task 7: Configure the destination connection for the Pipeline_Deploy pipeline
 
@@ -2454,7 +2453,7 @@ pipeline.
 2. Select **Destination**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image376.png)
+incorrect.](./media/image376.png)
 
 3. Configure **Destination**:
 
@@ -2469,16 +2468,16 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
         Select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image377.png)
+incorrect.](./media/image377.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image378.png)
+incorrect.](./media/image378.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image379.png)
+incorrect.](./media/image379.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image380.png)
+incorrect.](./media/image380.png)
 
 8. Configure **DestinationWSID**:
 
@@ -2494,10 +2493,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 		Select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image381.png)
+incorrect.](./media/image381.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image382.png)
+incorrect.](./media/image382.png)
 
 9. Configure **DestinationTableName**:
 
@@ -2513,54 +2512,54 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
         Select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image383.png)
+incorrect.](./media/image383.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image384.png)
+incorrect.](./media/image384.png)
 
 10. Select **Validate.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image385.png)
+incorrect.](./media/image385.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image386.png)
+incorrect.](./media/image386.png)
 
 11. Now that the destination connection is set up, save the pipeline and
     select **Run**. Confirm that it successfully runs.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image387.png)
+incorrect.](./media/image387.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image388.png)
+incorrect.](./media/image388.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image389.png)
+incorrect.](./media/image389.png)
 
 12. In the left navigation pane, select *Workspaces*, and then choose
     ***Data Factory-@lab.LabInstance.Id\[Test\]*.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image390.png)
+incorrect.](./media/image390.png)
 
 13. Switch to the **datafactory_lakehouse** lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image391.png)
+incorrect.](./media/image391.png)
 
 6. To validate the created tables, click and select refresh on
     the **Tables** in the **Explorer** panel until all the tables appear
     in the list.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image392.png)
+incorrect.](./media/image392.png)
 
 7. Confirm that the **TestCopiedData** table appears under **test
     lakehouse**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image393.png)
+incorrect.](./media/image393.png)
 
 ## Task 8: Set the variable library's active set for each stage
 
@@ -2568,46 +2567,46 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ***WS_variables***, as shown in the below image.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image394.png)
+incorrect.](./media/image394.png)
 
 2. Select the Prod-VS ellipsis (**...**), and then select **Set as
     active**. Select the **Set as Active** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image395.png)
+incorrect.](./media/image395.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image396.png)
+incorrect.](./media/image396.png)
 
 3. Select **Save** \ **Agree**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image397.png)
+incorrect.](./media/image397.png)
 
 4. On the top navigation menu, navigate and click on
     ***data_movement_pipeline***, as shown in the below image
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image398.png)
+incorrect.](./media/image398.png)
 
 5. On the Copy Activity page, review the variables for both the Source
     and Destination
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image399.png)
+incorrect.](./media/image399.png)
 
 6. Then, click the **Run** button to execute the activity.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image400.png)
+incorrect.](./media/image400.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image401.png)
+incorrect.](./media/image401.png)
 
 7. Pipeline successfully executed
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image402.png)
+incorrect.](./media/image402.png)
 
 8. To verify the data in the Production lakehouse.
 
@@ -2616,42 +2615,42 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     production workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image403.png)
+incorrect.](./media/image403.png)
 
 10. Select the production lakehouse
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image404.png)
+incorrect.](./media/image404.png)
 
 11. To validate the created tables, click and select refresh on
     the **Tables** in the **Explorer** panel until all the tables appear
     in the list.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image405.png)
+incorrect.](./media/image405.png)
 
 12. Confirm that the **ProdCopiedData** table appears under
     **datafactory_lakehouse**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image406.png)
+incorrect.](./media/image406.png)
 
 13. Navigate and click
     on **Data_Factory@lab.LabInstance.Id** 
     dev workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image407.png)
+incorrect.](./media/image407.png)
 
 14. In **Source control**, select the required items (such as the
     pipeline and workspace variables), enter an optional commit message,
     and click **Commit** to save the changes.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image408.png)
+incorrect.](./media/image408.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image409.png)
+incorrect.](./media/image409.png)
 
 ## Task 9: Deploy content from one stage to another
 
@@ -2659,10 +2658,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     select **View** **deployment pipeline**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image410.png)
+incorrect.](./media/image410.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image411.png)
+incorrect.](./media/image411.png)
 
 3. You can review the **deployment history** to see the last time
     content was deployed to each stage. To examine the differences
@@ -2670,10 +2669,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     content in different deployment stages. 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image412.png)
+incorrect.](./media/image412.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image413.png)
+incorrect.](./media/image413.png)
 
 ## Task 10: Clean up resources
 
@@ -2681,40 +2680,40 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ***Data Factory-@lab.LabInstance.Id*.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image414.png)
+incorrect.](./media/image414.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image415.png)
+incorrect.](./media/image415.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image416.png)
+incorrect.](./media/image416.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image417.png)
+incorrect.](./media/image417.png)
 
     ![A black text on a white background AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image418.png)
+incorrect.](./media/image418.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image419.png)
+incorrect.](./media/image419.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image420.png)
+incorrect.](./media/image420.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image421.png)
+incorrect.](./media/image421.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image422.png)
+incorrect.](./media/image422.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image423.png)
+incorrect.](./media/image423.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image424.png)
+incorrect.](./media/image424.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image425.png)
+incorrect.](./media/image425.png)
 
 **Summary**
 
