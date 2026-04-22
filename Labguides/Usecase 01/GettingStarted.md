@@ -81,7 +81,7 @@ Once the environment is provisioned, a virtual machine (LabVM) and lab guide wil
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-   ![01](./media/Intro-00.png)
+   ![01](./media/GS0.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -91,65 +91,51 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![01](./media/Intro-01.png)
+   ![01](./media/GS3.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
  
-![01](./media/Intro-02.png)
+![01](./media/GS2.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![01](./media/Intro-03.png)
+![01](./media/GS1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-  ![01](./media/Intro-04.png)
+  ![01](./media/GS4.png)
  
-## Let's Get Started with Power BI Portal
+## Let's Get Started with Azure Portal
  
-1. On your virtual machine, open the **Microsoft Edge**.
- 
-    ![01](./media/Intro-05.png)
- 
-2.  In the new tab, navigate to the **Microsoft Fabric** portal by copying and pasting the following URL into the address bar.
+1. On your virtual machine, click on the **Azure Portal** icon.
 
-      ```
-      https://app.fabric.microsoft.com
-      ```
+    ![Image](./media/GS5.png)
 
-3. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email/username, and click on **Next (2)**. 
 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
- 
-       ![01](./media/image1.png)
- 
-4. Next, provide your Temporary Access Password **(1)** and click on **Sign in (2)**:
- 
-   - **Temprory Access Pass:** <inject key="AzureAdUserPassword"></inject>
- 
-       ![01](./media/image2.png)
-
-5. If you see the pop-up Stay Signed in?, select **No**.
+    - **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-    ![01](./media/Intro-08.png)
+      ![Image](./media/GS6.png)
+     
+1. Now enter the following Temparory Access Pass and click on **Sign in (2)**.
+   
+    - **Temporaray Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
 
-6. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
+      ![Image](./media/GS7.png)
+     
+1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-    ![01](./media/Intro-09.png)
+    ![Image](./media/GS8.png)
 
-7. When the **Welcome to the Fabric view** dialog appears, click **Cancel**.   
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-    ![01](./media/image4.png)
-
-8. You will be navigated to the **Microsoft Fabric Home page**.
-
-    ![01](./media/image3.png)
+1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
 
 ## Support Contact
 
@@ -162,6 +148,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
  
-![01](./media/Intro-11.png)
+![01](./media/GS9.png)
 
 ## Happy Learning!!

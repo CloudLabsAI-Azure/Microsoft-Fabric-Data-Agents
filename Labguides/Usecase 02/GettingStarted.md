@@ -4,129 +4,142 @@
 
 ### Overview
 
-In this hands-on lab, you will gain comprehensive, hands-on experience in migrating data and metadata from **Azure Synapse Analytics** to **Microsoft Fabric Data Warehouse**. As organizations modernize their analytics platforms, Microsoft Fabric offers a unified, scalable, and fully integrated environment that simplifies data engineering, warehousing, real-time analytics, and business intelligence. 
+In this hands-on lab, you will gain comprehensive, hands-on experience in building an end-to-end **modern data engineering and integration solution using Microsoft Fabric Data Factory**. As organizations modernize their data platforms, Microsoft Fabric provides a unified and scalable environment that simplifies data ingestion, transformation, orchestration, and deployment within a single ecosystem.
 
-Throughout these labs, you will create and configure Azure Synapse components, ingest sample datasets, integrate them through pipelines, set up a new Fabric workspace, and use the **Fabric Migration Assistant** to seamlessly migrate SQL objects and data into the Fabric Data Warehouse. You will learn to establish connections between Synapse and Fabric, validate migrated data, and schedule pipelines for automated data movement, ensuring business continuity throughout the migration process.
+Throughout this lab, you will create and configure a Fabric workspace, set up a Lakehouse, and ingest real-world datasets such as the **NYC Taxi dataset**. You will leverage **Dataflow Gen2 and Power Query** to clean, transform, merge, and enrich data, preparing it for downstream analytics. You will also implement advanced data transformation techniques such as filtering, aggregation, parameterization, and calculated columns to build a curated dataset.
+
+Additionally, you will design and orchestrate data movement using Fabric Pipelines and Copy activities, enabling automated workflows between Lakehouse and Warehouse. The lab also introduces parameterized pipeline templates, scheduling, monitoring, and alerting mechanisms, ensuring reliability and operational efficiency. Finally, you will explore deployment-ready components such as reusable pipelines and automated refresh schedules, helping you build scalable, production-ready data solutions across environments. 
 
 ### Objectives
 
-By the end of this day, participants will be able to:
+By the end of this lab, participants will be able to:
 
-- **Lab 1:** Execute an end-to-end migration of data from Azure Synapse Analytics dedicated SQL pools to Microsoft Fabric Data Warehouse using the Migration Assistant
-- **Lab 2:** Migrate Azure Synapse Analytics SQL objects and implement data pipelines to copy data into Fabric Data Warehouse with OneLake integration and pipeline scheduling
+- Build an end-to-end data engineering solution in **Microsoft Fabric** by creating a workspace, Lakehouse, and ingesting sample datasets (NYC Taxi data)
+
+- Perform data transformation and preparation using **Dataflow Gen2 and Power Query**, including cleaning, filtering, merging, aggregating, and parameterizing data
+
+- Design and orchestrate data movement using **Fabric Pipelines and Copy activities**, including moving data from Lakehouse to Warehouse and monitoring execution
+
+- Implement automation features such as **scheduled refresh, reusable pipeline templates, and basic monitoring**, to create scalable and production-ready data workflows
+
 
 ### Pre-requisites
 
 Participants should have:
 
-- A working knowledge of Microsoft Azure services, including resource groups, virtual machines, and Azure SQL
-- Basic experience with SQL Server and Azure Synapse Analytics, including writing T-SQL queries
-- Familiarity with data warehousing concepts such as dedicated SQL pools and data integration pipelines
-- Understanding of storage concepts including Data Lake Storage Gen2 and OneLake
-- General awareness of how data migration and ETL processes work in cloud environments
+- A basic understanding of **Microsoft Fabric** concepts, including workspaces, Lakehouse, and Data Factory components
+
+- Familiarity with **data integration and transformation concepts (ETL/ELT)**
+
+- Basic knowledge of **Power Query** for data cleaning and transformation
+
+- Understanding of **data storage concepts**, including Lakehouse and OneLake
+
+- General awareness of **data pipelines, orchestration, and scheduling** in modern data platforms
+
 
 ### Explanation of Components
 
-The architecture for this day's labs involves the following key components:
+The architecture for this lab involves the following key components:
 
-**Azure Synapse Analytics:** The source data platform providing:
-- Dedicated SQL pools for structured data storage and processing
-- Integration runtime for data movement and transformation
-- Pipelines for orchestrating data workflows
-- SQL scripts for data querying and exploration
+**Microsoft Fabric Workspace:** The central environment that hosts all artifacts including Lakehouse, Dataflows, Pipelines, and Warehouse. It acts as a unified container for managing and organizing data engineering assets.
 
-**Microsoft Fabric Data Warehouse:** The target analytics platform providing:
-- Unified storage via OneLake for seamless data integration
-- SQL endpoint for querying and analysis
-- Built-in pipeline support for data movement
-- Integrated analytics and business intelligence capabilities
+**Fabric Lakehouse:** The primary data storage layer where raw and transformed data is stored. It combines the capabilities of a data lake and a data warehouse, enabling both file-based storage and table-based analytics using a SQL endpoint.
 
-**Fabric Migration Assistant:** Automates the migration process by:
-- Analyzing source schemas and dependencies
-- Validating migration readiness
-- Converting Synapse objects to Fabric-compatible formats
-- Mapping and transferring metadata and data
+**OneLake:** Microsoft Fabric’s unified data lake that underpins the Lakehouse. It provides centralized, scalable storage for all data and ensures seamless integration across different Fabric components.
 
-**Data Pipelines:** Connect data sources to destinations by:
-- Supporting copy data activities for batch data movement
-- Enabling both triggered and scheduled execution
-- Providing data transformation and enrichment capabilities
-- Allowing integration with multiple data sources
+**Dataflow Gen2:** Used for data ingestion and transformation. It enables users to connect to data sources, clean and shape data using Power Query, and prepare curated datasets for analytics.
 
-**OneLake:** Microsoft Fabric's cloud-native data lake providing:
-- Centralized storage for all Fabric workloads
-- Support for structured and unstructured data
-- Integration with Fabric Data Warehouse and other services
+**Power Query:** The transformation engine within Dataflow Gen2 that allows users to perform operations such as filtering, merging, aggregating, and creating calculated columns to refine datasets.
 
----
+**Fabric Pipelines:** Used for orchestrating and automating data workflows. Pipelines enable movement of data between Lakehouse and Warehouse, support scheduling, and allow integration of multiple activities.
 
-## Getting Started with the lab
+**Copy Activity (Data Movement):** A core component within pipelines that facilitates data transfer between sources and destinations, such as moving curated data from Lakehouse to Warehouse.
 
-Welcome to your Migrate to Microsoft Fabric Workshop, Let's begin by making the most of this experience.
+**Fabric Data Warehouse:** A structured analytics layer where curated data is loaded for high-performance querying and reporting. It provides a SQL-based interface for downstream analytics and BI workloads.
 
+**Parameterization and Scheduling:** These features enable dynamic and reusable data workflows. Parameters allow flexible data filtering and configuration, while scheduling ensures automated and consistent data refresh.
+
+**Monitoring and Alerts:** Provides visibility into pipeline and dataflow execution, helping track performance, troubleshoot issues, and ensure reliable data operations.
+
+
+## Getting Started with the Lab
+ 
+Once the environment is provisioned, a virtual machine (LabVM) and lab guide will be loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the Lab guide to switch to different exercises in the lab guide.
+ 
 ## Accessing Your Lab Environment
-
+ 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
+ 
+   ![01](../Usecase%2001/media/GS0.png)
 
-![Access Your VM and Lab Guide](./media/guide1.png)
+### Virtual Machine & Lab Guide
+ 
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+ 
+## Exploring Your Lab Resources
+ 
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+ 
+   ![01](../Usecase%2001/media/GS3.png)
+ 
+## Utilizing the Split Window Feature
+ 
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
+ 
+![01](../Usecase%2001/media/GS2.png)
+ 
+## Managing Your Virtual Machine
+ 
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+ 
+![01](../Usecase%2001/media/GS1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](./media/zum.png)
+  ![01](../Usecase%2001/media/GS4.png)
+ 
+## Let's Get Started with Power BI Portal
+ 
+1. On your virtual machine, open the **Microsoft Edge**.
+ 
+    ![01](./media/GS10.png)
+ 
+2.  In the new tab, navigate to the **Microsoft Fabric** portal by copying and pasting the following URL into the address bar.
 
-## Virtual Machine & Lab Guide
+      ```
+      https://app.fabric.microsoft.com
+      ```
 
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+3. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
 
-## Exploring Your Lab Resources
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
+ 
+       ![01](./media/GS11.png)
+ 
+4. Next, provide your Temporary Access Password **(1)** and click on **Sign in (2)**:
+ 
+   - **Temprory Access Pass:** <inject key="AzureAdUserPassword"></inject>
+ 
+       ![01](../Usecase%2001/media/GS7.png)
 
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+5. If you see the pop-up Stay Signed in?, select **No**.
+   
+    ![01](./media/GS11.png)
 
-![Explore Lab Resources](./media/envtab.png)
+6. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
 
-## Utilizing the Split Window Feature
+    ![01](../Usecase%2001/media/GS8.png)
 
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+7. When the **Welcome to the Fabric view** dialog appears, click **Cancel**.   
 
-![Use the Split Window Feature](./media/splittt.png)
+    ![01](./media/GS13.png)
 
-## Managing Your Virtual Machine
+8. You will be navigated to the **Microsoft Fabric Home page**.
 
-Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
-
-![Manage Your Virtual Machine](./media/VMSS.png)
-
-## Let's Get Started with Azure Portal
-
-1. On your virtual machine, click on the Azure Portal icon.
-
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your **credentials (1)** and select **Next (2)**:
-
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-
-     ![Enter Your Username](./media/odlusr.png)
-
-3. Next, provide your **password (1)** and select **Sign In (2)**:
-
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-     ![Enter Your Password](./media/password.png)
-
-      >**Note:** If you see **Temporary Access pass**, enter the the password and select **Sign In (2)**:
-
-       - Enter **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
-
-          ![](./media/image.png)
-
-4. If **Action required** pop-up window appears, click on **Ask later**.
-
-5. If prompted to **stay signed in**, you can click **No**.
-
-6. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
+    ![01](./media/GS14.png)
 
 ## Support Contact
 
@@ -134,11 +147,11 @@ The CloudLabs support team is available 24/7, 365 days a year, via email and liv
 
 Learner Support Contacts:
 
-- Email Support: [cloudlabs-support@spektrasystems.com](mailto:cloudlabs-support@spektrasystems.com)
+- Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Click **Next** from the bottom right corner to embark on your Lab journey!
+Now, click on **Next** from the lower right corner to move on to the next page.
+ 
+![01](../Usecase%2001/media/GS9.png)
 
-![Start Your Azure Journey](./media/PageNo.png)
-
-Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+## Happy Learning!!
