@@ -69,29 +69,29 @@ reports.
     |TAP|**@lab.CloudPortalCredential(User1).AccessToken**|
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image1.png)
+incorrect.](./media/image1.png)
 
 3. Enter your password and click **Sign in**.
 
     ![A login screen with a red box and blue text AI-generated content may
- be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image2.png)
+ be incorrect.](./media/image2.png)
 
 4. On **Stay signed in?** page, click **Yes**.
 
     ![A screenshot of a computer error AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image3.png)
+incorrect.](./media/image3.png)
 
 5. You'll be directed to Fabric Home page.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image4.png)
+incorrect.](./media/image4.png)
 
 6. On the **Home** page click on **+ New Workspaces** as shown in the
     below image. This creates a dedicated workspace where you can
     organize all Fabric items.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image5.png)
+incorrect.](./media/image5.png)
 
 7. On the **Create a workspace** pane that appears on the right side,
     enter the following details, and click **Apply**.
@@ -104,10 +104,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image6.png)
+incorrect.](./media/image6.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image7.png)
+incorrect.](./media/image7.png)
 
 8. The Workspace is now created.
 
@@ -125,13 +125,13 @@ queries later.
     the navigation bar.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image9.png)
+incorrect.](./media/image9.png)
 
 2. On the **Filter by item type** search box,
     enter **Lakehouse** and select the lakehouse item.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image10.png)
+incorrect.](./media/image10.png)
 
 3. On the **New lakehouse** dialog box,
     enter **datafactory_lakehouse** in the **Name** field, click
@@ -140,16 +140,16 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	**Note**: Ensure to remove space before **datafactory_lakehouse**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image11.png)
+incorrect.](./media/image11.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image12.png)
+incorrect.](./media/image12.png)
 
 4. Wait for the notification stating **Successfully created SQL
     endpoint**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image13.png)
+incorrect.](./media/image13.png)
 
 5. From the **lakehouse** home page, select **Start with sample data**
     to view the sample data list and load the lakehouse with the
@@ -157,26 +157,26 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     point without needing raw data files.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image14.png)
+incorrect.](./media/image14.png)
 
 6. The **Use a sample** dialog is displayed, select the **NYCTaxi**
     sample data tile.The NYCTaxi sample gives realistic,
     schema-consistent data, so you can focus on transformations rather
     than building data from scratch.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image15.png)
+    ![](./media/image15.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image16.png)
+incorrect.](./media/image16.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image17.png)
+incorrect.](./media/image17.png)
 
 7. From the **Home** tab of the **Lakehouse,** select **Get
     data** **Upload files**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image18.png)
+incorrect.](./media/image18.png)
 
 5. On the **Upload files** pane that appears on the right side, select
     the **folder icon** under the **Files/** and then browse
@@ -185,29 +185,29 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     the **Upload** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image19.png)
+incorrect.](./media/image19.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image20.png)
+incorrect.](./media/image20.png)
 
 6. On the Upload folder pane, click **Upload**.
 
 	>[!Alert] If the **Files** folder shows a failed state, wait a minute and refresh the browser.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image21.png)
+incorrect.](./media/image21.png)
 
 7. After the files have been uploaded **close** the **Upload
     folder** pane.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image22.png)
+incorrect.](./media/image22.png)
 
 8. Expand **Files** and select the **NYC-Taxi-Green-Discounts** file
     and verify that the CSV files have been uploaded.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image23.png)
+incorrect.](./media/image23.png)
 
 9. On the **Lakehouse** page, under the Explorer pane, select
     **Files**. Now, hover your mouse
@@ -216,22 +216,22 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     and click on **Load Table**, then select **New table**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image24.png)
+incorrect.](./media/image24.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image25.png)
+incorrect.](./media/image25.png)
 
 10. On the **Load file to new table** dialog box, and click on
     the **Load** button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image26.png)
+incorrect.](./media/image26.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image27.png)
+incorrect.](./media/image27.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image28.png)
+incorrect.](./media/image28.png)
 
 ## Task 3: Create new Dataflow Gen2 with sample data
 
@@ -243,31 +243,31 @@ transformation, and preparation of data for downstream analytics.
     the image below.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image29.png)
+incorrect.](./media/image29.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image30.png)
+incorrect.](./media/image30.png)
 
 2. Create a new Dataflow Gen2 by clicking on the **+New item** button
     in the navigation bar. From the list of available items select
     the **Dataflow Gen2** item
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image31.png)
+incorrect.](./media/image31.png)
 
 3. On the **New Dataflow Gen2** dialog box, click on **Dataflow1** and
     rename it to **NYC_Taxi_Dataflow**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image32.png)
+    ![](./media/image32.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image33.png)
+incorrect.](./media/image33.png)
 
 4. From the **Home** tab, select **Get data** and then
     the **More...** option to upload the tables into Dataflow Gen2
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image34.png)
+incorrect.](./media/image34.png)
 
 5. Within the **Get data** explorer's search bar,
     type **datafactory_lakehouse** to locate the lakehouse item.
@@ -275,11 +275,11 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     catalog's returned results.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image35.png)
+incorrect.](./media/image35.png)
 
 6. Click on the **Connect** button.   
 
-	![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image36.png)
+	![A screenshot of a computer AI-generated content may be incorrect.](./media/image36.png)
 
 7. From the Get data table navigator, select the tables listed below to
     perform data transformation operations and merge the tables for our
@@ -292,10 +292,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 8. Click on **Create.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image37.png)
+incorrect.](./media/image37.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image38.png)
+incorrect.](./media/image38.png)
 
 ## Task 4: Implement Power Query transformations
 
@@ -311,10 +311,10 @@ data for meaningful analysis.
     the **Date/Time** to **Date** type.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image39.png)
+incorrect.](./media/image39.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image40.png)
+incorrect.](./media/image40.png)
 
 2. Select the **storeAndFwdFlag** column's filter and sort dropdown
     menu. (If you see a warning **List may be incomplete**,
@@ -326,26 +326,26 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image42.png)
+incorrect.](./media/image42.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image43.png)
+incorrect.](./media/image43.png)
 
 4. Select the **IpepPickupDatetime** column sort and filter dropdown
     menu, then select **Date filters**, and choose
     the **Between...** filter provided for Date and Date/Time types
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image44.png)
+incorrect.](./media/image44.png)
 
 5. On the **Filter rows** dialog box, select dates between January 1,
     2022, and January 31, 2022, then select **OK**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image45.png)
+incorrect.](./media/image45.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image46.png)
+incorrect.](./media/image46.png)
 
 6. Select the **nyc_taxi_green_discounts** table and from the **Home**
      tab, while reviewing the data, we see the headers appear to be in
@@ -354,10 +354,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     select **Use first row as headers**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image47.png)
+incorrect.](./media/image47.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image48.png)
+incorrect.](./media/image48.png)
 
 	**Note:** After promoting the headers, you can see a new step added to
 	the **Applied steps** pane at the top of the dataflow editor to the data
@@ -370,10 +370,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     become rows.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image49.png)
+incorrect.](./media/image49.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image50.png)
+incorrect.](./media/image50.png)
 
 8. With the table unpivoted, rename the *Attribute* and *Value* columns
     using the formula bar. Replace the existing script with:  
@@ -381,42 +381,42 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	**Table.UnpivotOtherColumns(#"Changed column type", {"VendorID"}, "Date", "Discount")** 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image51.png)
+incorrect.](./media/image51.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image52.png)
+    ![](./media/image52.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image53.png)
+    ![](./media/image53.png)
 
 	**Note:** To rename the Attribute and Value columns, you can also
 	double-click them and change 'Attribute' to 'Date' and 'Value' to
 	'Discount'.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image54.png)
+incorrect.](./media/image54.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image55.png)
+incorrect.](./media/image55.png)
 
 9. Change the data type of the Date column by selecting the data type
     menu to the left of the column name and choosing **Date**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image56.png)
+incorrect.](./media/image56.png)
 
 10. Select the **Discount** column and then select the **Transform** tab
     on the menu. Select **Number column**, and then
     select **Standard** numeric transformations from the submenu, and
     choose **Divide**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image57.png)
+    ![](./media/image57.png)
 
 11. On the **Divide** dialog box, enter the value 100.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image58.png)
+incorrect.](./media/image58.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image59.png)
+incorrect.](./media/image59.png)
 
 ## Task 5: Merging queries
 
@@ -428,7 +428,7 @@ a single unified view for reporting and analytics.
     and on the **Home** tab, Select the **Combine** menu and
     choose **Merge queries**, then **Merge queries as new**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image60.png)
+    ![](./media/image60.png)
 
 2. From the Merge query window, set the **Right table for
     merge** to **nyc-taxi-green-discounts**. On the top right corner,
@@ -439,13 +439,13 @@ a single unified view for reporting and analytics.
     accurately combined based on matching columns.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image61.png)
+incorrect.](./media/image61.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image62.png)
+incorrect.](./media/image62.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image63.png)
+incorrect.](./media/image63.png)
 
 3. Navigate to the far right of the **green_tripdata_2022** table.
     Select the expand icon on the joined **nyc_taxi_green_discounts**
@@ -454,17 +454,17 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     in the dataset—then click **OK** to continue.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image64.png)
+incorrect.](./media/image64.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image65.png)
+incorrect.](./media/image65.png)
 
 4. With the discount value at the row level, we can create a new column
     to calculate the total amount after discount. To do so, select
     the **Add column** tab at the top of the editor, and choose **Custom
     column** from the **General** group.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image66.png)
+    ![](./media/image66.png)
 
 5. On the **Custom column** dialog, you can use the [Power Query
     formula language (also known as
@@ -478,7 +478,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 	Then select **OK**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image67.png)
+    ![](./media/image67.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image68.png)
@@ -488,30 +488,30 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     the **Number column** group, select the **Rounding** drop down and
     then choose **Round...**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image69.png)
+    ![](./Usecase%2002/media/image69.png)
 
 7. On the **Round** dialog box, enter 2 for the number of decimal
     places and then select **OK**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image70.png)
+    ![](./media/image70.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image71.png)
+incorrect.](./media/image71.png)
 
 8. Change the data type of the **IpepPickupDatetime** from **Date** to
     **Date/Time**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image72.png)
+    ![](./media/image72.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image73.png)
+incorrect.](./media/image73.png)
 
 9. Finally, expand the **Query settings** pane from the right side of
     the editor if it isn't already expanded, and rename the query
     from **Merge** to **Output**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image74.png)
+incorrect.](./media/image74.png)
 
 ## Task 6: Load the output query to a table in the Lakehouse
 
@@ -524,20 +524,20 @@ reporting.
     destination** from the **Query** grouping, to select
     a **Lakehouse** destination.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image75.png)
+    ![](./media/image75.png)
 
 2. On the **Connect to data destination** dialog box, your connection
     should already be selected. Select **Next** to continue.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image76.png)
+incorrect.](./media/image76.png)
 
 3. On the **Choose destination target** dialog, browse to the Lakehouse
     where you wish to load the data and name the new table, then
     select **Next** again.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image77.png)
+incorrect.](./media/image77.png)
 
 4. On the **Choose destination settings** dialog, you can use the
     automatic settings or deselect the automatic settings and leave the
@@ -545,14 +545,14 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     are mapped correctly, and select **Save settings**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image78.png)
+incorrect.](./media/image78.png)
 
 5. On the main editor window, confirm that you see your output
     destination on the **Query settings** pane for the **Output** table
     under **Data destination**, and then select **Save**\*.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image79.png)
+incorrect.](./media/image79.png)
 
 ## Task 7: Choose columns
 
@@ -564,7 +564,7 @@ downstream reports focus only on relevant data.
     columns group, select **Choose columns**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image80.png)
+incorrect.](./media/image80.png)
 
 2. The **Choose columns** dialog appears, containing all the available
     columns in your table. You can select all the fields that you want
@@ -574,13 +574,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     check boxes for those fields.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image81.png)
+incorrect.](./media/image81.png)
 
 3. After selecting **OK**, create a table that only contains
     the selected columns.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image82.png)
+incorrect.](./media/image82.png)
 
 ## Task 8: Remove columns
 
@@ -597,7 +597,7 @@ needs.
 	  table *except* the selected ones.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image83.png)
+incorrect.](./media/image83.png)
 
 2. You can also select the columns you want to remove in the table,
     then select and hold (or right-click) the column and choose **Remove
@@ -612,12 +612,12 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	where you can select the **Remove columns** command.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image84.png)
+incorrect.](./media/image84.png)
 
 3. After selecting **Remove columns**, you create a table that only
     contains the columns.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image85.png)
+    ![](./media/image85.png)
 
 ## Task 9: Group and Aggregate Data by Column(s) in Power Query
 
@@ -627,7 +627,7 @@ answer key business questions like total tips per vendor.
 
 1. Select **Output** and select **Group by** on the **Home** tab.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image86.png)
+    ![](./media/image86.png)
 
 2. On the **Group by** settings page, enter the following details.
 
@@ -654,13 +654,13 @@ answer key business questions like total tips per vendor.
 5. Click **OK** 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image87.png)
+incorrect.](./media/image87.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image88.png)
+incorrect.](./media/image88.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image89.png)
+incorrect.](./media/image89.png)
 
 ## Task 10: Creating a Parameter and Using It in a Filter
 
@@ -674,7 +674,7 @@ flexible and reusable across environments or scenario
     choose **New Parameter.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image90.png)
+incorrect.](./media/image90.png)
 
 3. On the **Manage Parameters** dialog, enter the following details:
     set **the Name to **PUlocationID**, the **Type to Decimal
@@ -682,10 +682,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     the parameter**.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image91.png)
+incorrect.](./media/image91.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image92.png)
+incorrect.](./media/image92.png)
 
 4. Select the **green_tridata_2022** query and from the **Home** tab
 
@@ -694,37 +694,37 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     then select **Number filters**, and choose the **Equals...** 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image93.png)
+incorrect.](./media/image93.png)
 
 6. On the **Filter rows** dialog, click the pencil icon next to the
     value field, then select **Select a parameter** to dynamically
     filter rows based on a predefined parameter.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image94.png)
+incorrect.](./media/image94.png)
 
 7. Choose the parameter **PUlocationID** from the dropdown list to
     filter rows dynamically based on the selected parameter value. Click
     on **Ok** button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image95.png)
+incorrect.](./media/image95.png)
 
 8. This will filter the **PUloactionID** table to only show the product
     with the key you specify.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image96.png)
+incorrect.](./media/image96.png)
 
 9. To modify the parameters, select the **PUloactionID** parameter,
     enter **244** as the Current Value, and then click the **Apply**
     button
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image97.png)
+incorrect.](./media/image97.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image98.png)
+incorrect.](./media/image98.png)
 
 11. On the Query settings pane, select the **green_tripdata_2022**
 
@@ -732,30 +732,30 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     select **Number filters**, and choose the **Greater than...** 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image99.png)
+incorrect.](./media/image99.png)
 
 13. In the **Filter rows** dialog, click the pencil icon next to the
     value field, then click **Select a parameter** and select it. Click
     **Ok**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image100.png)
+incorrect.](./media/image100.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image101.png)
+incorrect.](./media/image101.png)
 
 14. On the Home window, select **Save & run** and click on **Save & run** button
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image102.png)
+    ![](./media/image102.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image103.png)
+incorrect.](./media/image103.png)
 
 15. On the left navigation select ***Data Factory-@lab.LabInstance.Id***, as shown in the
     image below.
 
 ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image104.png)
+incorrect.](./media/image104.png)
 
 **Optional: Link Parameters to Other Queries**
 
@@ -776,28 +776,28 @@ manual intervention.
     to the dataflow and select the **Schedule**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image105.png)
+incorrect.](./media/image105.png)
 
 2. Configure **the Dataflow refresh schedule to run once daily at 8:00
     AM until the end of the year.** This frequency is more typical for
     production environments, balancing data freshness with system
     performance and resource efficiency.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image106.png)
+    ![](./media/image106.png)
 
 3. Select **Close**
 
     ![A screenshot of a schedule AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image107.png)
+incorrect.](./media/image107.png)
 
 4. To check the status ellipsis icon next to the dataflow and select
     **Recent runs**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image108.png)
+incorrect.](./media/image108.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image109.png)
+incorrect.](./media/image109.png)
 
 	**Note:** You can view the **Recent runs** directly within the
 	Dataflow editor—located just after the **Save and run** and **Check
@@ -805,10 +805,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	without leaving the Dataflow interface
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image110.png)
+incorrect.](./media/image110.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image111.png)
+incorrect.](./media/image111.png)
 
 # Exercise 2: Pipeline Templates and Monitoring 
 
@@ -828,41 +828,41 @@ into a high-performance environment for analytics.
 1. On **Data Factory-@lab.LabInstance.Id** workspace page, navigate and click on **+ New item** button and select the **Warehouse** tile.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image112.png)
+incorrect.](./media/image112.png)
 
 2. On the **New warehouse** dialog box,
     enter **dataFactory_warehouse** in the **Name** field, click
     on the **Create** button and open the new lakehouse.
 
     ![A screenshot of a login box AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image113.png)
+incorrect.](./media/image113.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image114.png)
+incorrect.](./media/image114.png)
 
 3. On the left navigation, select ***Data Factory-@lab.LabInstance.Id***, as shown in
     the image below.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image115.png)
+incorrect.](./media/image115.png)
 
 4. On workspace page, click **New item** and select the **Copyjob**
     tile.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image116.png)
+    ![](./media/image116.png)
 
 3. On the New copy job window, set the copy job name
     to **CopyNYCTaxi** and then select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image117.png)
+incorrect.](./media/image117.png)
 
 4. From the Copy job window, use the OneLake tab at the top if you want
     to set additional criteria such as filters or item types. Select
     **datafactory_lakehouse**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image118.png)
+incorrect.](./media/image118.png)
 
 5. Now that you're on the **Choose data** step, select the following
     tables:
@@ -874,14 +874,14 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 	- nyc_taxi_green_discount
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image119.png)
+incorrect.](./media/image119.png)
 
 6. On the Choose data destination tab, search for the data source
     starting with **datafactory_warehouse** in the search bar and
     then select **datafactory_warehouse** from the OneLake catalog list.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image120.png)
+incorrect.](./media/image120.png)
 
 7. On the **Settings** step, review the Copy job mode options and then
     select **Next** to continue. Copy jobs move curated data into a
@@ -1465,13 +1465,13 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     the **Dataflow Gen2** item
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image214.png)
+incorrect.](./media/image214.png)
 
 12. In the **New Dataflow Gen2** window, click on **Dataflow1** and
     rename it to **Variable_Dataflow**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image215.png)
+incorrect.](./media/var1.png)
 
 13. From the **Home** tab, select **Get data** and then
     the **More...** option.
@@ -1586,7 +1586,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 23. Once both queries are created, update the query script to reference
     them instead of using hardcoded values by manually replacing the
     original values in the formula bar with the **WorkspaceId** and
-    **LakehouseId** query references.
+    **LakehouseID** query references.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image235.png)
 
@@ -1633,7 +1633,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image241.png)
 
 28. Select the **CountryOrRegion** column sort and filter dropdown menu,
-    then select **Number filters**, and choose the **Equals...** 
+    then select **Text filters**, and choose the **Equals...** 
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image242.png)
@@ -1667,7 +1667,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
 
 33. Once the query script has been updated, navigate to the **'Data
     destination'** pane on the right side, click the '**+'** icon, and
-    select '**Lakehouse**' as the destination to load the transformed
+    select '**Warehouse**' as the destination to load the transformed
     data
 
     ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image249.png)
@@ -1678,7 +1678,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/
     ![A screenshot of a computer AI-generated content may be
 incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image250.png)
 
-35. On the **Choose destination target** dialog, browse to the Lakehouse
+35. On the **Choose destination target** dialog, browse to the Warehouse
     where you wish to load the data and name the new table , then
     select **Next** again.
 
