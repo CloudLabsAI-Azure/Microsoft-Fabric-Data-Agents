@@ -1950,10 +1950,30 @@ deployment workflows.
 
 ## Task 1: Creating the Repository
 
+1. In the Azure portal, search for **DevOps** in the top search bar and select **Azure DevOps organizations** from the results.
+
+   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev1.png)
+
+2. On the Azure DevOps page, click on **View my organizations**.
+
+   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev2.png)
+
+1. On the Azure DevOps page, click on **Create new organization**.
+
+   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev3.png)
+
+1. Provide the organization name, select the region as **India**, choose the appropriate subscription, and click on **Continue**.
+
+   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev5.png)
+
+15. Select the checkbox to receive information (optional) and click on **Continue**.
+
+     ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev4.png)
+
 1. Open your browser, navigate to the address bar, and type or paste
     the following URL: **https://dev.azure.com/** and navigate to the project **DataFactory-@lab.LabInstance.Id**.
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image298.png)
 
 10. To create a new repository in Azure DevOps, navigate to **Repos \
@@ -2452,64 +2472,64 @@ incorrect.](./media/image376.png)
 
 3. Configure **Destination**:
 
-    1. Under **Destination** \ **Connection**, select **Add dynamic
+    - Under **Destination** \ **Connection**, select **Add dynamic
         content**.
 
-    2. Select the ellipsis (**...**), and then select **Library
+    - Select the ellipsis (**...**), and then select **Library
         variables (preview)**.
 
-    3. Select **Destination Lakehouse**. It populates the box
+    - Select **Destination Lakehouse**. It populates the box
         with @pipeline().libraryVariables.WSvariables_Destination_Lakehouse_ID.
         Select **OK**.
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image377.png)
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image378.png)
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image379.png)
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image380.png)
 
 8. Configure **DestinationWSID**:
 
 
-	1)  Under **Destination** \ **Workspace ID**, select **Add dynamic
+	- Under **Destination** \ **Workspace ID**, select **Add dynamic
 		content**.
 
-	2)  Select the ellipsis (**...**), and then select **Library variables
+	- Select the ellipsis (**...**), and then select **Library variables
 		(preview)**.
 
-	3)  Select **DestinationWSID**. It populates the box
+	- Select **DestinationWSID**. It populates the box
 		with @pipeline().libraryVariables.WSvariables_Destination_Workspace_ID.
 		Select **OK**.
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image381.png)
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image382.png)
 
 9. Configure **DestinationTableName**:
 
 
-    1)  Under **Destination** \ **Table**, select **Enter manually**,
+    -  Under **Destination** \ **Table**, select **Enter manually**,
         select **Table name**, and then select **Add dynamic content**.
 
-    2)  Select the ellipsis (**...**), and then select **Library variables
+    -  Select the ellipsis (**...**), and then select **Library variables
         (preview)**.
 
-    3)  Select **DestinationTableName**. It populates the box
+    -  Select **DestinationTableName**. It populates the box
         with @pipeline().libraryVariables.WSvariables_DestinationTable_Name.
         Select **OK**.
 
-    ![A screenshot of a computer AI-generated content may be
+        ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image383.png)
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image384.png)
 
 10. Select **Validate.**
@@ -2671,41 +2691,64 @@ incorrect.](./media/image413.png)
 
 ## Task 10: Clean up resources
 
-4. In the left navigation pane, select *Workspaces*, and then choose
+1. In the left navigation pane, select *Workspaces*, and then choose
     ***Data Factory-@lab.LabInstance.Id*.**
 
+1. Click on the **ellipsis (...)** in the top right corner and select **Delete pipeline**.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image414.png)
+
+1. Navigate to **Workspaces** from the left pane and select **Data Factory-214 [Test]** workspace.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image415.png)
 
+1. In the **Data Factory-214 [Test]** workspace, click on **Workspace settings**.
+
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image416.png)
+
+1. Under the **General** section, click on **Remove this workspace**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image417.png)
 
+1. In the confirmation dialog, click on **Delete** to remove the workspace.
+
     ![A black text on a white background AI-generated content may be
 incorrect.](./media/image418.png)
+
+1. Navigate to **Workspaces** from the left pane and select **Data Factory-214 [Production]** workspace.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image419.png)
 
+1. In the **Data Factory-214 [Production]** workspace, click on **Workspace settings**.
+
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image420.png)
+
+1. Under the **General** section, click on **Remove this workspace**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image421.png)
 
+1. Navigate to **Workspaces** from the left pane and select **Data Factory-214** workspace.
+
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image422.png)
+
+1. In the **Data Factory-214** workspace, click on **Workspace settings**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image423.png)
 
+1. Under the **General** section, click on **Remove this workspace**.
+
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image424.png)
+
+1. Verify that the workspace is removed and navigate back to the remaining workspace.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image425.png)
