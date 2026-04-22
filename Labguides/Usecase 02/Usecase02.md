@@ -65,21 +65,21 @@ reports.
     and click on the **Submit** button.
     |   |   |
     |----|----|
-    |Username|**@lab.CloudPortalCredential(User1).Username**|
-    |TAP|**@lab.CloudPortalCredential(User1).AccessToken**|
+    |Username|**<inject key="AzureAdUserEmail"></inject>**|
+    |TAP|**<inject key="AzureAdUserPassword"></inject>**|
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image1.png)
+incorrect.](./media/e1t1s2.png)
 
-3. Enter your password and click **Sign in**.
+3. Enter your **Temporary Access Pass (1)** and click **Sign in (2)**.
 
     ![A login screen with a red box and blue text AI-generated content may
- be incorrect.](./media/image2.png)
+ be incorrect.](./media/e1t1s3.png)
 
 4. On **Stay signed in?** page, click **Yes**.
 
     ![A screenshot of a computer error AI-generated content may be
-incorrect.](./media/image3.png)
+incorrect.](./media/e1t1s4.png)
 
 5. You'll be directed to Fabric Home page.
 
@@ -94,25 +94,25 @@ incorrect.](./media/image4.png)
 incorrect.](./media/image5.png)
 
 7. On the **Create a workspace** pane that appears on the right side,
-    enter the following details, and click **Apply**.
+    enter the following details, and click **Apply (3)**.
 
     |  |   |
     |----|----|
-    |Name|	**Data Factory-@lab.LabInstance.Id**|
-    |Advanced	|Select Fabric capacity|
-    |Default storage format|	Small dataset storage format|
+    |Name|	**<inject key="AzureAdUserEmail"></inject>**|
+    |Advanced	|Select **Fabric capacity (1)**|
+    |Sementic model storage format|	**Sementic small model storage format (2)**|
 
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image6.png)
+incorrect.](./media/e1t1s7.1.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image7.png)
+incorrect.](./media/e1t1s7.2.png)
 
 8. The Workspace is now created.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image8.png)
+incorrect.](./media/z2.png)
 
 ## Task 2: Create a lakehouse and Ingest sample data
 
@@ -125,13 +125,13 @@ queries later.
     the navigation bar.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image9.png)
+incorrect.](./media/e1t2s1.png)
 
 2. On the **Filter by item type** search box,
     enter **Lakehouse** and select the lakehouse item.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image10.png)
+incorrect.](./media/e1t2s2.png)
 
 3. On the **New lakehouse** dialog box,
     enter **datafactory_lakehouse (1)** in the **Name** field, use default location **(2)** then uncheck the L**akehouse schemas** **(3)** click
@@ -166,8 +166,12 @@ incorrect.](./media/e1t2s5.png)
 
     ![](./media/image15.png)
 
+1. Wait for the table preview to load. You will see a **Loading preview...** message while the data is being fetched.
+
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image16.png)
+
+1. Verify that the table data is successfully loaded and displayed in the **Table view**, showing rows and columns in the preview section.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image17.png)
@@ -176,7 +180,7 @@ incorrect.](./media/image17.png)
     data** **Upload files**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image18.png)
+incorrect.](./media/e1t2s7.png)
 
 5. On the **Upload files** pane that appears on the right side, select
     the **folder icon** under the **Files/** and then browse
@@ -200,11 +204,11 @@ incorrect.](./media/image21.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image22.png)
 
-8. Expand **Files** and select the **NYC-Taxi-Green-Discounts** file
+8. Expand **Files (1)** and select the **NYC-Taxi-Green-Discounts (2)** file
     and verify that the CSV files have been uploaded.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image23.png)
+incorrect.](./media/e1t2s11.png)
 
 9. On the **Lakehouse** page, under the Explorer pane, select
     **Files**. Now, hover your mouse
@@ -213,16 +217,18 @@ incorrect.](./media/image23.png)
     and click on **Load Table**, then select **New table**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image24.png)
+incorrect.](./media/e1t2s12.1.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image25.png)
+incorrect.](./media/e1t2s12.2.png)
 
 10. On the **Load file to new table** dialog box, and click on
     the **Load** button.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image26.png)
+
+1. Verify that the **nyc-taxi-green-discounts** table has been successfully created in the Lakehouse by observing the confirmation notification.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image27.png)
@@ -236,32 +242,32 @@ In this task, you build a new Dataflow Gen2 object that connects to the
 lakehouse tables. Dataflows allow you to automate ingestion,
 transformation, and preparation of data for downstream analytics.
 
-1. From the left navigation select ***Data Factory-@lab.LabInstance.Id***, as shown in
+1. From the left navigation select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in
     the image below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image29.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image30.png)
+incorrect.](./media/z3.png)
 
-2. Create a new Dataflow Gen2 by clicking on the **+New item** button
+2. Create a new Dataflow Gen2 by clicking on the **+New item (1)** button
     in the navigation bar. From the list of available items select
-    the **Dataflow Gen2** item
+    the **Dataflow Gen2 (2)** item.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image31.png)
+incorrect.](./media/z4.png)
 
-3. On the **New Dataflow Gen2** dialog box, click on **Dataflow1** and
-    rename it to **NYC_Taxi_Dataflow**
+3. On the **New Dataflow Gen2** dialog box, click on **Dataflow1** and rename it to **NYC_Taxi_Dataflow (1)** and **Create (2)**.
 
-    ![](./media/image32.png)
+    ![](./media/e1t3s3.1.png)
+
+1. Observe that the **Power Query editor** is opened successfully, displaying options such as **Import from Excel**, **Import from SQL Server**, and **Import from a Text/CSV file** to start creating or modifying a Dataflow.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image33.png)
 
-4. From the **Home** tab, select **Get data** and then
-    the **More...** option to upload the tables into Dataflow Gen2
+4. From the **Home** tab, select **Get data** and then the **More...** option to upload the tables into Dataflow Gen2
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image34.png)
@@ -274,24 +280,20 @@ incorrect.](./media/image34.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image35.png)
 
-6. Click on the **Connect** button.   
+7. From the Get data table navigator, select the tables listed below to perform data transformation operations and merge the tables for our downstream business intelligence projects.
 
-	![A screenshot of a computer AI-generated content may be incorrect.](./media/image36.png)
+	- select **green_tripdata_2022**
 
-7. From the Get data table navigator, select the tables listed below to
-    perform data transformation operations and merge the tables for our
-    downstream business intelligence projects.
+	- select **nyc_taxi_green_discounts**
 
-	- **green_tripdata_2022**
+    - Click on **Create.**
 
-	- **nyc_taxi_green_discounts**
-
-8. Click on **Create.**
-
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image37.png)
 
-    ![A screenshot of a computer AI-generated content may be
+ 1. In the **Power Query editor**, verify that the tables are created under **Quries** pane.
+
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image38.png)
 
 ## Task 4: Implement Power Query transformations
@@ -301,11 +303,7 @@ Query. You adjust data types, filter rows, unpivot columns, and
 calculate new fields like discounts. These transformations prepare the
 data for meaningful analysis.
 
-1. Select the **green_tripdata_2022** table and from the **Home** tab,
-    select the data type icon in the column header of the second column,
-    **IpepPickupDatetime**, to display a dropdown menu and select the
-    data type from the menu to convert the column from
-    the **Date/Time** to **Date** type.
+1. Select the **green_tripdata_2022** click on the data type icon of the **lpep_pickup_datetime** column and select **Date** to change its data type.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image39.png)
@@ -313,11 +311,11 @@ incorrect.](./media/image39.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image40.png)
 
-2. Select the **storeAndFwdFlag** column's filter and sort dropdown
+2. Select the **storeAndFwdFlag (1)** column's filter and sort dropdown
     menu. (If you see a warning **List may be incomplete**,
-    select **Load more** to see all the data.)
+    select **Load more (2)** to see all the data.)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/fbrcdtafctrydepth/refs/heads/Cloud-slice-December2025/Labguides/Usecase%2002/media/image41.png)
+    ![](./media/z5.png)
 
 3. Select 'Y' to show only rows where a discount was applied, and then
     select **OK**.
@@ -341,6 +339,8 @@ incorrect.](./media/image44.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image45.png)
 
+1. Verify that the filtered data is displayed in the preview.
+
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image46.png)
 
@@ -352,6 +352,8 @@ incorrect.](./media/image46.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image47.png)
+
+1. Verify that the filtered data is displayed in the preview.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image48.png)
@@ -384,7 +386,7 @@ incorrect.](./media/image51.png)
 
     ![](./media/image53.png)
 
-	**Note:** To rename the Attribute and Value columns, you can also
+	> **Note:** To rename the Attribute and Value columns, you can also
 	double-click them and change 'Attribute' to 'Date' and 'Value' to
 	'Discount'.
 
@@ -425,18 +427,14 @@ a single unified view for reporting and analytics.
     and on the **Home** tab, Select the **Combine** menu and
     choose **Merge queries**, then **Merge queries as new**.
 
-    ![](./media/e1t5s1.png)
+    ![](./media/z6.png)
 
-2. From the Merge query window, set the **Right table for
-    merge** to **nyc-taxi-green-discounts**. On the top right corner,
-    select the **lightbulb** which has detected a possible column match.
-    In this example, both tables contain a column titled **VendorID**.
-    Select this option to set the columns to be merged on. Click
-    on **OK** to proceed. This activity ensures that the data is
-    accurately combined based on matching columns.
+2. In the **Merge** window, select **nyc-taxi-green-discounts (1)** select the **light-bulb (2)** and choose the **VendorID → VendorID (3)** mapping from suggestions, set **Join kind** to **Inner (4)**, and click **OK (5)**.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image61.png)
+incorrect.](./media/z8.png)
+
+1. Verify after merging the tables.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image63.png)
@@ -460,19 +458,13 @@ incorrect.](./media/image65.png)
 
     ![](./media/image66.png)
 
-5. On the **Custom column** dialog, you can use the [Power Query
-    formula language (also known as
-    M)](https://learn.microsoft.com/en-us/powerquery-m) to define how
-    your new column should be calculated.
-    Enter **TotalAfterDiscount**** for the **New column name**,
-    select **Currency** for the **Data type**, and provide the following
-    M expression for the **Custom column formula**:
+5. On the **Custom column** dialog, you can use the [Power Query formula language (also known as M)](https://learn.microsoft.com/en-us/powerquery-m) to define how your new column should be calculated. Enter **TotalAfterDiscount**** for the **New column name**, select **Currency** for the **Data type**, and provide the following M expression for the **Custom column formula**:
 
     ```
 	if [tolls_amount] > 0 then [tolls_amount] * ( 1 - [Discount] ) else [tolls_amount]
     ```
 
-	- Then select **OK**.
+	 - Then select **OK**.
 
        ![](./media/image67.png)
 
@@ -484,7 +476,7 @@ incorrect.](./media/image68.png)
     the **Number column** group, select the **Rounding** drop down and
     then choose **Round...**.
 
-    ![](./Usecase%2002/media/image69.png)
+    ![](./media/z9.png)
 
 7. On the **Round** dialog box, enter 2 for the number of decimal
     places and then select **OK**.
@@ -498,6 +490,8 @@ incorrect.](./media/image71.png)
     **Date/Time**.
 
     ![](./media/image72.png)
+
+1. Verify the table as shown in below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image73.png)
@@ -515,15 +509,11 @@ After transformations, you save the output query into the lakehouse as a
 structured table. This provides a curated dataset ready for analytics or
 reporting.
 
-1. Select the **Output** merge query that has been created previously.
-    Then select the **Home** tab on the editor window, and **Add data
-    destination** from the **Query** grouping, to select
-    a **Lakehouse** destination.
+1. Select the **Output (1)** query, go to the **Home (2)** tab, click **Add data destination (3)**, and choose **Lakehouse (4)** under New destination.
 
-    ![](./media/image75.png)
+    ![](./media/z10.png)
 
-2. On the **Connect to data destination** dialog box, your connection
-    should already be selected. Select **Next** to continue.
+2. On the **Connect to data destination** dialog box, your connection should already be selected. Select **Next** to continue.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image76.png)
@@ -592,7 +582,7 @@ needs.
 	- **Remove other columns**: Removes all columns from the
 	  table *except* the selected ones.
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image83.png)
 
 2. You can also select the columns you want to remove in the table,
@@ -712,15 +702,15 @@ incorrect.](./media/image95.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image96.png)
 
-9. To modify the parameters, select the **PUloactionID** parameter,
-    enter **244** as the Current Value, and then click the **Apply**
-    button
+9. To modify the parameters, select the **PUloactionID (1)** parameter,
+    enter **244 (2)** as the Current Value, and then click the **Apply (3)**
+    button.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image97.png)
+incorrect.](./media/z11.png)
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image98.png)
+incorrect.](./media/z12.png)
 
 11. On the Query settings pane, select the **green_tripdata_2022**
 
