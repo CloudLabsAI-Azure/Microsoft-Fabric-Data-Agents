@@ -98,7 +98,7 @@ incorrect.](./media/image5.png)
 
     |  |   |
     |----|----|
-    |Name|	**<inject key="AzureAdUserEmail"></inject>**|
+    |Name|	**Data Factory-<inject key="DeploymentID" enableCopy="false"/>**|
     |Advanced	|Select **Fabric capacity (1)**|
     |Sementic model storage format|	**Sementic small model storage format (2)**|
 
@@ -737,7 +737,7 @@ incorrect.](./media/image101.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image103.png)
 
-15. On the left navigation select ***Data Factory-@lab.LabInstance.Id***, as shown in the image below.
+15. On the left navigation select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in the image below.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image104.png)
@@ -810,7 +810,7 @@ You configure a copy job to move tables from the lakehouse into a
 dedicated warehouse. This step demonstrates how to stage curated data
 into a high-performance environment for analytics.
 
-1. On **Data Factory-@lab.LabInstance.Id** workspace page, navigate and click on **+ New item** button and select the **Warehouse** tile.
+1. On **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** workspace page, navigate and click on **+ New item** button and select the **Warehouse** tile.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image112.png)
@@ -825,7 +825,7 @@ incorrect.](./media/image113.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image114.png)
 
-3. On the left navigation, select ***Data Factory-@lab.LabInstance.Id***, as shown in
+3. On the left navigation, select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in
     the image below.
 
     ![A screenshot of a computer AI-generated content may be
@@ -921,7 +921,7 @@ incorrect.](./media/image128.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image129.png)
 
-15. On the left navigation, select **Data Factory-@lab.LabInstance.Id**, as shown in the
+15. On the left navigation, select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in the
     image below.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1368,7 +1368,7 @@ You’ll work through a scenario where the source, logic (filters), and
 destination of a dataflow are all driven by variables (such as workspace
 IDs, lakehouse IDs, filter values) instead of static values.
 
-1. On the **Data Factory-@lab.LabInstance.Id** dev workspace, select
+1. On the **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** dev workspace, select
     the **datafactory_lakehouse** lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1380,7 +1380,7 @@ incorrect.](./media/image202.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image203.png)
 
-3. On the left navigation, select **Data Factory-@lab.LabInstance.Id**, as shown in the
+3. On the left navigation, select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in the
     image below.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1395,7 +1395,7 @@ incorrect.](./media/image205.png)
 incorrect.](./media/image206.png)
 
 4. Navigate and click
-    on **Data_Factory@lab.LabInstance.Id** 
+    on **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** 
     dev workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
@@ -1438,7 +1438,7 @@ incorrect.](./media/image211.png)
 incorrect.](./media/image212.png)
 
 10. Navigate and click
-    on **Data_Factory@lab.LabInstance.Id** Workspace
+    on **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** Workspace
     on the left navigation
 
     ![A screenshot of a computer AI-generated content may be
@@ -1868,7 +1868,7 @@ To use Git integration with Copy job in Fabric, you first need to
 connect to a Git repository, as described here.
 
 1. Sign-in into the Fabric portal and navigate to dev workspace as
-    **Data Factory-@lab.LabInstance.Id** to connect to Git. Select **Workspace
+    **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** to connect to Git. Select **Workspace
     settings**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -2003,7 +2003,7 @@ incorrect.](./media/image305.png)
 ## Task 2: Integrating the Fabric feature workspace with the Azure Devops Repo
 
 1. Sign in to Microsoft Fabric and navigate to the development
-    workspace (*Data Factory-@lab.LabInstance.Id*) to connect to Git. Then, select
+    workspace (Data Factory-<inject key="DeploymentID" enableCopy="false"/>) to connect to Git. Then, select
     *Workspace settings*.
 
     ![A screenshot of a computer AI-generated content may be
@@ -2093,12 +2093,12 @@ Before you get started, be sure to set up the following prerequisites:
 
 2. Admin access of a Fabric workspace.
 
-3. From the **Data Factory-@lab.LabInstance.Id** Workspaces page,
+3. From the **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** Workspaces page,
     select **View** **deployment pipeline**.
 
 ## Task 1: Deploy content from one workspace to another
 
-1. From the **Data Factory-@lab.LabInstance.Id** Workspaces page,
+1. From the **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** Workspaces page,
     select **View** **deployment pipeline**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -2169,15 +2169,15 @@ incorrect.](./media/image333.png)
     in the left navigation pane.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image334.png)
+incorrect.](./media/z13.png)
 
 ## Task 2: Create the Pipeline_Deploy pipeline and declare variables
 
 1. Navigate and click
-    on **Data_Factory@lab.LabInstance.Id** dev workspace on the left-sided navigation menu.
+    on **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** dev workspace on the left-sided navigation menu.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image335.png)
+incorrect.](./media/z14.png)
 
 2. On the **Fabric** page, navigate to +**New item** section and then
     filter by, and select, **Pipeline** to create pipeline.
@@ -2204,7 +2204,7 @@ incorrect.](./media/image339.png)
 In this task, you get the unique identifiers to use in your variable
 library.
 
-1. On the **Data Factory-@lab.LabInstance.Id** dev workspace, select
+1. On the **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** dev workspace, select
     the **datafactory_lakehouse** lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
@@ -2350,7 +2350,7 @@ incorrect.](./media/image360.png)
     variable.**
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/image361.png)
+incorrect.](./media/image361.png)
 
 6. Click on **+ New** and repeat the above step to select all the
     variables.
@@ -2378,63 +2378,63 @@ incorrect.](./media/image365.png)
 3. Configure **SourceLH**:
 
 
-    1)  Under **Source** \ **Lakehouse**, select **Add dynamic content**.
+    -  Under **Source** \ **Lakehouse**, select **Add dynamic content**.
 
-    2)  Select the ellipsis (**...**), and then select **Library
+    -  Select the ellipsis (**...**), and then select **Library
         variables**.
 
-    3)  Select **SourceLH**. It populates the box
+    -  Select **SourceLH**. It populates the box
         with @pipeline().libraryVariables.WSvariables_Source_Lakehouse_ID.
         Select **OK**.
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image366.png)
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image367.png)
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image368.png)
 
 4. Configure Source_Workspace_ID:
 
 
-    1)  Under **Source** \ **Workspace ID**, select **Add dynamic
+    -  Under **Source** \ **Workspace ID**, select **Add dynamic
         content**.
 
-    2)  Select the ellipsis (**...**), and then select **Library
+    -  Select the ellipsis (**...**), and then select **Library
         variables**.
 
-    3)  Select **SourceWSID**. It populates the box
+    -  Select **SourceWSID**. It populates the box
         with @pipeline().libraryVariables.WSvariables_Source_Workspace_ID.
         Select **OK**.
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image369.png)
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image370.png)
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image371.png)
 
 5. Configure **SourceTableName**:
 
 
-    1)  Under **Source** \ **Table**, select **Enter manually**,
+    -  Under **Source** \ **Table**, select **Enter manually**,
         select **Table name**, and then select **Add dynamic content**.
 
-    2)  Select the ellipsis (**...**), and then select **Library variables
+    -  Select the ellipsis (**...**), and then select **Library variables
         (preview)**.
 
-    3)  Select **SourceTableName**. It populates the box
+    -  Select **SourceTableName**. It populates the box
         with @pipeline().libraryVariables.WSvariables_SourceTable_Name.
         Select **OK**.
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image372.png)
 
-    ![A screenshot of a computer AI-generated content may be
+       ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image373.png)
 
 7. Now that the source connection is set up, you can test it.
@@ -2659,7 +2659,7 @@ incorrect.](./media/image409.png)
 
 ## Task 9: Deploy content from one stage to another
 
-1. From the **Data Factory-@lab.LabInstance.Id** Workspaces page,
+1. From the **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** Workspaces page,
     select **View** **deployment pipeline**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -2682,7 +2682,7 @@ incorrect.](./media/image413.png)
 ## Task 10: Clean up resources
 
 1. In the left navigation pane, select *Workspaces*, and then choose
-    ***Data Factory-@lab.LabInstance.Id*.**
+    **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**
 
 1. Click on the **ellipsis (...)** in the top right corner and select **Delete pipeline**.
     ![A screenshot of a computer AI-generated content may be
