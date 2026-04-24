@@ -103,10 +103,10 @@ incorrect.](./media/image5.png)
     |Sementic model storage format|	**Sementic small model storage format (2)**|
 
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t1s7.1.png)
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t1s7.2.png)
 
 8. The Workspace is now created.
@@ -121,40 +121,32 @@ along with additional CSV files. This establishes your raw dataset
 foundation inside Fabric, enabling you to start transformations and
 queries later.
 
-1. Create a new lakehouse by clicking on the **+New item** button in
-    the navigation bar.
+1. Create a new lakehouse by clicking on the **+New item** button in the navigation bar.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t2s1.png)
 
-2. On the **Filter by item type** search box,
-    enter **Lakehouse** and select the lakehouse item.
+2. On the **Filter by item type** search box, enter **Lakehouse** and select the lakehouse item.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t2s2.png)
 
-3. On the **New lakehouse** dialog box,
-    enter **datafactory_lakehouse (1)** in the **Name** field, use default location **(2)** then uncheck the L**akehouse schemas** **(3)** click
-    on the **Create (4)** button and open the new lakehouse.
+3. On the **New lakehouse** dialog box enter **datafactory_lakehouse (1)** in the **Name** field, use default location **(2)** then uncheck the L**akehouse schemas** **(3)** click on the **Create (4)** button and open the new lakehouse.
 
-	> **Note**: Ensure to remove space before **datafactory_lakehouse**.
+   > **Note**: Ensure to remove space before **datafactory_lakehouse**.
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/up1.png)
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image12.png)
 
-4. Wait for the notification stating **Successfully created SQL
-    endpoint**.
+4. Wait for the notification stating **Successfully created SQL endpoint**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image13.png)
 
-5. From the **lakehouse** home page, select **Start with sample data**
-    to view the sample data list and load the lakehouse with the
-    built-in sample dataset. Using sample data provides a quick starting
-    point without needing raw data files.
+5. From the **lakehouse** home page, select **Start with sample data** to view the sample data list and load the lakehouse with the built-in sample dataset. Using sample data provides a quick starting point without needing raw data files.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t2s5.png)
@@ -188,18 +180,15 @@ incorrect.](./media/e1t2s7.png)
     the **NYC-Taxi-Green-Discounts** file and click on
     the **Upload** button.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/e1t2s8.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/e1t2s8.png)
 
 6. On the Upload folder pane, click **Upload**.
 
-	>[!Alert] If the **Files** folder shows a failed state, wait a minute and refresh the browser.
+	 >[!Alert] If the **Files** folder shows a failed state, wait a minute and refresh the browser.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image21.png)
+      ![](./media/image21.png)
 
-7. After the files have been uploaded **close** the **Upload
-    folder** pane.
+7. After the files have been uploaded **close** the **Upload folder** pane.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image22.png)
@@ -210,11 +199,7 @@ incorrect.](./media/image22.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t2s11.png)
 
-9. On the **Lakehouse** page, under the Explorer pane, select
-    **Files**. Now, hover your mouse
-    to **NYC-Taxi-Green-Discounts.csv** file. Click on the horizontal
-    ellipses **(…)** beside **NYC-Taxi-Green-Discounts**.csv. Navigate
-    and click on **Load Table**, then select **New table**.
+9. On the **Lakehouse** page, under the Explorer pane, select **Files**. Now, hover your mouse to **NYC-Taxi-Green-Discounts.csv** file. Click on the horizontal ellipses **(…)** beside **NYC-Taxi-Green-Discounts**.csv. Navigate and click on **Load Table**, then select **New table**.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t2s12.1.png)
@@ -222,16 +207,13 @@ incorrect.](./media/e1t2s12.1.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/e1t2s12.2.png)
 
-10. On the **Load file to new table** dialog box, and click on
-    the **Load** button.
+10. On the **Load file to new table** dialog box, and click on the **Load** button.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image26.png)
+     ![](./media/image26.png)
 
 1. Verify that the **nyc-taxi-green-discounts** table has been successfully created in the Lakehouse by observing the confirmation notification.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image27.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image27.png)
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image28.png)
@@ -272,21 +254,17 @@ incorrect.](./media/image33.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image34.png)
 
-5. Within the **Get data** explorer's search bar,
-    type **datafactory_lakehouse** to locate the lakehouse item.
-    Select the **datafactory_lakehouse** item within the OneLake
-    catalog's returned results.
+5. Within the **Get data** explorer's search bar, type **datafactory_lakehouse** to locate the lakehouse item. Select the **datafactory_lakehouse** item within the OneLake catalog's returned results.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image35.png)
+    ![](./media/image35.png)
 
 7. From the Get data table navigator, select the tables listed below to perform data transformation operations and merge the tables for our downstream business intelligence projects.
 
-	- select **green_tripdata_2022**
+     - select **green_tripdata_2022**
 
-	- select **nyc_taxi_green_discounts**
+	 - select **nyc_taxi_green_discounts**
 
-    - Click on **Create.**
+     - Click on **Create.**
 
        ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image37.png)
@@ -358,8 +336,7 @@ incorrect.](./media/image47.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image48.png)
 
-	> **Note:** After promoting the headers, you can see a new step added to
-	the **Applied steps** pane at the top of the dataflow editor to the data
+	> **Note:** After promoting the headers, you can see a new step added to the **Applied steps** pane at the top of the dataflow editor to the data
 	types of your columns.
 
 7. Select the **nyc_taxi_green_discounts** table and from the **Home**
@@ -374,48 +351,37 @@ incorrect.](./media/image49.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image50.png)
 
-8. With the table unpivoted, rename the *Attribute* and *Value* columns
-    using the formula bar. Replace the existing script with:  
+8. With the table unpivoted, rename the *Attribute* and *Value* columns using the formula bar. Replace the existing script with:  
 	
-	**Table.UnpivotOtherColumns(#"Changed column type", {"VendorID"}, "Date", "Discount")** 
+	- Apply this formula **Table.UnpivotOtherColumns(#"Changed column type", {"VendorID"}, "Date", "Discount")** 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image51.png)
+      ![A screenshot of a computer AI-generated content may be incorrect.](./media/image51.png)
 
-    ![](./media/image52.png)
+      ![](./media/image52.png)
 
-    ![](./media/image53.png)
+      ![](./media/image53.png)
 
-	> **Note:** To rename the Attribute and Value columns, you can also
+	  > **Note:** To rename the Attribute and Value columns, you can also
 	double-click them and change 'Attribute' to 'Date' and 'Value' to
 	'Discount'.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image54.png)
+      ![A screenshot of a computer AI-generated content may be incorrect.](./media/image54.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image55.png)
+      ![A screenshot of a computer AI-generated content may be incorrect.](./media/image55.png)
 
-9. Change the data type of the Date column by selecting the data type
-    menu to the left of the column name and choosing **Date**.
+9. Change the data type of the Date column by selecting the data type menu to the left of the column name and choosing **Date**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image56.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image56.png)
 
-10. Select the **Discount** column and then select the **Transform** tab
-    on the menu. Select **Number column**, and then
-    select **Standard** numeric transformations from the submenu, and
-    choose **Divide**.
+10. Select the **Discount** column and then select the **Transform** tab on the menu. Select **Number column**, and then select **Standard** numeric transformations from the submenu, and choose **Divide**.
 
-    ![](./media/image57.png)
+     ![](./media/z15.png)
 
 11. On the **Divide** dialog box, enter the value 100.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image58.png)
+     ![](./media/image58.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image59.png)
+     ![](./media/image59.png)
 
 ## Task 5: Merging queries
 
@@ -423,33 +389,23 @@ In this task, you join multiple tables (trip data and discounts) to
 enrich your dataset. Merging helps consolidate related information into
 a single unified view for reporting and analytics.
 
-1. Select your original data query (In our example, its called Bronze),
-    and on the **Home** tab, Select the **Combine** menu and
-    choose **Merge queries**, then **Merge queries as new**.
+1. Select your original data query (In our example, its called Bronze),and on the **Home** tab, Select the **Combine**  menu and choose **Merge queries**, then **Merge queries as new**.
 
-    ![](./media/z6.png)
+     ![](./media/z6.png)
 
 2. In the **Merge** window, select **nyc-taxi-green-discounts (1)** select the **light-bulb (2)** and choose the **VendorID → VendorID (3)** mapping from suggestions, set **Join kind** to **Inner (4)**, and click **OK (5)**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/z8.png)
+    ![](./media/z8.png)
 
 1. Verify after merging the tables.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image63.png)
+    ![](./media/image63.png)
 
-3. Navigate to the far right of the **green_tripdata_2022** table.
-    Select the expand icon on the joined **nyc_taxi_green_discounts**
-    column. From the available column selections, deselect
-    **VendorID**—since it was used as the merge key and already exists
-    in the dataset—then click **OK** to continue.
+3. Navigate to the far right of the **green_tripdata_2022** table Select the expand icon on the joined **nyc_taxi_green_discounts** column. From the available column selections, deselect **VendorID**—since it was used as the merge key and already exists in the dataset—then click **OK** to continue.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image64.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image64.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image65.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/image65.png)
 
 4. With the discount value at the row level, we can create a new column
     to calculate the total amount after discount. To do so, select
@@ -478,16 +434,13 @@ incorrect.](./media/image68.png)
 
     ![](./media/z9.png)
 
-7. On the **Round** dialog box, enter 2 for the number of decimal
-    places and then select **OK**.
+7. On the **Round** dialog box, enter 2 for the number of decimal places and then select **OK**.
 
     ![](./media/image70.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image71.png)
+    ![](./media/image71.png)
 
-8. Change the data type of the **IpepPickupDatetime** from **Date** to
-    **Date/Time**.
+8. Change the data type of the **IpepPickupDatetime** from **Date** to **Date/Time**.
 
     ![](./media/image72.png)
 
@@ -533,6 +486,10 @@ incorrect.](./media/image77.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image78.png)
 
+    > **Note:** Please uncheck **RatecodeID, passenger_count and trip_distance** columns in the column mapping if you get any error after running the Dataflow gen 2.
+
+     ![](./media/z26.png)
+
 5. On the main editor window, confirm that you see your output
     destination on the **Query settings** pane for the **Output** table
     under **Data destination**, and then select **Save**\*.
@@ -562,8 +519,7 @@ incorrect.](./media/image80.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image81.png)
 
-3. After selecting **OK**, create a table that only contains
-    the selected columns.
+3. After selecting **OK**, create a table that only contains the selected columns.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image82.png)
@@ -574,30 +530,18 @@ In this task, you remove unnecessary columns using different techniques.
 This ensures the final dataset remains lean and tailored for business
 needs.
 
-1. When you select **Remove columns** from the **Home** tab, you have
-    two options:
+1. When you select **Remove columns** from the **Home** tab, you have two options:
 
 	- **Remove columns**: Removes the selected columns.
 
 	- **Remove other columns**: Removes all columns from the
 	  table *except* the selected ones.
 
-      ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image83.png)
+      ![](./media/image83.png)
 
-2. You can also select the columns you want to remove in the table,
-    then select and hold (or right-click) the column and choose **Remove
-    columns** in the shortcut menu. This method of removing columns is
-    demonstrated in the next section.
+2. You can also select the columns you want to remove in the table, then select and hold (or right-click) the column and choose **Remove columns** in the shortcut menu. This method of removing columns is demonstrated in the next section. **Remove selected columns** Starting from the sample table, select the **passenger_count** and the **Report created** columns. Select and hold (or right-click) either of the selected column headings. A new shortcut menu appears, where you can select the **Remove columns** command.
 
-	**Remove selected columns**
-
-	Starting from the sample table, select the **passenger_count** and
-	the **Report created** columns. Select and hold (or right-click)
-	either of the selected column headings. A new shortcut menu appears,
-	where you can select the **Remove columns** command.
-
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image84.png)
 
 3. After selecting **Remove columns**, you create a table that only
@@ -627,10 +571,7 @@ answer key business questions like total tips per vendor.
 
 		3. **Fare_amount**
 
-3. On the **New column name,** enter
-    **Count** in **Operation** column field, select **Sum**, then
-    under **Column** field, select **tip_amount.** Click on **Add
-    aggregation** to add more aggregate column and operation.
+3. On the **New column name,** enter **Count** in **Operation** column field, select **Sum**, then under **Column** field, select **tip_amount.** Click on **Add aggregation** to add more aggregate column and operation.
 
 4. On the **New column name,** enter
     **File** in **Operation** column field, select **Sum**, then
@@ -714,21 +655,15 @@ incorrect.](./media/z12.png)
 
 11. On the Query settings pane, select the **green_tripdata_2022**
 
-12. Select the **Productkey** column sort and filter dropdown menu, then
-    select **Number filters**, and choose the **Greater than...** 
+12. Select the **Productkey** column sort and filter dropdown menu, then select **Number filters**, and choose the **Greater than...** 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image99.png)
+     ![](./media/image99.png)
 
-13. In the **Filter rows** dialog, click the pencil icon next to the
-    value field, then click **Select a parameter** and select it. Click
-    **Ok**
+13. In the **Filter rows** dialog, click the pencil icon next to the value field, then click **Select a parameter** and select it. Click **Ok.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image100.png)
+     ![](./media/image100.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image101.png)
+     ![](./media/image101.png)
 
 14. On the Home window, select **Save & run** and click on **Save & run** button
 
@@ -757,43 +692,32 @@ Finally, you automate the refresh of your dataflow on a recurring
 schedule. This ensures your curated datasets remain updated without
 manual intervention.
 
-1. On the Fabric workspace, select the more options ellipsis icon next
-    to the dataflow and select the **Schedule**
+1. On the Fabric workspace, select the more options ellipsis icon next to the dataflow and select the **Schedule.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image105.png)
+    ![](./media/image105.png)
 
-2. Configure **the Dataflow refresh schedule to run once daily at 8:00
-    AM until the end of the year.** This frequency is more typical for
-    production environments, balancing data freshness with system
-    performance and resource efficiency.
+2. Configure **the Dataflow refresh schedule to run once daily at 8:00 AM until the end of the year.** This frequency is more typical for production environments, balancing data freshness with system performance and resource efficiency.
 
     ![](./media/image106.png)
 
 3. Select **Close**
 
-    ![A screenshot of a schedule AI-generated content may be
-incorrect.](./media/image107.png)
+    ![](./media/image107.png)
 
-4. To check the status ellipsis icon next to the dataflow and select
-    **Recent runs**
+4. To check the status ellipsis icon next to the dataflow and select **Recent runs**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image108.png)
+    ![](./media/image108.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image109.png)
+    ![](./media/image109.png)
 
 	> **Note:** You can view the **Recent runs** directly within the
 	Dataflow editor—located just after the **Save and run** and **Check
 	validation** options. This allows you to monitor execution history
 	without leaving the Dataflow interface
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image110.png)
+    ![](./media/image110.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image111.png)
+    ![](./media/image111.png)
 
 # Exercise 2: Pipeline Templates and Monitoring 
 
@@ -868,37 +792,26 @@ incorrect.](./media/image119.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image120.png)
 
-7. On the **Settings** step, review the Copy job mode options and then
-    select **Next** to continue. Copy jobs move curated data into a
-    warehouse for faster analytics.
+7. On the **Settings** step, review the Copy job mode options and then select **Next** to continue. Copy jobs move curated data into a warehouse for faster analytics.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image121.png)
 
-8. On the **Map to destination** tab, you can review the added tables
-    and update the schema or table names. Once reviewed,
-    select **Next** to continue.
+8. On the **Map to destination** tab, you can review the added tables and update the schema or table names. Once reviewed, select **Next** to continue.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image122.png)
+     ![](./media/image122.png)
 
-9. On the **Review + save** step, deselect the **Start data transfer
-    immediately** option and then select **Save** to continue.
+9. On the **Review + save** step, deselect the **Start data transfer immediately** option and then select **Save** to continue.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image123.png)
+    ![](./media/image123.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image124.png)
+    ![](./media/image124.png)
 
-10. Now that you've reviewed the configuration, from the **Home** tab,
-    select the **Run** option to begin copying data from the lakehouse
-    into the warehouse.
+10. Now that you've reviewed the configuration, from the **Home** tab, select the **Run** option to begin copying data from the lakehouse into the warehouse.
 
-    ![](./media/image125.png)
+     ![](./media/image125.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image126.png)
+     ![](./media/image126.png)
 
 11. You can monitor the copy job in the **Results** tab at the bottom to
     confirm that it has successfully completed.
@@ -909,23 +822,17 @@ incorrect.](./media/image127.png)
 12. Hover over the copy job on the left side-rail and select
     the **X** to close it.
 
-13. On the top menu, select **datafactory_warehouse**, as shown in the
-    image below.
+13. On the top menu, select **datafactory_warehouse**, as shown in the image below.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image128.png)
+    ![](./media/image128.png)
 
-14. To verify the tables in the warehouse, navigate to the warehouse
-    explorer and review the list of tables
+14. To verify the tables in the warehouse, navigate to the warehouse explorer and review the list of tables
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image129.png)
+    ![](./media/image129.png)
 
-15. On the left navigation, select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in the
-    image below.
+15. On the left navigation, select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in the image below.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image130.png)
+    ![](./media/image130.png)
 
 ## Task 2: Create parameterized pipeline template
 
@@ -933,17 +840,13 @@ In this task, you design a reusable pipeline template with parameters.
 Parameterization makes pipelines flexible and reusable across multiple
 datasets, environments, or scenarios.
 
-1. Select the **New item** option on the workspace page.
-    Select **Pipeline** from the new item flyout menu.
+1. Select the **New item** option on the workspace page.Select **Pipeline** from the new item flyout menu.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image131.png)
+     ![](./media/image131.png)
 
-2. Provide a Pipeline Name as **sample_pipeline** and then
-    select **Create**.
+2. Provide a Pipeline Name as **sample_pipeline** and then select **Create**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image132.png)
+     ![](./media/image132.png)
 
 ## Task 3: Use a Copy activity in the pipeline to load sample data to a data Lakehouse
 
@@ -1006,11 +909,9 @@ incorrect.](./media/image140.png)
     **+New** to create a new destination table for loading the data.
    ![](./media/image141.png)
 
-11. Enter the table name as **holidaydatacontainer** and click on
-    **Create**
+11. Enter the table name as **holidaydatacontainer** and click on **Create**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image142.png)
+     ![](./media/image142.png)
 
 **Task 5: Run and view the results of your Copy activity.**
 
@@ -1100,83 +1001,64 @@ incorrect.](./media/image156.png)
     - Enter your email address in the **To** section. If you want to use
     several addresses, use **;** to separate them.
 
-       ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image157.png)
+       ![](./media/image157.png)
 
-	- For the **Subject**, select the field so that the **Add dynamic
-	  content** option appears, and then select it to display the pipeline
-	  expression builder canvas.
+	 - For the **Subject**, select the field so that the **Add dynamic content** option appears, and then select it to display the pipeline expression builder canvas.
 
-10. The **Pipeline expression builder** dialog appears. Enter the
-    following expression, then select **OK**:
+10. The **Pipeline expression builder** dialog appears. Enter the following expression, then select **OK**:
 
-	**@concat('DI in an Hour Pipeline Succeeded with Pipeline Run Id',pipeline().RunId)**
+	- **@concat('DI in an Hour Pipeline Succeeded with Pipeline Run Id',pipeline().RunId)**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image158.png)
+      ![](./media/image158.png)
 
-11. For the **Body**, select the field again and choose the **View in
-    expression builder** option when it appears below the text area. Add
-    the following expression again in the **Pipeline expression
-    builder** dialog that appears, then select **OK**:
+11. For the **Body**, select the field again and choose the **View in expression builder** option when it appears below the text area. Add the following expression again in the **Pipeline expression builder** dialog that appears, then select **OK**:
 
-	**@concat('RunID = ', pipeline().RunId, ' ; ', 'Copied rows ',
-	activity('Copy_data1').output.rowsCopied, ' ; ','Throughput ',
-	activity('Copy_data1').output.throughput)**
+	```
+    @concat(
+    'RunID = ', pipeline().RunId,
+    '; Copied rows = ', activity('Copy data1').output.dataWritten,
+    '; Throughput = ', activity('Copy data1').output. Throughput
+    )
+    ```
 
 	> **Note:** Replace **Copy_data1** with the name of your own
 	pipeline copy activity (example: **Copy_2ph**).
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image159.png)
+     ![](./media/image159.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image160.png)
+     ![](./media/image160.png)
 
-6. Finally select the **Home** tab at the top of the pipeline editor
-    and choose **Run**. Then select **Save and run** on the confirmation
-    dialog to execute these activities.
+6. Finally select the **Home** tab at the top of the pipeline editor and choose **Run**. Then select **Save and run** on the confirmation dialog to execute these activities.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image161.png)
+     ![](./media/image161.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image162.png)
+     ![](./media/image162.png)
 
-12. After the pipeline runs successfully, check your email to find the
-    confirmation email sent from the pipeline.
+12. After the pipeline runs successfully, check your email to find the confirmation email sent from the pipeline.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image163.png)
+     ![](./media/image163.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image164.png)
+     ![](./media/image164.png)
 
 ## Task 4: Schedule pipeline execution
 
 In this task, you automate pipeline execution with a schedule. Scheduled
 runs help ensure data freshness without manual effort
 
-1. On the **Home** tab of the pipeline editor window,
-    select **Schedule**.
+1. On the **Home** tab of the pipeline editor window, select **Schedule**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image165.png)
+     ![](./media/image165.png)
 
-2. Select **+ Add schedule** and configure the schedule as required
-    then select **Save** and close the **Schedule** panel.
+2. Select **+ Add schedule** and configure the schedule as required then select **Save** and close the **Schedule** panel.
 
-	**Note**: The example here schedules the pipeline to execute
+	> **Note**: The example here schedules the pipeline to execute
 	daily at 8:00 PM until the end of the year.
 
-    ![A screenshot of a schedule AI-generated content may be
-incorrect.](./media/image166.png)
+     ![](./media/image166.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image167.png)
+     ![](./media/image167.png)
 
-    ![A screenshot of a schedule AI-generated content may be
-incorrect.](./media/image168.png)
+     ![](./media/image168.png)
 
 ## Task 5: Add a Dataflow activity to the pipeline
 
@@ -1184,46 +1066,30 @@ In this task, you integrate a Dataflow into your pipeline, chaining
 activities together. This creates end-to-end workflows where multiple
 data processing steps are executed in sequence.
 
-1. Hover over the green line connecting the **Copy activity** and
-    the **Office 365 Outlook** activity on your pipeline canvas and
-    select the **+** button to insert a new activity.
+1. Hover over the green line connecting the **Copy activity** and the **Office 365 Outlook** activity on your pipeline canvas and select the **+** button to insert a new activity.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image169.png)
+     ![](./media/image169.png)
 
 2. Choose **Dataflow** from the menu that appears.
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image170.png)
 
-3. The newly created Dataflow activity is inserted between the Copy
-    activity and the Office 365 Outlook activity, and selected
-    automatically, showing its properties in the area below the canvas.
-    Select the **Settings** tab on the properties area, and then select
-    your dataflow created.
+3. The newly created Dataflow activity is inserted between the Copy activity and the Office 365 Outlook activity, and selected automatically, showing its properties in the area below the canvas. Select the **Settings** tab on the properties area, and then select your dataflow created.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image171.png)
+    ![](./media/image171.png)
 
-13. Select the **Home** tab at the top of the pipeline editor and
-    choose **Run**. Then select **Save and run** again on the
-    confirmation dialog to execute these activities.
+13. Select the **Home** tab at the top of the pipeline editor and choose **Run**. Then select **Save and run** again on the confirmation dialog to execute these activities.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image172.png)
+     ![](./media/image172.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image173.png)
+     ![](./media/image173.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image174.png)
+     ![](./media/image174.png)
 
-14. Select your workspace,
-    the [**Data-Factory@lab.LabInstance.Id**](mailto:Data-Factory@lab.LabInstance.Id) from
-    the left-hand navigation menu. It opens the workspace item view.
+14. Select your workspace, the [**Data-Factory@lab.LabInstance.Id**](mailto:Data-Factory@lab.LabInstance.Id) from the left-hand navigation menu. It opens the workspace item view.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image175.png)
+     ![](./media/image175.png)
 
 ## Task 6: Monitor data pipeline runs
 
@@ -1280,78 +1146,55 @@ incorrect.](./media/image184.png)
 
     ![Screenshot of activity run filter options.](./media/image185.png)
 
-15. Select the column option and select the columns and click on
-    **Apply** button
+15. Select the column option and select the columns and click on **Apply** button
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image186.png)
+     ![](./media/image186.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image187.png)
+     ![](./media/image187.png)
 
 16. Select the **sample_pipeline**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image188.png)
+     ![](./media/image188.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image189.png)
+     ![](./media/image189.png)
 
-17. You can also search for an activity name, activity type, or activity
-    run ID with the **Filter by keyword** box.
+17. You can also search for an activity name, activity type, or activity run ID with the **Filter by keyword** box.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image190.png)
+     ![](./media/image190.png)
 
-    ![Screenshot of keyword filter box.](./media/image191.png)
+     ![](./media/image191.png)
 
-    ![Screenshot of keyword filtering results.](./media/image192.png)
+     ![](./media/image192.png)
 
-7. If you want to export your monitoring data, select **Export to
-    CSV**.
+7. If you want to export your monitoring data, select **Export to CSV**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image193.png)
+     ![](./media/image193.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image194.png)
+     ![](./media/image194.png)
 
-8. To find additional information on your pipeline
-    runs **Input** and **Output**, select the input or output links to
-    the right of the relevant row in the Activity Runs.
+8. To find additional information on your pipeline runs **Input** and **Output**, select the input or output links to the right of the relevant row in the Activity Runs.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image195.png)
+     ![](./media/image195.png)
 
-9. You can select **Update pipeline** to make changes to your pipeline
-    from this screen. This selection takes you back to the pipeline
-    canvas.
+9. You can select **Update pipeline** to make changes to your pipeline from this screen. This selection takes you back to the pipeline canvas.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image196.png)
+     ![](./media/image196.png)
 
-10. You can also **Rerun** your data pipeline. You can choose to rerun
-    the entire pipeline or only rerun the pipeline from the failed
-    activity.
+10. You can also **Rerun** your data pipeline. You can choose to rerun the entire pipeline or only rerun the pipeline from the failed activity.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image197.png)
+     ![](./media/image197.png)
 
-18. Select the **Rerun entire data pipeline**
+18. Select the **Rerun entire data pipeline.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image198.png)
+     ![](./media/image198.png)
 
-19. Select **Ok**
+19. Select **Ok.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image199.png)
+     ![](./media/image199.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image200.png)
+     ![](./media/image200.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image201.png)
+     ![](./media/image201.png)
 
 # Exercise 3: Implementing CI/CD and ALM Solution Architectures for Dataflow Gen2 in Microsoft Fabric
 
@@ -1368,17 +1211,13 @@ You’ll work through a scenario where the source, logic (filters), and
 destination of a dataflow are all driven by variables (such as workspace
 IDs, lakehouse IDs, filter values) instead of static values.
 
-1. On the **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** dev workspace, select
-    the **datafactory_lakehouse** lakehouse.
+1. On the **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** dev workspace, select the **datafactory_lakehouse** lakehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image202.png)
+     ![](./media/image202.png)
 
-2. Copy the **workspace ID** and the **lakehouse object ID** in the URL
-    and save it in the Notepad.
+2. Copy the **workspace ID** and the **lakehouse object ID** in the URL and save it in the Notepad.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image203.png)
+    ![](./media/image203.png)
 
 3. On the left navigation, select **Data Factory-<inject key="DeploymentID" enableCopy="false"/>**, as shown in the
     image below.
@@ -1428,73 +1267,48 @@ incorrect.](./media/image210.png)
     |WarehouseId	|Guid|	<GUID of datafactory_warehouse ID Warehouse|
     |Region	|String|**Sweden**|
 
-
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image211.png)
 
 9. Select **Save** \ **Agree**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image212.png)
+    ![](./media/image212.png)
 
-10. Navigate and click
-    on **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** Workspace
-    on the left navigation
+10. Navigate and click on **Data Factory-<inject key="DeploymentID" enableCopy="false"/>** Workspace on the left navigation.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image213.png)
+     ![](./media/image213.png)
 
-11. Create a new Dataflow Gen2 by clicking on the **+New item** button
-    in the navigation bar. From the list of available items select
-    the **Dataflow Gen2** item
+11. Create a new Dataflow Gen2 by clicking on the **+New item** button in the navigation bar. From the list of available items select the **Dataflow Gen2** item.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image214.png)
+     ![](./media/image214.png)
 
-12. In the **New Dataflow Gen2** window, click on **Dataflow1** and
-    rename it to **Variable_Dataflow**
+12. In the **New Dataflow Gen2** window, click on **Dataflow1** and rename it to **Variable_Dataflow.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/var1.png)
+     ![](./media/var1.png)
 
-13. From the **Home** tab, select **Get data** and then
-    the **More...** option.
+13. From the **Home** tab, select **Get data** and then the **More...** option.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image216.png)
+     ![](./media/image216.png)
 
-14. Within the **Get data** explorer's search bar,
-    type **datafactory_lakehouse** to locate the silver lakehouse
-    item. Select the **datafactory_lakehouse** item within the OneLake
-    catalog's returned results.
+14. Within the **Get data** explorer's search bar, type **datafactory_lakehouse** to locate the silver lakehouse item. Select the **datafactory_lakehouse** item within the OneLake catalog's returned results.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image217.png)
+     ![](./media/image217.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image218.png)
+     ![](./media/image218.png)
 
-15. From the Get data table navigator, select the table
-    **holidaydatacontainer** and click on **Create**
+15. From the Get data table navigator, select the table **holidaydatacontainer** and click on **Create**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image219.png)
+     ![](./media/image219.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image220.png)
+     ![](./media/image220.png)
 
-16. From the **Home** tab, select **Get data** and then the **Blank
-    query** option.
+16. From the **Home** tab, select **Get data** and then the **Blank query** option.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image221.png)
+     ![](./media/image221.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image222.png)
+     ![](./media/image222.png)
 
-17. Once your query is created and visible in the dataflow, rename it to
-    **WorkspaceId** and update the formula in the **Source** step with
-    the following expression and click on **Next** button
+17. Once your query is created and visible in the dataflow, rename it to **WorkspaceId** and update the formula in the **Source** step with the following expression and click on **Next** button.
 	
     ```
     let
@@ -1503,31 +1317,21 @@ incorrect.](./media/image222.png)
     Source
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image223.png)
+    ![](./media/image223.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image224.png)
+    ![](./media/image224.png)
 
-18. In the **Power Query** editor, right-click the existing query (for
-    example, **Query**) from the **Queries** pane, select **Rename**,
-    and change its name to **WorkspaceId**
+18. In the **Power Query** editor, right-click the existing query (for example, **Query**) from the **Queries** pane, select **Rename**, and change its name to **WorkspaceId.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image225.png)
+     ![](./media/image225.png)
+ 
+     ![](./media/image226.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image226.png)
+19. From the **Home** tab, select **Get data** and then the **Blank query** option.
 
-19. From the **Home** tab, select **Get data** and then the **Blank
-    query** option.
+     ![](./media/image227.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image227.png)
-
-20. Once your query is created and visible in the dataflow, rename it to
-    **LakehouseID** and update the formula in the **Source** step with
-    the following expression and click on **Next** button
+20. Once your query is created and visible in the dataflow, rename it to **LakehouseID** and update the formula in the **Source** step with the following expression and click on **Next** button.
 
     ```
 	let
@@ -1538,55 +1342,37 @@ incorrect.](./media/image227.png)
 	Source
     ```
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image228.png)
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image229.png)
 
-21. In the **Power Query** editor, right-click the existing query (for
-    example, **Query**) from the **Queries** pane, select **Rename**,
-    and change its name to **LakehouseID**
+21. In the **Power Query** editor, right-click the existing query (for example, **Query**) from the **Queries** pane, select **Rename**, and change its name to **LakehouseID.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image230.png)
+     ![](./media/image230.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image231.png)
+     ![](./media/image231.png)
 
-22. Select the **holidaydatacontainer** table. Once your query is
-    created and visible in the Dataflow, navigate to the 'Applied Steps'
-    pane on the right side and select the 'Step' option to open the
-    Query script and modify the formula as required.
+22. Select the **holidaydatacontainer** table. Once your query is created and visible in the Dataflow, navigate to the 'Applied Steps' pane on the right side and select the 'Step' option to open the Query script and modify the formula as required.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image232.png)
+     ![](./media/image232.png)
 
-    ![](./media/image233.png)
+     ![](./media/image233.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image234.png)
+     ![](./media/image234.png)
 
-23. Once both queries are created, update the query script to reference
-    them instead of using hardcoded values by manually replacing the
-    original values in the formula bar with the **WorkspaceId** and
-    **LakehouseID** query references.
+23. Once both queries are created, update the query script to reference them instead of using hardcoded values by manually replacing the original values in the formula bar with the **WorkspaceId** and **LakehouseID** query references.
 
-    ![](./media/image235.png)
+     ![](./media/image235.png)
 
-	And you notice that it still correctly evaluates the data preview in
-	the Dataflow editor with the direct references created in the diagram
-	view between all the queries involved:
+	 > **Note:** And you notice that it still correctly evaluates the data preview in the Dataflow editor with the direct references created in the diagram view between all the queries involved:
 
-24. From the **Home** tab, select **Get data** and then the **Blank
-    query** option.
+24. From the **Home** tab, select **Get data** and then the **Blank query** option.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image236.png)
+     ![](./media/image236.png)
 
-25. Once your query is created and visible in the dataflow, rename it to
-    **Region** and update the formula in the **Source** step with the
-    following expression and click on **Next** button
+25. Once your query is created and visible in the dataflow, rename it to **Region** and update the formula in the **Source** step with the following expression and click on **Next** button.
 	
     ```
     let
@@ -1595,113 +1381,81 @@ incorrect.](./media/image236.png)
     Source
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image237.png)
+     ![](./media/image237.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image238.png)
+     ![](./media/image238.png)
 
-26. In the **Power Query** editor, right-click the existing query (for
-    example, **Query**) from the **Queries** pane, select **Rename**,
-    and change its name to **Region**
+26. In the **Power Query** editor, right-click the existing query (for example, **Query**) from the **Queries** pane, select **Rename**, and change its name to **Region.**
 
-    ![](./media/image239.png)
+     ![](./media/image239.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image240.png)
+     ![](./media/image240.png)
 
-27. On the Home tab, go to the **holidaydatacontainer** table, and
-    select **CountryOrRegion** column
+27. On the Home tab, go to the **holidaydatacontainer** table, and select **CountryOrRegion** column.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image241.png)
+     ![](./media/image241.png)
 
-28. Select the **CountryOrRegion** column sort and filter dropdown menu,
-    then select **Text filters**, and choose the **Equals...** 
+28. Select the **CountryOrRegion** column sort and filter dropdown menu, then select **Text filters**, and choose the **Equals...** 
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image242.png)
+     ![](./media/image242.png)
 
-29. In the **Filter rows** dialog, click the pencil icon next to the
-    value field, then select **Select a query** to dynamically filter
-    rows based on a predefined parameter.
+29. In the **Filter rows** dialog, click the pencil icon next to the value field, then select **Select a query** to dynamically filter rows based on a predefined parameter.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image243.png)
+     ![](./media/image243.png)
 
 30. Select the **Region** and click on **OK** button
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image244.png)
+     ![](./media/image244.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image245.png)
+     ![](./media/image245.png)
 
 31. In the Home window, select **Save** button
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image246.png)
+     ![](./media/image246.png)
 
 32. In the Home window, select **Check validation Dataflow**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image247.png)
+     ![](./media/image247.png)
 
-    ![](./media/image248.png)
+     ![](./media/image248.png)
 
-33. Once the query script has been updated, navigate to the **'Data
-    destination'** pane on the right side, click the '**+'** icon, and
-    select '**Warehouse**' as the destination to load the transformed
-    data
+33. Once the query script has been updated, navigate to the **'Data destination'** pane on the right side, click the '**+'** icon, and select '**Warehouse**' as the destination to load the transformed data.
 
-    ![](./media/image249.png)
+     ![](./media/image249.png)
 
-34. On the **Connect to data destination** dialog, your connection
-    should already be selected. Select **Next** to continue.
+34. On the **Connect to data destination** dialog, your connection should already be selected. Select **Next** to continue.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image250.png)
+    ![](./media/image250.png)
 
-35. On the **Choose destination target** dialog, browse to the Warehouse
-    where you wish to load the data and name the new table , then
-    select **Next** again.
+35. On the **Choose destination target** dialog, browse to the Warehouse where you wish to load the data and name the new table , then select **Next** again.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image251.png)
+     ![](./media/image251.png)
 
 36. Click on **Save settings**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image252.png)
+     ![](./media/image252.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image253.png)
+     ![](./media/image253.png)
 
-37. In the Home window, select **Save & run** and click on **Save &
-    run** button
+37. In the Home window, select **Save & run** and click on **Save & run** button
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image254.png)
+    > **Note:** If you encounter any errors after selecting Save & Run, please proceed with the next task, sometimes this issue is due to the Fabric end.
 
-38. In the left-sided navigation menu, navigate and click on ***Data
-    Factory-@lab.LabInstance.Id***, as shown in the below image
+     ![](./media/image254.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image255.png)
+38. In the left-sided navigation menu, navigate and click on ***Data Factory-@lab.LabInstance.Id***, as shown in the below image
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image256.png)
+     ![](./media/image255.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image257.png)
+     ![](./media/image256.png)
 
-39. Select the Warehouse
+     ![](./media/image257.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image258.png)
+39. Select the Warehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image259.png)
+     ![](./media/image258.png)
+
+     ![](./media/image259.png)
 
 # Exercise 4: Enable GitHub Integration for Source Control and CI/CD in Microsoft Fabric
 
@@ -1837,24 +1591,19 @@ incorrect.](./media/image276.png)
 
 6. **Specify Access Permissions:**
 
-    - **Contents:** Select "Read and write" access for the "Contents"
-      permission.
+    - **Contents:** Select "Read and write" access for the "Contents" permission.
 
-    - **Other Permissions:** You can also configure other permissions as
-      needed, such as "Issues" or "Pull Requests".
+    - **Other Permissions:** You can also configure other permissions as needed, such as "Issues" or "Pull Requests".
 
-    ![](./media/image277.png)
+       ![](./media/image277.png)
 
-    ![A red rectangle with text AI-generated content may be
-incorrect.](./media/image278.png)
+       ![](./media/image278.png)
 
 7. Click **Generate token.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image279.png)
+     ![](./media/image279.png)
 
-    ![A screenshot of a computer error AI-generated content may be
-incorrect.](./media/image280.png)
+     ![](./media/image280.png)
 
     **Important:** Copy and securely store the generated token, as it
     will not be displayed again.
@@ -1909,15 +1658,15 @@ workspace, as described here.
     - **Folder**: The GitHub folder name that we have created earlier as
       **Copyjob-Test**
 
-	Select **Connect and sync**.
+	- Select **Connect and sync**.
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image286.png)
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image287.png)
 
-    ![A screenshot of a computer AI-generated content may be
+      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image288.png)
 
 2. After you connect, the Workspace displays information about **source
@@ -1942,31 +1691,25 @@ deployment workflows.
 
 1. In the Azure portal, search for **DevOps** in the top search bar and select **Azure DevOps organizations** from the results.
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev1.png)
+    ![](./media/dev1.png)
 
 2. On the Azure DevOps page, click on **View my organizations**.
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev2.png)
+    ![](./media/dev2.png)
 
 1. On the Azure DevOps page, click on **Create new organization**.
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev3.png)
+    ![](./media/dev3.png)
 
 1. Provide the organization name, select the region as **India**, choose the appropriate subscription, and click on **Continue**.
 
-   ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev5.png)
+    ![](./media/dev5.png)
 
 15. Select the checkbox to receive information (optional) and click on **Continue**.
 
-     ![A screenshot of a computer AI-generated content may be incorrect.](./media/dev4.png)
+     ![](./media/dev4.png)
 
-1. Open your browser, navigate to the address bar, and type or paste
-    the following URL: **https://dev.azure.com/** and navigate to the project **DataFactory-@lab.LabInstance.Id**.
-
-     ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image298.png)
-
-10. To create a new repository in Azure DevOps, navigate to **Repos \
+1. To create a new repository in Azure DevOps, navigate to **Repos \
     Files \ New repository dropdown \ New repository**
 
     ![](./media/image299.png)
@@ -2159,17 +1902,13 @@ incorrect.](./media/image331.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image332.png)
 
-10. The **Production workspace** has been successfully created, and the
-    data has been deployed
+10. The **Production workspace** has been successfully created, and the data has been deployed
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image333.png)
+     ![](./media/image333.png)
 
-11. To review the Test and Production workspaces, click on the workspace
-    in the left navigation pane.
+11. To review the Test and Production workspaces, click on the workspace in the left navigation pane.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/z13.png)
+     ![](./media/z13.png)
 
 ## Task 2: Create the Pipeline_Deploy pipeline and declare variables
 
@@ -2285,7 +2024,7 @@ incorrect.](./media/image351.png)
     |DestinationTable_Name|	String|	**TestCopiedData**|
 
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image352.png)
 
 6. On the **WS Variables** variable library page, select **Add value
@@ -2312,18 +2051,16 @@ incorrect.](./media/image354.png)
     |DestinationTable_Name|	String	|**ProdCopiedData**|
 
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image355.png)
 
 9. Select **Save** \ **Agree**.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image356.png)
+    ![](./media/image356.png)
 
 10. Select the **data_movement_pipeline.**
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image357.png)
+     ![](./media/image357.png)
 
 ## Task 5: Create the Pipeline_Deploy pipeline and declare variables
 
@@ -2409,14 +2146,11 @@ incorrect.](./media/image368.png)
         with @pipeline().libraryVariables.WSvariables_Source_Workspace_ID.
         Select **OK**.
 
-       ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image369.png)
+       ![](./media/image369.png)
 
-       ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image370.png)
+       ![](./media/image370.png)
 
-       ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image371.png)
+       ![](./media/image371.png)
 
 5. Configure **SourceTableName**:
 
@@ -2431,8 +2165,7 @@ incorrect.](./media/image371.png)
         with @pipeline().libraryVariables.WSvariables_SourceTable_Name.
         Select **OK**.
 
-       ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image372.png)
+       ![](./media/image372.png)
 
        ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image373.png)
@@ -2634,28 +2367,20 @@ incorrect.](./media/image404.png)
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image405.png)
 
-12. Confirm that the **ProdCopiedData** table appears under
-    **datafactory_lakehouse**
+12. Confirm that the **ProdCopiedData** table appears under **datafactory_lakehouse**
 
-    ![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image406.png)
 
-13. Navigate and click
-    on **Data_Factory@lab.LabInstance.Id** 
-    dev workspace on the left-sided navigation menu.
+13. Navigate and click on **Data_Factory@lab.LabInstance.Id** dev workspace on the left-sided navigation menu.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image407.png)
+     ![](./media/image407.png)
 
-14. In **Source control**, select the required items (such as the
-    pipeline and workspace variables), enter an optional commit message,
-    and click **Commit** to save the changes.
+14. In **Source control**, select the required items (such as the pipeline and workspace variables), enter an optional commit message, and click **Commit** to save the changes.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image408.png)
+     ![](./media/image408.png)
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image409.png)
+     ![](./media/image409.png)
 
 ## Task 9: Deploy content from one stage to another
 
